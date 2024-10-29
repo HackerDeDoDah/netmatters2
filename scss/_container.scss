@@ -23,8 +23,18 @@
     }
 
 }
+
 .icon-container {
-    display: flex;
-    justify-content: space-between;
+    display: inline;
+
     max-width: 50px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    background-color: #201e1e;
+    p {
+        color: white;
+    }
 }
