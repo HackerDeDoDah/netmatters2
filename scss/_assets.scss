@@ -1,5 +1,5 @@
 .icon {
-    display: inline-block;
+    display: flex;
     width: 35px;
     height: 35px;
     stroke-width: 0;
@@ -15,4 +15,10 @@
 #phone {
     width: 35px;
     height: 35px;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    width: auto;
 }
