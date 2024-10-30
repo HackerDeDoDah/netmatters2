@@ -45,7 +45,7 @@
 
 // card hover color change
 @mixin color {
-    h3 p {
+    &:hover {
         color: white;
     }
 }
