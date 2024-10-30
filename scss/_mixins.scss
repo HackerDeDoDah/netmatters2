@@ -45,7 +45,8 @@
 
 // card hover color change
 @mixin color {
-    &:hover {
-        color: white;
+    .card-button-top {
+        background-color: white;
+        color: black;
     }
 }

@@ -331,48 +331,6 @@ footer .footer-row .footer-menu a:hover {
   }
 }
 
-#top1:hover {
-  background-color: rgb(82, 80, 78);
-  color: #fff;
-  cursor: pointer;
-}
-
-#top2:hover {
-  background-color: #4287f5;
-  color: #fff;
-  cursor: pointer;
-}
-
-#top3:hover {
-  background-color: green;
-  color: #fff;
-  cursor: pointer;
-}
-
-#top4:hover {
-  background-color: brown;
-  color: #fff;
-  cursor: pointer;
-}
-
-#top5:hover {
-  background-color: purple;
-  color: #fff;
-  cursor: pointer;
-}
-
-#top6:hover {
-  background-color: red;
-  color: #fff;
-  cursor: pointer;
-}
-
-#top7:hover {
-  background-color: brown;
-  color: #fff;
-  cursor: pointer;
-}
-
 .card-button-top {
   padding: 10px 15px;
   background-color: #3498db;
@@ -383,7 +341,72 @@ footer .footer-row .footer-menu a:hover {
   transition: background-color 0.3s ease;
 }
 
-.card-button-top:hover {
+#top1:hover {
+  background-color: rgb(82, 80, 78);
+  color: #fff;
+  cursor: pointer;
+}
+#top1:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top2:hover {
+  background-color: #4287f5;
+  color: #fff;
+  cursor: pointer;
+}
+#top2:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top3:hover {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+#top3:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top4:hover {
+  background-color: brown;
+  color: #fff;
+  cursor: pointer;
+}
+#top4:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top5:hover {
+  background-color: purple;
+  color: #fff;
+  cursor: pointer;
+}
+#top5:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top6:hover {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+#top6:hover .card-button-top {
+  background-color: white;
+  color: black;
+}
+
+#top7:hover {
+  background-color: brown;
+  color: #fff;
+  cursor: pointer;
+}
+#top7:hover .card-button-top {
   background-color: white;
   color: black;
 }
@@ -393,8 +416,9 @@ footer .footer-row .footer-menu a:hover {
   padding: 15px;
   align-items: center;
 }
-.card-content-top:hover {
-  color: white;
+.card-content-top .card-button-top {
+  background-color: white;
+  color: black;
 }
 
 .card-title-top {

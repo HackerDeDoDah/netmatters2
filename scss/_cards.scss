@@ -98,49 +98,6 @@
     @include m.top-cards;
 
 }
-
-#top1:hover {
-    background-color: rgb(82, 80, 78);
-    color: #fff;
-    cursor: pointer;
-   
-}
-#top2:hover {
-    background-color: #4287f5;
-    color: #fff;
-    cursor: pointer;
-    
-}
-#top3:hover {
-    background-color: green;
-    color: #fff;
-    cursor: pointer;
-   
-}
-#top4:hover {
-    background-color: brown;
-    color: #fff;
-    cursor: pointer;
-    
-}
-#top5:hover {
-    background-color: purple;
-    color: #fff;
-    cursor: pointer;
-    
-}
-#top6:hover {
-    background-color: red;
-    color: #fff;
-    cursor: pointer;
-   
-}
-#top7:hover {
-    background-color: brown;
-    color: #fff;
-    cursor: pointer;
-    
-}
 .card-button-top {
     padding: 10px 15px;
     background-color: #3498db;
@@ -150,10 +107,48 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-  
-.card-button-top:hover {
-    background-color: white;
-    color: black;
+#top1:hover {
+    background-color: rgb(82, 80, 78);
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+
+#top2:hover {
+    background-color: #4287f5;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+#top3:hover {
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+#top4:hover {
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+#top5:hover {
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+#top6:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
+}
+#top7:hover {
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+    @include m.color;
 }
   /* Card Content */
 .card-content-top {
