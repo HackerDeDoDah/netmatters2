@@ -1,7 +1,7 @@
 @use 'mixins' as m;
 
 
-/* Card Container */
+/* ---- Card Container ----- */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
     @include m.responsive;
 }
   
-  /* Card Styling */
+  /* ----- bottom cards ----- */
 .card {
     justify-content: center;
     background-color: #fff;
@@ -30,14 +30,14 @@
     
 }
   
-  /* Image Styling */
+  /* --- Image Styling ---- */
 .card-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
   
-  /* Card Content */
+  /* ---- Card Content ---- */
 .card-content {
     padding: 15px;
 }
@@ -55,7 +55,7 @@
     margin-bottom: 15px;
 }
   
-  /* Button Styling */
+  /* ---- Button Styling ---- */
 .card-button {
     padding: 10px 15px;
     background-color: #3498db;
@@ -70,7 +70,7 @@
     background-color: #2980b9;
 }
 
-  /* Card Footer */
+  /* --- Card Footer ---- */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -89,14 +89,31 @@
     font-size: 0.9rem;
     color: #3498db;
 }
+
+/* ----- top of page cards ---- */
+
 .top-cards {
-    display: flex;
+    display: grid;
     height: 200px;
     border-radius: 8px;
     align-items: center;
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     @include m.top-cards;
 
+}
+
+#top1,
+#top2,
+#top3 {
+    grid-column: span 4;
+    align-self: stretch;
+}
+
+#top4,
+#top5,
+#top6,
+#top7 {
+    grid-column: span 3;
 }
 .card-button-top {
     padding: 10px 15px;
@@ -110,49 +127,76 @@
     background-color: rgb(82, 80, 78);
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 
 #top2:hover {
     background-color: #4287f5;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 #top3:hover {
     background-color: green;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 #top4:hover {
     background-color: brown;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 #top5:hover {
     background-color: purple;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 #top6:hover {
     background-color: red;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
 #top7:hover {
     background-color: brown;
     color: #fff;
     cursor: pointer;
-    @include m.color;
+    //@include m.color;
+    .card-title-top {
+        color: #fff;
+    }
 }
   /* Card Content */
+
+.card-icon {
+    align-self: center;
+}
+
 .card-content-top {
     padding: 15px;
-    @include m.color;
+    color: #333;
+    //@include m.color;
     align-items: center;
 }
   
@@ -165,8 +209,9 @@
 }
   
 .card-description-top {
+    text-align: center;
     font-size: 1rem;
-    color: #666;
+    color: #333;
     margin-bottom: 15px;
  
 }
