@@ -50,3 +50,40 @@
         color: black;
     }
 }
+
+@mixin buttons {
+    .btn-blue {
+        background-color: #4287f5;
+        color: #fff;
+    }
+
+    .btn-red {
+        background-color: red;
+        color: #fff;
+    }
+
+    .btn-green {
+        background-color: green;
+        color: #fff;
+    }
+
+    .btn-brown {
+        background-color: brown;
+        color: #fff;
+    }
+
+    .btn-orange {
+        background-color: orange;
+        color: #fff;
+    }
+
+    .btn-yellow {
+        background-color: yellow;
+        color: #fff;
+    }
+
+    .btn-purple {
+        background-color: purple;
+        color: #fff;
+    }
+}
