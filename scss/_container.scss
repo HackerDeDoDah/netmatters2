@@ -30,17 +30,19 @@
     }
 }
 
-.grid-container{
+.grid-container1{
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     grid-template-rows: repeat(2, 300px);
-    max-width: 789px;
+    max-width: minmax(267px, 800px);
     gap: 20px;
     padding: 5px;
     position: relative;
     padding-bottom: 20px;
     @include m.responsive;
 }
+
+
 
 .hero img {
     width: 100%;

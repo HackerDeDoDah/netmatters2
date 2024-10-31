@@ -1,3 +1,7 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
 body {
   margin: 0;
 }
@@ -48,28 +52,28 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.grid-container {
+.grid-container1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 300px);
-  max-width: 789px;
+  max-width: minmax(267px, 800px);
   gap: 20px;
   padding: 5px;
   position: relative;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .grid-container {
+  .grid-container1 {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .grid-container {
+  .grid-container1 {
     width: 970px;
   }
 }
 @media (min-width: 1260px) {
-  .grid-container {
+  .grid-container1 {
     width: 1200px;
   }
 }
@@ -135,7 +139,7 @@ footer .footer-row .footer-menu a:hover {
   display: grid;
   grid-template-rows: auto;
   width: 100%;
-  margin: o;
+  margin: 0;
   background-color: #1c202c;
   z-index: 10;
 }
@@ -253,6 +257,7 @@ footer .footer-row .footer-menu a:hover {
 /* ---- Card Content ---- */
 .card-content {
   padding: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 .card-title {
@@ -306,12 +311,13 @@ footer .footer-row .footer-menu a:hover {
 /* ----- top of page cards ---- */
 .top-cards {
   display: grid;
-  height: 200px;
+  height: 300px;
   border-radius: 8px;
   align-items: center;
   transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   /* 2 cards per row for tablets and medium screens */
   /* 3 cards per row for larger screens */
+  font-family: "Poppins", sans-serif;
 }
 @media (min-width: 600px) {
   .top-cards .card {
@@ -460,4 +466,39 @@ footer .footer-row .footer-menu a:hover {
   font-size: 1rem;
   color: #333;
   margin-bottom: 15px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto 20px auto;
+}
+
+.business,
+.marketing,
+.notables {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  max-width: 370px;
+  height: 583px;
+}
+.business .card-img,
+.marketing .card-img,
+.notables .card-img {
+  max-width: 370px;
+}
+
+.seperator {
+  border-top: 1px solid #ddd;
+}
+
+.avatar {
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */

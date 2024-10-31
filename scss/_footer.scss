@@ -57,7 +57,7 @@ footer {
    display: grid;
    grid-template-rows: auto;
    width: 100%;
-   margin: o;
+   margin: 0;
    background-color: #1c202c;
    z-index: 10;
    @include m.responsive;
