@@ -1,3 +1,5 @@
+@use 'mixins' as m;
+
 .article-container {
     display: flex;
     flex-direction: row;
@@ -11,15 +13,24 @@
 .notables {
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
-    max-width: 370px;
+    width: 370px;
     height: 583px;
-    .card-img {
-        max-width: 370px;
-    }
+}
+@include m.buttons;
+
+.article-content {
+    margin: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;     
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .seperator {
@@ -28,4 +39,13 @@
 }
 .avatar {
     border-radius: 50%;
+}
+.business h3 {
+    color: orange;
+}
+.marketing h3 {
+    color: green;
+}
+.notables h3 {
+    color: purple;
 }
