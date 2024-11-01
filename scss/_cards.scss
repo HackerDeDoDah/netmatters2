@@ -23,13 +23,12 @@
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     width: 300px;
     border: 1px grey solid;
+    &:hover {
+        transform: translateY(-10px);
+    }
 }
   
-.card:hover {
-    transform: translateY(-10px);
-    
-}
-  
+
   /* --- Image Styling ---- */
 .card-image {
     width: 100%;

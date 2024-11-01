@@ -54,8 +54,12 @@ footer {
 }
 
 #sitemap {
-   display: grid;
-   grid-template-rows: auto;
+   flex: 100%;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 15px;
+   margin-top: 20px;
    width: 100%;
    margin: 0;
    background-color: #1c202c;
@@ -67,10 +71,11 @@ footer {
       color: #fff;
       line-height: 0.5rem;
       font-size: 12px;
-      a {
-         text-decoration: none;
-      }
    }
+   a {
+      text-decoration: none;
+   }
+   
    
 }
 // .footer-menu {

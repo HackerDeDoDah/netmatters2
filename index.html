@@ -12,23 +12,32 @@
 
     <body>
         <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html"><img src="assets\img\f-logo.webp" alt="netmatters logo"></a>
-                </div>
-                <div class="icon-container">
-                    <div class="icon-item">
-                        <img id="phone" src="assets\img\phone-talk.png" alt="phone-icon">
+          <div class="container">
+            <nav>
+                <img src="netmatters.png" alt="netmatters">
+                <div class="right-align"></div>
+                    <button class="button btn-blue"><img src="mouse-icon.svg">SUPPORT</button>
+                    <button class="button btn-grey"><img src="paper-plane.svg">CONTACT</button>
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <span class="search-icon">&#128269;</span> <!-- Unicode magnifier icon -->
                     </div>
-                    <div class="icon-item">
-                        <img id="phone" src="assets\img\menu.png" alt="phone-icon">
+                    <div class="hamburger-menu" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <!-- Dropdown Menu (Initially Hidden) -->
+                    <div class="dropdown-menu">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
                     </div>
                 </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button img="assets\img\search.png" id="search"></button>
-                </div>
-            </div>
+            </nav>
+        </div>
         </header>
         <ssection class="hero">
            <!-- this is where the carousel will go -->
@@ -153,6 +162,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- cards -->
         <section>
           <div class="article-container">
@@ -181,16 +191,19 @@
               </div>
             </article>
             <article class="notables">
+              <div class="article-link">
               <img class="card-img" src="assets\img\september-notables-2024-ZBOM.webp" alt="september notable">
                 <div class="article-content">
-                <h3><strong>September Notables 2024 - Celebrating Our Tea...</strong></h3>
-                <p>September Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we...</p>
-                <button class="card-button btn-purple">Read More</button>
-                <hr class="seperator">
-                <img class="avatar" src="assets\img\netmatters-ltd-VXAv.webp" alt="netmatters small logo">
-                <p><strong>Posted by Netmatters</strong></p>
-                <p>10th October 2024</p>
+                  <h3><strong>September Notables 2024 - Celebrating Our Tea...</strong></h3>
+                  <p>September Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we...</p>
+                  <button class="card-button button-reset btn-purple">Read More</button>
+                  <hr class="seperator">
+                  <img class="avatar" src="assets\img\netmatters-ltd-VXAv.webp" alt="netmatters small logo">
+                  <p><strong>Posted by Netmatters</strong></p>
+                  <p>10th October 2024</p>
+                </div>
               </div>
+
             </article>
           </div>
         </section>
@@ -203,9 +216,7 @@
               <a href="#"><i class="fab fa-instagram-square"></i></a>
               <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-
           </div>
-           
             <div class="container">
                 <div class="footer-row">
                     <div class="footer-menu">
@@ -259,5 +270,6 @@
             <p>All rights reserved.</p>
             <p><a href="https://www.netmatters.co.uk/sitemap.xml">Sitemap</a></p>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html>

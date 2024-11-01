@@ -14,21 +14,7 @@
     
 }
 
-.icon-container {
-    display: inline-block;
-    align-items: right;
-    padding: 15px;
-    width: 200px;
-    .icon-item {
-        display: inline;
-        margin-right: 15px;
-        width: 30px;
-        height: 30px;
-        background-color: #fff;
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-    }
-}
+
 
 .grid-container1{
     display: grid;

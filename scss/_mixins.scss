@@ -44,7 +44,24 @@
 //     }
 // }
 
+@mixin button-reset {
+
+    button {
+        background-color: none;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+        outline: none; 
+        &:hover {
+            @include m.buttons;
+        } 
+    }
+}
+
 @mixin buttons {
+
     .btn-blue {
         background-color: #4287f5;
         color: #fff;
