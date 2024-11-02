@@ -1,0 +1,54 @@
+// fit in a grid system here for the footer and welcom section
+// make it flexable 
+@use 'mixins' as m;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #323544;
+    @include m.responsive;
+    max-height: fit-content;
+    
+}
+
+
+// grid for cards
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(2, 300px);
+    max-width: minmax(250px, 800px);
+    gap: 20px;
+    padding: 5px;
+    position: relative;
+    padding-bottom: 20px;
+    @include m.responsive;
+}
+
+// flex grid for text
+.grid-container2{
+    display: flex;
+    max-width: minmax(250px, 800px);
+    max-height: fit-content;
+    gap: 20px;
+    padding: 5px;
+    position: relative;
+    padding-bottom: 20px;
+    @include m.responsive;
+}
+
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+#welcome #services{
+    display: flex;
+    flex-direction: column;
+}

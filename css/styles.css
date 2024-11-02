@@ -155,8 +155,6 @@ footer .footer-row .footer-menu a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
-  width: 200px;
-  height: 200px;
   border: 1px grey solid;
 }
 .card:hover {
@@ -502,7 +500,8 @@ nav {
 
 /* Logo Styling */
 nav img {
-  height: 50px;
+  display: flex;
+  height: 64px;
 }
 
 /* Right-Aligned Section */
@@ -581,17 +580,6 @@ nav img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-.dropdown-menu a:hover {
-  background-color: #f0f0f0;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   /* Show Hamburger Menu and Hide Other Elements */
@@ -606,4 +594,91 @@ nav img {
   .dropdown-menu {
     display: flex;
   }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #323544;
+  max-height: fit-content;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  max-width: minmax(250px, 800px);
+  gap: 20px;
+  padding: 5px;
+  position: relative;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .grid-container1 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container1 {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .grid-container1 {
+    width: 1200px;
+  }
+}
+
+.grid-container2 {
+  display: flex;
+  max-width: minmax(250px, 800px);
+  max-height: fit-content;
+  gap: 20px;
+  padding: 5px;
+  position: relative;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .grid-container2 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container2 {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .grid-container2 {
+    width: 1200px;
+  }
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#welcome #services {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */

@@ -24,8 +24,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
-    width: 200px;
-    height: 200px;
+
     border: 1px grey solid;
     &:hover {
         transform: translateY(-10px);

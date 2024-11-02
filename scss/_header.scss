@@ -1,5 +1,5 @@
   /* Container and Header Styling */
-  header {
+header {
     background-color: #ffffff;
     width: 100%;
     display: flex;
@@ -28,7 +28,8 @@ nav {
   
   /* Logo Styling */
 nav img {
-    height: 50px;
+    display: flex;
+    height: 64px;
 }
 
   /* Right-Aligned Section */
@@ -107,16 +108,16 @@ nav img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
-.dropdown-menu a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-}
+// .dropdown-menu a {
+//     color: #333;
+//     text-decoration: none;
+//     padding: 10px;
+//     border-radius: 3px;
+// }
   
-  .dropdown-menu a:hover {
-    background-color: #f0f0f0;
-}
+//   .dropdown-menu a:hover {
+//     background-color: #f0f0f0;
+// }
   
   /* Responsive Styles */
 @media (max-width: 768px) {
