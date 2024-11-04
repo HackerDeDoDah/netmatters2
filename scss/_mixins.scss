@@ -78,4 +78,14 @@
         background-color: purple;
         color: #fff;
     }
+}  
+
+@mixin arrow {
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 40px solid #333; /* Arrow color */
+      }
 }
