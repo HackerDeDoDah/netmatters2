@@ -5,16 +5,78 @@
 //----------------------
 
 @mixin responsive {
+    @media (max-width: 768px) {
+        width: 748px;
+        #top1,
+        #top2,
+        #top3, 
+        #top4,
+        #top5,
+        #top6,
+        #top7 {
+            grid-column: span 12;
+            align-self: stretch;
+        }
+        .business,
+        .marketing,
+        .notable {
+            grid-column: span 12;
+        }
+    }
+
     @media (min-width: 768px) {
-        width: 750px;
+        width: 7650px;
+        #top1,
+        #top2,
+        #top3 {
+            grid-column: span 12;
+            align-self: stretch;
+        }
+
+        #top4,
+        #top5,
+        #top6,
+        #top7 {
+            grid-column: span 6;
+        }
+        .notable {
+            display: hidden;
+        }
    }
 
    @media (min-width: 992px) {
        width: 970px;
+        #top1,
+        #top2,
+        #top3 {
+            grid-column: span 4;
+            align-self: stretch;
+        }
+
+        #top4,
+        #top5,
+        #top6,
+        #top7 {
+            grid-column: span 6;
+        }
+
    }
 
    @media (min-width: 1260px) {
        width: 1200px;
+        #top1,
+        #top2,
+        #top3 {
+            grid-column: span 4;
+            align-self: stretch;
+        }
+
+        #top4,
+        #top5,
+        #top6,
+        #top7 {
+            grid-column: span 3;
+        }
    }
 }
 

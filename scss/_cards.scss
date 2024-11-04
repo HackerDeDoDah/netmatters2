@@ -89,8 +89,43 @@
 }
   
 .card-tags {
-    font-size: 0.9rem;
-    color: #3498db;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5rem;
+    color: #222323;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    @include m.responsive;  
+}
+
+.p1 {
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.p2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+    a {
+        text-decoration: none;
+        color: #222323;
+    } 
+}
+
+.car-btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* ----- top of page cards ---- */
@@ -104,20 +139,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#top1,
-#top2,
-#top3 {
-    grid-column: span 4;
-    align-self: stretch;
-}
-
-#top4,
-#top5,
-#top6,
-#top7 {
-    grid-column: span 3;
-}
 .card-button-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -193,7 +218,13 @@
 
 .card-icon {
     display: flex;
-    align-self: center;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 45px;
+        height: 45px;
+        align-self: center;
+    }
 }
 
 .card-content-top {
