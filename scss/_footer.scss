@@ -15,51 +15,49 @@ footer {
       #logo-white {
          filter: brightness(6);
       }
-   }
-   
-   .footer-row {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: fit-content;
-
-      
-
-      .footer-menu {   
-         flex: 100%; 
-         flex-direction: row; 
-         height: 300px;
-         margin-bottom: 30px;
-         
-         @media (min-width: 768px) {
-            flex: 50%;
-         }
-
-         @media (min-width: 992px) {
-            flex: 25%;
-         }
-
-         @media (min-width: 1260px) {
-            margin-bottom: 40px;
-         }
-
-         h4 {
-               text-transform: uppercase;
-               font-size: 1rem;
-               margin-bottom: 26px;	
-         }
-         a {
-            text-decoration: none;
-            color: #fff;
-            &:hover {
-               text-decoration: underline;
-            }
-         }
-      }	  
-   }
+   } 
 }
 
+.footer-row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: fit-content;
+}
+
+.footer-menu {   
+   flex: 100%; 
+   flex-direction: row; 
+   height: 300px;
+   margin-bottom: 30px;
+   
+   @media (min-width: 768px) {
+      flex: 50%;
+   }
+
+   @media (min-width: 992px) {
+      flex: 25%;
+   }
+
+   @media (min-width: 1260px) {
+      margin-bottom: 40px;
+   }
+   h4 {
+         text-transform: uppercase;
+         font-size: 1rem;
+         margin-bottom: 26px;	
+   }
+   a {
+      text-decoration: none;
+      color: #0f0707;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}	  
+
 #sitemap {
-  display: grid;
+   display: grid;
    justify-content: space-around;
    align-items: center;
    flex-wrap: wrap;
@@ -87,3 +85,22 @@ footer {
    }
 }
 
+
+// footer {
+//    display: grid;
+//    grid-template-columns: repeat(4, 1fr);
+//    gap: 20px;
+//    background-color: #333;
+//    padding: 20px;
+//    color: white;
+// }
+
+// footer ul {
+//    list-style-type: none;
+//    padding: 0;
+//    margin: 0;
+// }
+
+// footer li {
+//    margin-bottom: 8px;
+// }

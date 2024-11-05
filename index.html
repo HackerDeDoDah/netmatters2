@@ -30,9 +30,11 @@
     <section class="hero">
         <!-- this is where the carousel will go -->
         <img src="assets\img\home-K0pn.jpg" alt="nerd guy">
-        <h1><strong>Web Design</strong></h1>
-        <p><strong>For businesses looking to make a strong and effective first impression.</strong></p>
-        <button class="car-btn"><strong>FIND OUT MORE</strong><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="hero-overlay">
+          <h1><strong>Web Design</strong></h1>
+          <p><strong>For businesses looking to make a strong and effective first impression.</strong></p>
+          <button class="car-btn"><strong>FIND OUT MORE</strong><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
     </section>
     <section class="card-tags">
         <p class="p1">Our Services</p>
@@ -40,7 +42,7 @@
     </section>
     <!-- top cards for our services-->
     <section>
-      <div class="card-container ">
+      <div class="card-container">
         <div class="grid-container1">
           <div class="card top-cards" id="top1">
             <div class="card-icon">
@@ -144,7 +146,9 @@
             <div class="container" id="services">
                 <article id="item-2">
                     <h1><strong>What Our Clients Think</strong></h1>
-                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <div class="stars">
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
                     <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
                     <p>Eleanor Bishop, Head of Marketing - <a href="#">Partnership LLP</a></p>
                     <button class="card-button">Read More</button>
@@ -218,49 +222,50 @@
             </div>
           </div>
           <div class="footer-row">
-            <div class="footer-menu" id="f2">
-              <h4>About Netmatters</h4>
-              <a href="#">News</a>
-              <a href="#">Our Careers</a>
-              <a href="#">Our Team</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Cookie Policy</a>
-              <a href="#">Data Retention & Disposal Policy</a>
-              <a href="#">CCTV Policy</a>
-              <a href="#">Environmental Policy</a>
-              <a href="#">Terms & Conditions</a>
-            </div>
-          
-            <div class="footer-menu" id="f3">
+            <h4>About Netmatters</h4>
+              <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Our Careers</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                  <li><a href="#">Data Retention & Disposal Policy</a></li>
+                  <li><a href="#">CCTV Policy</a></li>
+                  <li><a href="#">Environmental Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+
               <h4>Our Services</h4>
-              <a href="#">Bespoke Software</a>
-              <a href="#">IT Support</a>
-              <a href="#">Digital Marketing</a>
-              <a href="#">Telecoms Services</a>
-              <a href="#">Web Design</a>
-              <a href="#">Cyber Security</a>
-              <a href="#">Developer Training</a>
-            </div>
-          
-            <div class="footer-menu" id="f4">
+              <ul>
+                  <li><a href="#">Bespoke Software</a></li>
+                  <li><a href="#">IT Support</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Telecoms Services</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Cyber Security</a></li>
+                  <li><a href="#">Developer Training</a></li>
+              </ul>
+
               <h4>Our Industries</h4>
-              <a href="#">Financial Services</a>
-              <a href="#">Construction</a>
-              <a href="#">Retail & E-Commerce</a>
-              <a href="#">Non-Profits</a>
-              <a href="#">SME's</a>
-              <a href="#">Healthcare</a>
-              <a href="#">Education & Training</a>
-              <a href="#">Travel & Leisure</a>
-            </div>
-          
-            <div class="footer-menu" id="f5">
+              <ul>
+                  <li><a href="#">Financial Services</a></li>
+                  <li><a href="#">Construction</a></li>
+                  <li><a href="#">Retail & E-Commerce</a></li>
+                  <li><a href="#">Non-Profits</a></li>
+                  <li><a href="#">SME's</a></li>
+                  <li><a href="#">Healthcare</a></li>
+                  <li><a href="#">Education & Training</a></li>
+                  <li><a href="#">Travel & Leisure</a></li>
+              </ul>
+
               <h4>Locations</h4>
-              <a href="#">Cambridge Office</a>
-              <a href="#">Wymondham Office</a>
-              <a href="#">Great Yarmouth Office</a>
-            </div>
+              <ul>
+                  <li><a href="#">Cambridge Office</a></li>
+                  <li><a href="#">Wymondham Office</a></li>
+                  <li><a href="#">Great Yarmouth Office</a></li>
+              </ul>
+
           
           </div>
         </div>
