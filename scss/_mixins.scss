@@ -78,7 +78,7 @@
     }
 
     .btn-red {
-        background-color: red;
+        background-color: rgb(240, 18, 107);
         color: #fff;
     }
 
@@ -142,5 +142,20 @@
     background-color: purple;
 }
 .c-6 {
-    background-color: red;
+    background-color: rgb(240, 18, 107);
+}
+
+@mixin s-c {
+    .fa-facebook-f:hover {
+        background-color: #1877F2;
+    }
+    .fa-x-twitter:hover {
+        background-color: #1DA1F2;
+    }
+    .fa-linkedin-in:hover {
+        background-color: #0A66C2;
+    }
+    .fa-instagram:hover {
+        background-color: #C13584;
+    }
 }

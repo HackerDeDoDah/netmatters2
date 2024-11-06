@@ -12,7 +12,7 @@
 
 <body>
     <header>
-      <div class="container header-flex">
+      <div class="container-nav header-flex">
         <nav>
             <img src="assets\img\f-logo.webp" alt="netmatters">
             <div class="right-align"></div>
@@ -21,7 +21,11 @@
                 <div class="search-bar">
                     <input type="text" class="search-input" placeholder="Search...">
                     <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span> 
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="hamburger" onclick="this.classList.toggle('open')">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>                    
                 </div>
             </div>
         </nav>
@@ -73,7 +77,7 @@
           <div class="card top-cards" id="top3">
             <div class="card-icon">
               <div class="circle-background c-3">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-sharp fa-solid fa-chart-simple"></i>
               </div>
             </div>
             <div class="card-content-top">
@@ -109,7 +113,7 @@
           <div class="card top-cards" id="top6">
             <div class="card-icon">
               <div class="circle-background c-6">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-shield-halved"></i>
               </div>
             </div>
             <div class="card-content-top">
@@ -121,7 +125,7 @@
           <div class="card top-cards" id="top7">
             <div class="card-icon">
               <div class="circle-background c-7">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-graduation-cap"></i>
               </div>
             </div>
             <div class="card-content-top">
@@ -133,7 +137,7 @@
         </div>
       </div>
     </section><!-- mid section -->
-    <div class="container-main">
+    <div class="container">
         <div class="grid-container2">
             <div class="container" id="welcome">
                 <article id="item-1">
@@ -212,14 +216,15 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-logo">
-            <img id="logo-white" src="assets\img\nm-logo-white-med.webp" alt="Netnatters logo">
+            <img src="assets\img\nm-logo-white-med.webp" alt="Netnatters logo">
             <div class="social">
               <h4>FOLLOW US ON:</h4>
               <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f o1"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in o2"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter o3"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram o4"></i></a>
+                
               </div>
             </div>
           </div>

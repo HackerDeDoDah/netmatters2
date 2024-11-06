@@ -10,15 +10,14 @@ footer {
    padding: 30px 0 0;
    position: relative;
    height: 400px;
-   img {
-      width: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      #logo-white {
-         filter: brightness(6);
-      }
-   } 
+   
 }
+img {
+   width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   
+} 
 
 footer ul {
    list-style-type: none; 
@@ -48,7 +47,7 @@ a {
 
 
 .footer-menu {   
-   flex: 100%; 
+   flex: none; 
    flex-direction: column; 
    height: 300px;
    margin-bottom: 30px;
@@ -68,9 +67,8 @@ a {
 }	  
 
 #sitemap {
-   display: grid;
+   display: flex;
    justify-content: space-around;
-   
    flex-wrap: wrap;
    padding: 15px;
    margin-left: auto;
@@ -94,19 +92,30 @@ a {
       font-size: 12px;
    }
 }
-
-.fa-brands {
-   display: flex;
-   border: 1px solid transparent;
-   font-size: 40px;
-   
-}
+//--------- social icons ----------------
 .social-icons {
    display: flex;
    gap: 10px;
    border: 1px solid #eee;
-   height: 50px;
+   height: 60px;
    align-items: center;
    justify-content: space-evenly;
+   .o1,
+   .o2,
+   .o3,
+   .o4 {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #23252f;
+      border: 1px solid transparent;
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+   }
+   a {
+      text-decoration: none;
+   }
+   @include m.s-c;
 }
 

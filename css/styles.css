@@ -19,7 +19,7 @@
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
 }
 
 body {
@@ -96,7 +96,7 @@ body {
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
 }
 
 footer {
@@ -108,13 +108,11 @@ footer {
   position: relative;
   height: 400px;
 }
-footer img {
+
+img {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-}
-footer img #logo-white {
-  filter: brightness(6);
 }
 
 footer ul {
@@ -145,7 +143,7 @@ a:hover {
 }
 
 .footer-menu {
-  flex: 100%;
+  flex: none;
   flex-direction: column;
   height: 300px;
   margin-bottom: 30px;
@@ -167,7 +165,7 @@ a:hover {
 }
 
 #sitemap {
-  display: grid;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 15px;
@@ -243,67 +241,41 @@ a:hover {
   font-size: 12px;
 }
 
-.fa-brands {
-  display: flex;
-  border: 1px solid transparent;
-  font-size: 40px;
-}
-
 .social-icons {
   display: flex;
   gap: 10px;
   border: 1px solid #eee;
-  height: 50px;
+  height: 60px;
   align-items: center;
   justify-content: space-evenly;
 }
-
-.c-1 {
-  background-color: orange;
+.social-icons .o1,
+.social-icons .o2,
+.social-icons .o3,
+.social-icons .o4 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #23252f;
+  border: 1px solid transparent;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
 }
-
-.c-2 {
-  background-color: #4287f5;
+.social-icons a {
+  text-decoration: none;
 }
-
-.c-3 {
-  background-color: green;
+.social-icons .fa-facebook-f:hover {
+  background-color: #1877F2;
 }
-
-.c-4, .c-7 {
-  background-color: brown;
+.social-icons .fa-x-twitter:hover {
+  background-color: #1DA1F2;
 }
-
-.c-5 {
-  background-color: purple;
+.social-icons .fa-linkedin-in:hover {
+  background-color: #0A66C2;
 }
-
-.c-6 {
-  background-color: red;
-}
-
-.c-1 {
-  background-color: orange;
-}
-
-.c-2 {
-  background-color: #4287f5;
-}
-
-.c-3 {
-  background-color: green;
-}
-
-.c-4, .c-7 {
-  background-color: brown;
-}
-
-.c-5 {
-  background-color: purple;
-}
-
-.c-6 {
-  background-color: red;
+.social-icons .fa-instagram:hover {
+  background-color: #C13584;
 }
 
 .c-1 {
@@ -327,7 +299,55 @@ a:hover {
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
+}
+
+.c-1 {
+  background-color: orange;
+}
+
+.c-2 {
+  background-color: #4287f5;
+}
+
+.c-3 {
+  background-color: green;
+}
+
+.c-4, .c-7 {
+  background-color: brown;
+}
+
+.c-5 {
+  background-color: purple;
+}
+
+.c-6 {
+  background-color: rgb(240, 18, 107);
+}
+
+.c-1 {
+  background-color: orange;
+}
+
+.c-2 {
+  background-color: #4287f5;
+}
+
+.c-3 {
+  background-color: green;
+}
+
+.c-4, .c-7 {
+  background-color: brown;
+}
+
+.c-5 {
+  background-color: purple;
+}
+
+.c-6 {
+  background-color: rgb(240, 18, 107);
 }
 
 /* ---- Card Container ----- */
@@ -563,7 +583,7 @@ a:hover {
   color: #fff;
 }
 .card-button-top .btn-red {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
   color: #fff;
 }
 .card-button-top .btn-green {
@@ -698,7 +718,7 @@ a:hover {
 }
 
 #top6:hover {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
   color: #fff;
   cursor: pointer;
 }
@@ -716,7 +736,7 @@ a:hover {
   background-color: #fff;
 }
 #top6:hover .fa-solid {
-  color: red;
+  color: rgb(240, 18, 107);
 }
 
 #top7:hover {
@@ -807,7 +827,7 @@ a:hover {
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
 }
 
 .article-container {
@@ -969,7 +989,7 @@ h3 {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -978,13 +998,14 @@ header {
   box-sizing: border-box;
 }
 
-.container {
+.container-nav {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  height: 80px;
+  height: 88px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -1010,16 +1031,15 @@ nav img {
   display: flex;
   align-items: center;
   margin-left: auto;
-  gap: 15px;
+  gap: 22px;
 }
 
 .button {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 16px;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1061,59 +1081,63 @@ nav img {
 }
 
 .search-icon {
+  filter: invert(1) brightness(3);
   position: absolute;
-  right: 10px;
-  color: #888;
+  right: 40px;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .search-button {
   display: none;
 }
 
-.dropdown-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #ffffff;
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.dropdown-menu a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-  background-color: #f0f0f0;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .hamburger-menu {
+  .hamburger {
     display: flex;
   }
   .button, .search-bar {
     display: none;
   }
-  .dropdown-menu {
-    display: flex;
-    position: static;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
 }
+/* General styling for the hamburger container */
+.hamburger {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Styling for the lines */
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  transition: 0.3s ease;
+  transform-origin: center;
+}
+
+/* Transition to "X" when .open is applied */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0; /* Hide middle line */
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -8px);
+}
+
 .c-1 {
   background-color: orange;
 }
@@ -1135,7 +1159,7 @@ nav img {
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
 }
 
 .container {
@@ -1330,7 +1354,7 @@ nav img {
   flex: 100%;
   background-color: #333645;
   max-width: 1200px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   gap: 20px;
@@ -1451,12 +1475,12 @@ nav img {
 }
 
 .c-6 {
-  background-color: red;
+  background-color: rgb(240, 18, 107);
 }
 
 .hero img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
