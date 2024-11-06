@@ -7,16 +7,15 @@
     flex-direction: row;
     justify-content: space-around;
     align-content: space-between;
-    // gap: 20px;
     max-width: 1200px;
     min-height: 600px;
     margin: 20px auto 20px auto;
     @include m.responsive;
-
     a {
         text-decoration: none;
     }
 }
+
 .grid-container-articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,14 +45,15 @@
     }  
 }
 
-// .article-container:hover > :not(:hover){opacity: 0.7;}
+//.article-container:hover > :not(:hover){opacity: 0.7;}
 
 .article-content {
     margin: 20px;
     font-size: 16px;
     line-height: 1.5rem;
-    h3 p {
-        font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    h3, p {
+        
         padding: 10px;
     }
     p {
@@ -97,6 +97,7 @@ h3 {
 .card-footer-container {
     display: inline-flex;
     max-height: 50px;
+    margin-top: auto;
     justify-content: space-between;
     align-items: center;
     p {

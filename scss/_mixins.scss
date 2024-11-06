@@ -5,24 +5,7 @@
 //----------------------
 
 @mixin responsive {
-    @media (max-width: 768px) {
-        width: 748px;
-        #top1,
-        #top2,
-        #top3, 
-        #top4,
-        #top5,
-        #top6,
-        #top7 {
-            grid-column: span 12;
-            align-self: stretch;
-        }
-        .business,
-        .marketing,
-        .notable {
-            grid-column: span 12;
-        }
-    }
+    
 
     @media (min-width: 768px) {
         width: 750px;
@@ -39,9 +22,7 @@
         #top7 {
             grid-column: span 6;
         }
-        .notable {
-            display: none;
-        }
+        
    }
 
    @media (min-width: 992px) {
@@ -59,7 +40,7 @@
         #top7 {
             grid-column: span 6;
         }
-
+        
    }
 
    @media (min-width: 1260px) {
@@ -77,30 +58,15 @@
         #top7 {
             grid-column: span 3;
         }
+       
    }
 }
 
 // card hover color change
-// @mixin color {
-//     .card-button-top {
-//         background-color: white;
-//         color: black;
-//     }
-// }
-
-@mixin button-reset {
-
-    button {
-        background-color: none;
-        border: none;
-        border-radius: 4px;
-        font: inherit;
-        color: inherit;
-        cursor: pointer;
-        outline: none; 
-        &:hover {
-            @include m.buttons;
-        } 
+@mixin color {
+    .card-button-top {
+        background-color: white;
+        color: black;
     }
 }
 
@@ -148,7 +114,7 @@
         height: 0;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
-        border-left: 40px solid #333; /* Arrow color */
+        border-left: 40px solid #333; 
       }
 }
 
@@ -159,4 +125,22 @@
     .card-title-top {
         color: #fff;
     }
+}
+.c-1 {
+    background-color: orange;
+}
+.c-2 {
+    background-color: #4287f5;
+}
+.c-3 {
+    background-color: green;
+}
+.c-4, .c-7 {
+    background-color: brown;
+}
+.c-5 {
+    background-color: purple;
+}
+.c-6 {
+    background-color: red;
 }
