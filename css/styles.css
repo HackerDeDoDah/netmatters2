@@ -633,6 +633,10 @@ a:hover {
   background-color: purple;
   color: #fff;
 }
+.card-button-top .btn-dark-grey {
+  background-color: #262833;
+  color: #fff;
+}
 
 #top1:hover {
   background-color: rgb(109, 107, 104);
@@ -1449,19 +1453,68 @@ nav img {
   align-items: center;
   gap: 20px;
   font-family: "Poppins", sans-serif;
-}
-.grid-container2 #welcome h1,
-.grid-container2 #welcome a,
-.grid-container2 #welcome p, .grid-container2 #services h1,
-.grid-container2 #services a,
-.grid-container2 #services p {
   color: #fff;
+  line-height: 1.7rem;
+}
+.grid-container2 #welcome .btn-blue, .grid-container2 #services .btn-blue {
+  background-color: #4287f5;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-red, .grid-container2 #services .btn-red {
+  background-color: rgb(240, 18, 107);
+  color: #fff;
+}
+.grid-container2 #welcome .btn-green, .grid-container2 #services .btn-green {
+  background-color: green;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-brown, .grid-container2 #services .btn-brown {
+  background-color: brown;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-orange, .grid-container2 #services .btn-orange {
+  background-color: orange;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-yellow, .grid-container2 #services .btn-yellow {
+  background-color: yellow;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-purple, .grid-container2 #services .btn-purple {
+  background-color: purple;
+  color: #fff;
+}
+.grid-container2 #welcome .btn-dark-grey, .grid-container2 #services .btn-dark-grey {
+  background-color: #262833;
+  color: #fff;
+}
+.grid-container2 #welcome h1, .grid-container2 #services h1 {
+  font-size: x-large;
+}
+.grid-container2 #welcome a, .grid-container2 #services a {
   text-decoration: none;
+  font-size: large;
+}
+.grid-container2 #welcome a:hover, .grid-container2 #services a:hover {
+  text-decoration: underline;
+}
+.grid-container2 #welcome p, .grid-container2 #services p {
   font-size: large;
 }
 .grid-container2 #welcome .fa-star, .grid-container2 #services .fa-star {
   font-size: 40px;
   padding-right: 5px;
+}
+.grid-container2 #welcome .eleanor, .grid-container2 #services .eleanor {
+  font-size: small;
+  color: #83848b;
+}
+.grid-container2 #welcome .partner, .grid-container2 #services .partner {
+  font-size: medium;
+}
+
+.card-button {
+  margin-top: auto;
 }
 
 .footer-grid {
