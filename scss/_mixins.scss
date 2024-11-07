@@ -162,7 +162,7 @@
 }
 @mixin n-c {
     .n-1 {
-        color: orange;
+        color: rgb(100, 99, 97);
     }
     .n-2 {
         color: #4287f5;
@@ -182,5 +182,25 @@
 
     .n-6 {
         color: rgb(240, 18, 107);
+    }
+}
+@mixin no-c {
+    .cc-1 {
+        background-color: orange;
+    }
+    .cc-2 {
+        background-color: #4287f5;
+    }
+    .cc-3 {
+        background-color: green;
+    }
+    .cc-4, .cc-7 {
+        background-color: brown;
+    }
+    .cc-5 {
+        background-color: purple;
+    }
+    .cc-6 {
+        background-color: rgb(240, 18, 107);
     }
 }

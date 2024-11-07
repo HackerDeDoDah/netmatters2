@@ -24,10 +24,11 @@
     right: 0; 
     width: 157px; 
     border: 1px solid transparent;
+    background-color: #333645;
     text-align: center;
     justify-content: center;
     padding: 20px;
-    color: white;
+    color: #fff;
     cursor: pointer;
     .fa-solid,
     .fa-sharp {
@@ -36,18 +37,15 @@
     &:not(:hover) {
         @include m.n-c;
     }
+    &:hover {
+        @include m.no-c;
+    }
 }
 
 .dropdown-content {
     display: none;
     position: relative;
     top: 8px;
-    // left: 0;
-    // width: 100%; 
-    // background-color: #333645;
-    // padding: 20px;
-    // color: white;
-    // text-align: left;
     z-index: 999; 
     opacity: 0; 
     transition: opacity 0.3s ease;

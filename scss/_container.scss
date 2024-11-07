@@ -34,7 +34,7 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #323544;
+    background-color: #333645;
     @include m.responsive;
     max-height: fit-content;
 }
@@ -64,6 +64,11 @@
         p {
             color: #fff;
             text-decoration: none;
+            font-size: large;
+        }
+        .fa-star {
+            font-size: 40px;
+            padding-right: 5px;
         }
     }
 }
