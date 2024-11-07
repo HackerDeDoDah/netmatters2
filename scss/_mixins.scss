@@ -62,7 +62,7 @@
    }
 }
 
-// card hover color change
+//-----card hover color change --------------------
 @mixin color {
     .card-button-top {
         background-color: white;
@@ -70,6 +70,7 @@
     }
 }
 
+//----Button colors --------------------------------
 @mixin buttons {
 
     .btn-blue {
@@ -107,14 +108,14 @@
         color: #fff;
     }
 }  
-
+//---- Dropdown Arrow --------------------------------
 @mixin arrow {
-    .arrow-right {
+    .down-arrow {
         width: 0;
         height: 0;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        border-left: 40px solid #333; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #fff; 
       }
 }
 
@@ -157,5 +158,29 @@
     }
     .fa-instagram:hover {
         background-color: #C13584;
+    }
+}
+@mixin n-c {
+    .n-1 {
+        color: orange;
+    }
+    .n-2 {
+        color: #4287f5;
+    }
+
+    .n-3 {
+        color: green;
+    }
+
+    .n-4, .n-7 {
+        color: brown;
+    }
+
+    .n-5 {
+        color: purple;
+    }
+
+    .n-6 {
+        color: rgb(240, 18, 107);
     }
 }

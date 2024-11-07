@@ -1,0 +1,79 @@
+@use 'mixins' as m;
+
+
+.menu {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    background-color: #333645;
+}
+
+.drop-down-menu {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    // padding: 10px;
+    width: 1100px; 
+    height: 100px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    position: relative;
+    left: 0;
+    right: 0; 
+    width: 157px; 
+    border: 1px solid transparent;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    .fa-solid,
+    .fa-sharp {
+        color: #fff;
+    }
+    &:not(:hover) {
+        @include m.n-c;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    top: 8px;
+    // left: 0;
+    // width: 100%; 
+    // background-color: #333645;
+    // padding: 20px;
+    // color: white;
+    // text-align: left;
+    z-index: 999; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-top: 20px solid #2441d0; 
+      }
+}
+
+.menu-item:hover .dropdown-content,
+.menu-item:focus .dropdown-content {
+    display: flex;
+    opacity: 1; 
+}
+
+.dropdown-content p {
+    margin: 0;
+}
+.soft {
+    font-size: 8px;
+    margin-bottom: 2px;
+}
+.hard {
+    font-size: 16px;
+    margin-top: 0;
+}
