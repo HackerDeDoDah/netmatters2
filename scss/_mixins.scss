@@ -5,7 +5,9 @@
 //----------------------
 
 @mixin responsive {
-    
+    @media (max-width: 768px) {
+        display: none;
+    }
 
     @media (min-width: 768px) {
         width: 750px;

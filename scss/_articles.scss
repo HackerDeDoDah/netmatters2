@@ -26,6 +26,13 @@
     max-width: 1200px;
 }
 
+.btn-style {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: auto;
+}
+
 .business,
 .marketing,
 .notables {
@@ -40,12 +47,13 @@
     width: 370px;
     height: 583px;
     cursor: pointer;
+    @include m.buttons;
     &:hover {
         transform: translateY(-10px);
     }  
 }
 
-//.article-container:hover > :not(:hover){opacity: 0.7;}
+.article-container:hover > :not(:hover){opacity: 0.7;}
 
 .article-content {
     margin: 20px;

@@ -259,7 +259,7 @@
 .card-content-top {
     padding: 0px 15px;
     color: #333;
-    //@include m.color;
+    @include m.color;
     align-items: center;
 }
   
