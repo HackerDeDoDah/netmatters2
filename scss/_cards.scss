@@ -123,7 +123,7 @@
     overflow: hidden;
 }
 
-.fa-solid {
+.top-cards .fa-solid {
     color: #fff;
 }
 
@@ -137,7 +137,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    @include m.buttons;
+    // @include m.buttons;
 }
 #top1:hover {
     background-color: rgb(109, 107, 104);
@@ -277,4 +277,8 @@
     color: #333;
     margin-bottom: 10px;
  
+}
+
+.card-button-top {
+    // --- fill this in --------------------------------
 }

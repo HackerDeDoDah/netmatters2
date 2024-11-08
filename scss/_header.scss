@@ -71,8 +71,8 @@ nav img {
     background-color: #007bff;
 }
 
-.btn-grey {
-    background-color: #6c757d;
+.btn-light-grey {
+    background-color: #afafaf;
 }
 
 .button img {
@@ -85,24 +85,30 @@ nav img {
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 310px
 }
 
 .search-input {
     padding: 8px 12px 8px 12px;
     font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #ccc;
+    border-radius: 0 5px 5px 0;
     outline: none;
     width: 100%;
+    height:56px;
     box-sizing: border-box;
 }
 
 .search-icon {
-    filter: invert(1) brightness(3);
+    // filter: invert(1) brightness(3);
     position: absolute;
-    right: 46px;
+    right: 0px;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
+    background-color: #afafaf;
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
     z-index: 2;
 }
@@ -128,11 +134,11 @@ nav img {
 }
 /* General styling for the hamburger container */
 .hamburger {
-  width: 40px;
-  height: 34px;
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-direction: column;
-  border: 1px solid transparent;
+  border: 10px solid #313030;
   background-color: #313030;
   padding: 5px;;
   justify-content: space-between;
@@ -145,7 +151,6 @@ nav img {
   display: block;
   width: 100%;
   height: 5px;
-  border-radius: 2px;
   background-color: #fff;
   transition: 0.3s ease;
   transform-origin: center;
@@ -153,7 +158,7 @@ nav img {
 
 /* Transition to "X" when .open is applied */
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 5px);
+  transform: rotate(45deg) translate(7px, 4px);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -161,5 +166,5 @@ nav img {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -5px);
+  transform: rotate(-45deg) translate(7px, -4px);
 }
