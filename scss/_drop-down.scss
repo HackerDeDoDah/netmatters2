@@ -52,10 +52,10 @@
     .triangle {
         width: 0;
         height: 0;
-        border-left: 60px solid transparent;
-        border-right: 60px solid transparent;
-        border-top: 20px solid #2441d0; 
-      }
+        border-left: 66px solid transparent;
+        border-right: 66px solid transparent;
+        border-top: 25px solid #2441d0; 
+    }
 }
 
 .menu-item:hover .dropdown-content,
@@ -76,6 +76,152 @@
     margin-top: 0;
 }
 
+#bespoke-software {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#it-support {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#digital-marketing {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#telecoms-services {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#web-design {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#cyber-security {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#developer-course {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262833;
+    @include m.responsive;
+    max-height: fit-content;
+    z-index: 200;
+}
+
+#bs:hover ~ #bespoke-software,
+#bespoke-software:hover {
+    display: block;
+    background-color: #43475a;
+    .triangle {
+        border-top: 25px solid #43475a;
+    }
+}
+#it:hover ~ #it-support,
+#it-support:hover { 
+    display : block;
+    background-color: #4287fa;
+}
+#dm:hover ~ #digital-marketing,
+#digital-marketing:hover {
+    display: block;
+    background-color: green;
+}
+
+#ts:hover ~ #telecoms-services,
+#telecoms-services:hover {
+    display: block;
+    background-color: brown;
+}
+
+#wd:hover ~ #web-design,
+#web-design:hover {
+    display: block;
+    background-color: purple;
+}
+#cs:hover ~ #cyber-security,
+#cyber-security:hover {
+    display: block;
+    background-color: rgb(240, 18, 107);
+}
+#dc:hover ~ #developer-course,
+#developer-course:hover {
+    display: block;
+    background-color: brown;
+}
+
 #bespoke-software,
 #it-support,
 #digital-marketing,
@@ -83,18 +229,37 @@
 #web-design,
 #cyber-security,
 #developer-course {
-    display: none;
-}
-
-.dropdown-container {
-    display: flex;
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #323544;
-    @include m.responsive;
-    max-height: fit-content;
-    
+    h3 {
+        font-size: 2rem;
+        color: #fff;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0.5rem;
+        margin: 0;
+        line-height: 3rem;
+        // margin-right: 2rem;
+        color: #fff;
+        font-size: 1.2rem;
+        &:hover {
+            text-decoration: underline;
+        }
+        #break {
+            padding-top: 0;
+        }
+    }
+    i {
+        padding-right: .6rem;
+    }
 }

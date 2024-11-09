@@ -153,7 +153,7 @@ a {
    width: 100%;
    z-index: 1000;
    border: 1px solid transparent;
-   background-color: #333645;
+   background-color: #54596d;
    color: #fff;
    font-size: 8px;
    padding: 2px 10px 2px 5px;
@@ -168,8 +168,8 @@ a {
 .sofia {
    position: fixed;
    bottom: 25px;
-   right: 25px;
-   width: 100%;
+   right: 45px;
+   width: 90%;
    z-index: 1000;
    color: #fff;
    right: 0;
@@ -178,8 +178,9 @@ a {
    height: 65px;
    background-color: #333645;
    border-radius: 50%;
-   align-items: center;
+   box-shadow:  0 4px 8px rgba(0, 0, 0, 0.5);
+   justify-content: center;
    i {
-      justify-self: center;
+      align-items: center;
    }
 }
