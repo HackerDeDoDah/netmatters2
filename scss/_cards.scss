@@ -14,7 +14,7 @@
     padding: 20px;
     @include m.responsive;
 }
-  
+
   /* ----- cards ----- */
 .card {
     display: flex;
@@ -35,20 +35,20 @@
     padding: 15px;
     font-family: 'Poppins', sans-serif;
 }
-  
+
 .card-title {
     justify-self: center;
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
-  
+
 .card-description {
     font-size: 1rem;
     color: #666;
     margin-bottom: 15px;
 }
-  
+
   // ---- Button Styling 
 .card-button {
     padding: 15px 15px;
@@ -59,7 +59,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-  
+
 .card-button:hover {
     background-color: #2980b9;
 }
@@ -73,12 +73,12 @@
     background-color: #f7f7f7;
     border-top: 1px solid #e0e0e0;
 }
-  
+
 .card-date {
     font-size: 0.9rem;
     color: #888;
 }
-  
+
 .card-tags {
     display: flex;
     flex-direction: row;
@@ -262,7 +262,7 @@
     @include m.color;
     align-items: center;
 }
-  
+
 .card-title-top {
     justify-self: center;
     font-size: 1.5rem;
@@ -270,13 +270,12 @@
     margin: 8px;
     padding-bottom: 5px;
 }
-  
+
 .card-description-top {
     text-align: center;
     font-size: 1rem;
     color: #333;
     margin-bottom: 10px;
- 
 }
 
 .card-button-top {

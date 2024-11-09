@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
 .c-1 {
   background-color: orange;
 }
@@ -73,6 +79,12 @@ body {
   .container-main {
     width: 1200px;
   }
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
 }
 
 .c-1 {
@@ -308,14 +320,12 @@ a:hover {
   background-color: #C13584;
 }
 
-.sticky-footer {
+.consent {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-.sticky-footer .consent {
   border: 1px solid transparent;
   background-color: #333645;
   color: #fff;
@@ -325,19 +335,33 @@ a:hover {
   width: 135px;
   border-radius: 0 15px 0 0;
 }
-.sticky-footer .consent a {
+.consent a {
   text-decoration: none;
 }
-.sticky-footer .consent .sofia {
-  margin-right: 25px;
-  margin-bottom: 25px;
+
+.sofia {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 100%;
+  z-index: 1000;
   color: #fff;
   right: 0;
   border: 1px solid transparent;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   background-color: #333645;
   border-radius: 50%;
+  align-items: center;
+}
+.sofia i {
+  justify-self: center;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
 }
 
 .c-1 {
@@ -364,6 +388,12 @@ a:hover {
   background-color: rgb(240, 18, 107);
 }
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
 .c-1 {
   background-color: orange;
 }
@@ -386,6 +416,12 @@ a:hover {
 
 .c-6 {
   background-color: rgb(240, 18, 107);
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
 }
 
 .c-1 {
@@ -856,6 +892,12 @@ a:hover {
   margin-bottom: 10px;
 }
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
 .c-1 {
   background-color: orange;
 }
@@ -1253,6 +1295,12 @@ nav img {
 
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -4px);
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
 }
 
 .c-1 {
@@ -1654,6 +1702,12 @@ nav img {
   justify-content: space-evenly;
 }
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
 .c-1 {
   background-color: orange;
 }
@@ -1780,6 +1834,12 @@ nav img {
 
 .p1 a {
   font-size: 50px;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
 }
 
 .c-1 {
