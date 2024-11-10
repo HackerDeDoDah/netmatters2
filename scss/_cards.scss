@@ -91,15 +91,16 @@
     @include m.responsive;
     .p1 {
         margin-right: auto;
-        font-size: 40px;
-        font-weight: bold;
+        font-size: 2.5rem;
+        padding-left: 2rem;
     }
     .p2 {
-        
+        padding-top:20px;
+        padding-right: 2rem;
         font-weight: bold;
         a {
             text-decoration: none;
-            font-size: 40px;
+            font-size: 2.5rem;
             color: #222323;
             &:hover {
                 text-decoration: underline;
@@ -287,3 +288,12 @@
     margin-bottom: 10px;
 }
 
+#top1,
+#top2,
+#top3,
+#top4,
+#top5,
+#top6,
+#top7 {
+    @include m.buttons;
+}
