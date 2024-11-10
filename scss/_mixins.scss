@@ -247,3 +247,17 @@
         background-color: rgb(240, 18, 107);
     }
 }
+@mixin dds {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #262833;
+    max-height: fit-content;
+    z-index: 200;
+}

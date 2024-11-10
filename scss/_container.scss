@@ -74,7 +74,12 @@
         p {
             font-size: 1rem;
         }
-        
+        button {
+            width: 250px;
+            &:hover {
+                background-color: #16161d;
+            }
+        }
     }
     #services  {
         display: flex;
@@ -99,7 +104,7 @@
             font-size: 1rem;
         }
         .fa-star {
-            font-size: 40px;
+            font-size: 3rem;
             padding-right: 5px;
         }
         .eleanor {
@@ -113,10 +118,6 @@
             font-size: 1.3rem;
         }
     }
-}
-
-#stack {
-    margin-right: 30px;
 }
 
 .card-button {

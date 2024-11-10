@@ -77,117 +77,44 @@
 }
 
 #bespoke-software {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
-}
+    }
 
 #it-support {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #digital-marketing {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #telecoms-services {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #web-design {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #cyber-security {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #developer-course {
-    display: none;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #262833;
+    @include m.dds;
     @include m.responsive;
-    max-height: fit-content;
-    z-index: 200;
 }
 
 #bs:hover ~ #bespoke-software,
 #bespoke-software:hover {
     display: block;
     background-color: #43475a;
-    .triangle {
-        border-top: 25px solid #43475a;
-    }
 }
 #it:hover ~ #it-support,
 #it-support:hover { 

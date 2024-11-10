@@ -10,7 +10,7 @@ footer {
    color: #fff;
    padding: 30px 0 0;
    position: relative;
-   min-height: 400px;
+   min-height: 390px;
    
 }
 img {
@@ -168,12 +168,15 @@ a {
    a {
       text-decoration: none;
    }
+   &:hover {
+      background-color: #7d849c;
+   }
 }
 
 .sofia {
    position: fixed;
    bottom: 25px;
-   right: 45px;
+   margin-right: 40px;
    z-index: 1000;
    color: #fff;
    right: 0;
@@ -185,4 +188,7 @@ a {
    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.5);
    align-content: center;
    text-align: center;
+   &:hover {
+      background-color: #7d849c;
+   }
 }

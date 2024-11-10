@@ -11,6 +11,7 @@
     margin-bottom: 30px;
     gap: 20px;
     max-width: 1200px;
+    height: fit-content;
     padding: 20px;
     @include m.responsive;
 }
@@ -94,10 +95,11 @@
         font-weight: bold;
     }
     .p2 {
-        font-size: 40px;
+        
         font-weight: bold;
         a {
             text-decoration: none;
+            font-size: 40px;
             color: #222323;
             &:hover {
                 text-decoration: underline;
@@ -114,13 +116,12 @@
 
 .top-cards {
     display: grid;
-    height: 300px;
-    gap: 15px;
+    height: 310px;
+    gap: 15px 15px;
     border-radius: 8px;
     align-items: center;
-    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
 
@@ -138,10 +139,11 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    // @include m.buttons;
+    @include m.buttons;
 }
 #top1:hover {
     background-color: rgb(109, 107, 104);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -156,6 +158,7 @@
 
 #top2:hover {
     background-color: #4287f5;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -169,6 +172,7 @@
 }
 #top3:hover {
     background-color: green;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -182,6 +186,7 @@
 }
 #top4:hover {
     background-color: brown;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -195,6 +200,7 @@
 }
 #top5:hover {
     background-color: purple;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -208,6 +214,7 @@
 }
 #top6:hover {
     background-color: rgb(240, 18, 107);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -221,6 +228,7 @@
 }
 #top7:hover {
     background-color: brown;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
     @include m.color;
@@ -279,7 +287,3 @@
     margin-bottom: 10px;
 }
 
-.card-button-top {
-    // --- fill this in --------------------------------
-    @include m.buttons;
-}

@@ -79,7 +79,9 @@ box-sizing: border-box;
         .search-block {
             display: none;
         }
-        
+        .button, .search-bar {
+            display: flex;
+        }
     }
 
     @media (min-width: 1260px) {

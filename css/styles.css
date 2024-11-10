@@ -105,6 +105,9 @@ body {
   .container-nav .search-block {
     display: none;
   }
+  .container-nav .button, .container-nav .search-bar {
+    display: flex;
+  }
 }
 @media (min-width: 1260px) {
   .container-nav {
@@ -180,7 +183,7 @@ footer {
   color: #fff;
   padding: 30px 0 0;
   position: relative;
-  min-height: 400px;
+  min-height: 390px;
 }
 
 img {
@@ -429,11 +432,14 @@ a:hover {
 .consent a {
   text-decoration: none;
 }
+.consent:hover {
+  background-color: #7d849c;
+}
 
 .sofia {
   position: fixed;
   bottom: 25px;
-  right: 45px;
+  margin-right: 40px;
   z-index: 1000;
   color: #fff;
   right: 0;
@@ -445,6 +451,9 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   align-content: center;
   text-align: center;
+}
+.sofia:hover {
+  background-color: #7d849c;
 }
 
 :root {
@@ -546,6 +555,7 @@ a:hover {
   margin-bottom: 30px;
   gap: 20px;
   max-width: 1200px;
+  height: fit-content;
   padding: 20px;
 }
 @media (max-width: 768px) {
@@ -801,11 +811,11 @@ a:hover {
   font-weight: bold;
 }
 .card-tags .p2 {
-  font-size: 40px;
   font-weight: bold;
 }
 .card-tags .p2 a {
   text-decoration: none;
+  font-size: 40px;
   color: #222323;
 }
 .card-tags .p2 a:hover {
@@ -814,13 +824,12 @@ a:hover {
 
 .top-cards {
   display: grid;
-  height: 300px;
-  gap: 15px;
+  height: 310px;
+  gap: 15px 15px;
   border-radius: 8px;
   align-items: center;
-  transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -839,9 +848,42 @@ a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.card-button-top .btn-blue {
+  background-color: #4287f5;
+  color: #fff;
+}
+.card-button-top .btn-red {
+  background-color: rgb(240, 18, 107);
+  color: #fff;
+}
+.card-button-top .btn-green {
+  background-color: green;
+  color: #fff;
+}
+.card-button-top .btn-brown {
+  background-color: brown;
+  color: #fff;
+}
+.card-button-top .btn-orange {
+  background-color: orange;
+  color: #fff;
+}
+.card-button-top .btn-yellow {
+  background-color: yellow;
+  color: #fff;
+}
+.card-button-top .btn-purple {
+  background-color: purple;
+  color: #fff;
+}
+.card-button-top .btn-dark-grey {
+  background-color: #262833;
+  color: #fff;
+}
 
 #top1:hover {
   background-color: rgb(109, 107, 104);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -864,6 +906,7 @@ a:hover {
 
 #top2:hover {
   background-color: #4287f5;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -886,6 +929,7 @@ a:hover {
 
 #top3:hover {
   background-color: green;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -908,6 +952,7 @@ a:hover {
 
 #top4:hover {
   background-color: brown;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -930,6 +975,7 @@ a:hover {
 
 #top5:hover {
   background-color: purple;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -952,6 +998,7 @@ a:hover {
 
 #top6:hover {
   background-color: rgb(240, 18, 107);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -974,6 +1021,7 @@ a:hover {
 
 #top7:hover {
   background-color: brown;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -1041,39 +1089,6 @@ a:hover {
   font-size: 1rem;
   color: #333;
   margin-bottom: 10px;
-}
-
-.card-button-top .btn-blue {
-  background-color: #4287f5;
-  color: #fff;
-}
-.card-button-top .btn-red {
-  background-color: rgb(240, 18, 107);
-  color: #fff;
-}
-.card-button-top .btn-green {
-  background-color: green;
-  color: #fff;
-}
-.card-button-top .btn-brown {
-  background-color: brown;
-  color: #fff;
-}
-.card-button-top .btn-orange {
-  background-color: orange;
-  color: #fff;
-}
-.card-button-top .btn-yellow {
-  background-color: yellow;
-  color: #fff;
-}
-.card-button-top .btn-purple {
-  background-color: purple;
-  color: #fff;
-}
-.card-button-top .btn-dark-grey {
-  background-color: #262833;
-  color: #fff;
 }
 
 :root {
@@ -1222,6 +1237,7 @@ a:hover {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: auto;
+  cursor: pointer;
 }
 
 .business,
@@ -1230,11 +1246,11 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
   width: 370px;
   height: 583px;
   cursor: pointer;
@@ -1291,6 +1307,11 @@ a:hover {
 .marketing:hover,
 .notables:hover {
   transform: translateY(-10px);
+  transform: box-shadow 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.article-container:hover > :not(:hover) {
+  opacity: 0.7;
 }
 
 .article-content {
@@ -1358,8 +1379,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
   box-sizing: border-box;
 }
 
@@ -1470,12 +1490,15 @@ nav img {
   height: 50px;
   display: flex;
   flex-direction: column;
-  border: 10px solid #313030;
-  background-color: #313030;
+  border: 10px solid #111;
+  background-color: #111;
   padding: 5px;
   justify-content: space-between;
   cursor: pointer;
-  transition: 0.3s ease;
+}
+.hamburger:hover {
+  background-color: #444;
+  border: 10px solid #444;
 }
 
 /* Styling for the lines */
@@ -1991,6 +2014,12 @@ nav img {
 .grid-container2 #welcome p {
   font-size: 1rem;
 }
+.grid-container2 #welcome button {
+  width: 250px;
+}
+.grid-container2 #welcome button:hover {
+  background-color: #16161d;
+}
 .grid-container2 #services {
   display: flex;
   flex-direction: column;
@@ -2046,7 +2075,7 @@ nav img {
   font-size: 1rem;
 }
 .grid-container2 #services .fa-star {
-  font-size: 40px;
+  font-size: 3rem;
   padding-right: 5px;
 }
 .grid-container2 #services .eleanor {
@@ -2058,10 +2087,6 @@ nav img {
 }
 .grid-container2 #services p {
   font-size: 1.3rem;
-}
-
-#stack {
-  margin-right: 30px;
 }
 
 .card-button {
@@ -2419,6 +2444,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -2521,6 +2547,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -2623,6 +2650,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -2725,6 +2753,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -2827,6 +2856,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -2929,6 +2959,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -3031,6 +3062,7 @@ nav img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
   background-color: #262833;
   max-height: fit-content;
   z-index: 200;
@@ -3128,10 +3160,6 @@ nav img {
 #bespoke-software:hover {
   display: block;
   background-color: #43475a;
-}
-#bs:hover ~ #bespoke-software .triangle,
-#bespoke-software:hover .triangle {
-  border-top: 25px solid #43475a;
 }
 
 #it:hover ~ #it-support,
@@ -3237,4 +3265,70 @@ nav img {
 #cyber-security i,
 #developer-course i {
   padding-right: 0.6rem;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.sidebar ul {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5rem;
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+.sidebar ul li {
+  list-style-type: none;
+}
+
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=styles.css.map */
