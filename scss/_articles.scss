@@ -80,7 +80,7 @@
 .seperator {
     border-top: 1px solid #ddd;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .avatar {
     width: 50px;
@@ -89,6 +89,7 @@
 }
 .business h3 {
     color: orange;
+    padding-bottom: 30px;
 }
 .marketing h3 {
     color: green;
@@ -97,9 +98,9 @@
     color: purple;
     margin-top: 20px;
 }
-h3 {
-    padding-bottom: 30px;
-}
+
+    
+
 
 .card-footer-container {
     display: inline-flex;

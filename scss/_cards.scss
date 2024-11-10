@@ -82,30 +82,31 @@
 .card-tags {
     display: flex;
     flex-direction: row;
-    font-size: 0.5rem;
     color: #222323;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins', sans-serif;
-    @include m.responsive;  
+    @include m.responsive;
+    .p1 {
+        margin-right: auto;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .p2 {
+        font-size: 40px;
+        font-weight: bold;
+        a {
+            text-decoration: none;
+            color: #222323;
+            &:hover {
+                text-decoration: underline;
+            }
+        } 
+    }
 }
 
-.p1 {
-    margin-right: auto;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 15px;
-}
-.p2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-right: 15px;
-    a {
-        text-decoration: none;
-        color: #222323;
-    } 
-}
+
 
 
 

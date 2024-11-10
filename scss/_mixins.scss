@@ -10,7 +10,30 @@
 
 @mixin responsive {
     @media (max-width: 768px) {
-        display: none;
+        min-width: 430px;
+        margin-right: auto;
+        margin-left: auto;
+        #top1,
+        #top2,
+        #top3,
+        #top4,
+        #top5,
+        #top6,
+        #top7 {
+            grid-column: span 12;
+            align-self: stretch;
+        }
+        .article-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        // .grid-container-articles {
+        //     grid-template-rows: repeat(3, 1fr);
+        // }
+        .notables {
+            display: flex;
+        }
     }
 
     @media (min-width: 768px) {
@@ -28,7 +51,12 @@
         #top7 {
             grid-column: span 6;
         }
-        
+        .notables {
+            display: none;
+        }
+        .grid-container-articles {
+            grid-template-columns: repeat(2, 1.5fr);
+        }
     }
 
     @media (min-width: 992px) {
@@ -63,6 +91,12 @@
         #top6,
         #top7 {
             grid-column: span 3;
+        }
+        .notables {
+            display: flex;
+        }
+        .grid-container-articles {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

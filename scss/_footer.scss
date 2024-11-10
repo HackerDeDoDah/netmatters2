@@ -4,12 +4,13 @@
 
 footer {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between; 
    background-color: #323544;
    color: #fff;
    padding: 30px 0 0;
    position: relative;
-   height: 400px;
+   min-height: 400px;
    
 }
 img {
@@ -57,11 +58,16 @@ a {
    'f0 f1 f2 f3 f4';
    
    @media (min-width: 768px) {
-      flex: 50%;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+      'f0'
+      'f1'
+      'f2'
+      'f3'
+      'f4';
    }
 
    @media (min-width: 992px) {
-      flex: 25%;
       grid-template-areas: 
       'f1 f2 f3 f4';
    }
@@ -95,27 +101,26 @@ a {
 
 #sitemap {
    display: flex;
-   justify-content: space-around;
+   justify-content: flex-start;
    flex-wrap: wrap;
    padding: 15px;
    margin-left: auto;
    margin-right: auto;
-   width: 1200px;
    margin: 0;
    max-width: 1200px;
    z-index: 10;
    @include m.responsive;
    p {
-      display: inline-block;
-      grid-template-rows: 1fr 1fr;
+      display: flex;
+      // grid-template-rows: 1fr 1fr;
       margin: 0.25rem;
       color: #fff;
       line-height: 0.5rem;
       font-size: 12px;
    }
    a {
-      display: inline-block;
-      grid-template-rows: 1fr 1fr;
+      display: flex;
+      // grid-template-rows: 1fr 1fr;
       font-size: 12px;
    }
 }
@@ -169,18 +174,15 @@ a {
    position: fixed;
    bottom: 25px;
    right: 45px;
-   width: 90%;
    z-index: 1000;
    color: #fff;
    right: 0;
    border: 1px solid transparent;
-   width: 65px;
-   height: 65px;
+   width: 55px;
+   height: 55px;
    background-color: #333645;
    border-radius: 50%;
    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.5);
-   justify-content: center;
-   i {
-      align-items: center;
-   }
+   align-content: center;
+   text-align: center;
 }
