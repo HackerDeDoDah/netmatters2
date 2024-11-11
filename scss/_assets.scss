@@ -1,3 +1,85 @@
 // assets
 
 @use 'mixins' as m;
+
+.partner-banner {
+    width: 100%;
+    max-height: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    img {
+        max-height: 60px;
+        width: auto;
+        padding-left: 90px;
+        filter: grayscale(2);
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+.partner-banner2 {
+    width: 100%;
+    max-height: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tool-tip {
+    position: relative;
+    display: inline-block;
+}
+
+.tool-tip img {
+    display: block;
+    max-height: 60px;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    cursor: pointer;
+    filter: grayscale(2);
+    &:hover {
+        filter: none;
+    }
+}
+
+.tool-tip .tool-tip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: #333645;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 200;
+    @include m.buttons;
+    button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: .7rem;
+    }
+    .triangle2 {
+        position: absolute;
+        bottom: 210%;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #333645;
+        z-index: 201;
+    }
+}
+
+.tool-tip:hover .tool-tip-text {
+    visibility: visible;
+    opacity: 1;
+}

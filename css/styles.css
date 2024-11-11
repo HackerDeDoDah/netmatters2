@@ -13,7 +13,7 @@
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -177,7 +177,7 @@ body {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -488,7 +488,150 @@ a:hover {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
+}
+
+.c-4, .c-7 {
+  background-color: brown;
+}
+
+.c-5 {
+  background-color: purple;
+}
+
+.c-6 {
+  background-color: rgb(240, 18, 107);
+}
+
+.partner-banner {
+  width: 100%;
+  max-height: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.partner-banner img {
+  max-height: 60px;
+  width: auto;
+  padding-left: 90px;
+  filter: grayscale(2);
+}
+.partner-banner img:hover {
+  filter: none;
+}
+
+.partner-banner2 {
+  width: 100%;
+  max-height: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip img {
+  display: block;
+  max-height: 60px;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  cursor: pointer;
+  filter: grayscale(2);
+}
+.tool-tip img:hover {
+  filter: none;
+}
+
+.tool-tip .tool-tip-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 200%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 200;
+}
+.tool-tip .tool-tip-text .btn-blue {
+  background-color: #4287f5;
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-red {
+  background-color: rgb(240, 18, 107);
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-green {
+  background-color: rgb(60, 244, 78);
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-brown {
+  background-color: brown;
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-orange {
+  background-color: orange;
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-yellow {
+  background-color: yellow;
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-purple {
+  background-color: purple;
+  color: #fff;
+}
+.tool-tip .tool-tip-text .btn-dark-grey {
+  background-color: #262833;
+  color: #fff;
+}
+.tool-tip .tool-tip-text button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.tool-tip .tool-tip-text .triangle2 {
+  position: absolute;
+  bottom: 210%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333645;
+  z-index: 201;
+}
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
+.c-1 {
+  background-color: orange;
+}
+
+.c-2 {
+  background-color: #4287f5;
+}
+
+.c-3 {
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -518,7 +661,7 @@ a:hover {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -533,37 +676,6 @@ a:hover {
   background-color: rgb(240, 18, 107);
 }
 
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #4287f5;
-  --bg-color: #333645;
-}
-
-.c-1 {
-  background-color: orange;
-}
-
-.c-2 {
-  background-color: #4287f5;
-}
-
-.c-3 {
-  background-color: green;
-}
-
-.c-4, .c-7 {
-  background-color: brown;
-}
-
-.c-5 {
-  background-color: purple;
-}
-
-.c-6 {
-  background-color: rgb(240, 18, 107);
-}
-
-/* ---- Card Container ----- */
 .card-container {
   display: flex;
   align-items: center;
@@ -664,7 +776,6 @@ a:hover {
   }
 }
 
-/* ----- cards ----- */
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -876,7 +987,7 @@ a:hover {
   color: #fff;
 }
 .card-button-top .btn-green {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   color: #fff;
 }
 .card-button-top .btn-brown {
@@ -947,7 +1058,7 @@ a:hover {
 }
 
 #top3:hover {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -966,7 +1077,7 @@ a:hover {
   background-color: #fff;
 }
 #top3:hover .fa-solid {
-  color: green;
+  color: rgb(60, 244, 78);
 }
 
 #top4:hover {
@@ -1061,7 +1172,6 @@ a:hover {
   color: brown;
 }
 
-/* Card Content */
 .card-icon {
   display: flex;
   flex-direction: row;
@@ -1137,7 +1247,7 @@ a:hover {
 #top5 .btn-green,
 #top6 .btn-green,
 #top7 .btn-green {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   color: #fff;
 }
 #top1 .btn-brown,
@@ -1206,7 +1316,7 @@ a:hover {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -1370,7 +1480,7 @@ a:hover {
 .business .btn-green,
 .marketing .btn-green,
 .notables .btn-green {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   color: #fff;
 }
 .business .btn-brown,
@@ -1693,7 +1803,7 @@ nav img {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -2121,7 +2231,7 @@ nav img {
   color: #fff;
 }
 .grid-container2 #welcome .btn-green {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   color: #fff;
 }
 .grid-container2 #welcome .btn-brown {
@@ -2181,7 +2291,7 @@ nav img {
   color: #fff;
 }
 .grid-container2 #services .btn-green {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
   color: #fff;
 }
 .grid-container2 #services .btn-brown {
@@ -2289,7 +2399,7 @@ nav img {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -2457,7 +2567,7 @@ nav img {
 }
 
 .c-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 
 .c-4, .c-7 {
@@ -2530,7 +2640,7 @@ nav img {
   background-color: #4287f5;
 }
 .menu-item:hover .cc-3 {
-  background-color: green;
+  background-color: rgb(60, 244, 78);
 }
 .menu-item:hover .cc-4, .menu-item:hover .cc-7 {
   background-color: brown;

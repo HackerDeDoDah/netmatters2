@@ -1,8 +1,8 @@
-// cards
+
 
 @use 'mixins' as m;
 
-/* ---- Card Container ----- */
+// ---- Card Container 
 .card-container {
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     @include m.responsive;
 }
 
-  /* ----- cards ----- */
+  // ----- cards
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +172,7 @@
     }
 }
 #top3:hover {
-    background-color: green;
+    background-color: rgb(60, 244, 78);
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
@@ -182,7 +182,7 @@
         background-color: #fff;
     }
     .fa-solid {
-        color: green;
+        color: rgb(60, 244, 78);
     }
 }
 #top4:hover {
@@ -241,7 +241,7 @@
         color: brown;
     }
 }
-  /* Card Content */
+// ----- top card content
 
 .card-icon {
     display: flex;
