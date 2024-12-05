@@ -38,6 +38,10 @@ body {
   box-sizing: border-box;
 }
 
+.full-container {
+  width: 100vw;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1584,6 +1588,36 @@ a:hover {
   padding: 0;
 }
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
+.c-1 {
+  background-color: #f7b322;
+}
+
+.c-2 {
+  background-color: #4183d7;
+}
+
+.c-3 {
+  background-color: #2ecc71;
+}
+
+.c-4, .c-7 {
+  background-color: #ce4125;
+}
+
+.c-5 {
+  background-color: #926fb1;
+}
+
+.c-6 {
+  background-color: #f62459;
+}
+
 header {
   background-color: #fff;
   width: 100%;
@@ -1666,12 +1700,12 @@ nav img {
   align-items: center;
   gap: 5px;
   width: 290px;
-  border: 2px solid #afafaf;
-  border-radius: 0 7px 7px 0;
+  border: 2px solid #898989;
+  border-radius: 0 3px 3px 0;
 }
 
 .search-input {
-  padding: 8px 12px 8px 12px;
+  padding: 8px 10px 8px 10px;
   font-size: 14px;
   outline: none;
   height: 52px;
@@ -1683,10 +1717,10 @@ nav img {
   right: 0px;
   color: #fff;
   font-size: 1.5rem;
-  background-color: #afafaf;
+  background-color: #898989;
   border: 1px solid transparent;
   padding: 11px 20px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 3px 3px 0;
   cursor: pointer;
   z-index: 2;
 }
@@ -2414,6 +2448,10 @@ nav img {
   object-fit: cover;
 }
 
+.hero-container {
+  width: 1200px;
+}
+
 .hero-overlay {
   display: flex;
   flex-direction: column;
@@ -2422,7 +2460,6 @@ nav img {
   margin-left: auto;
   margin-right: auto;
   margin-top: -500px;
-  max-width: 1169px;
   z-index: 2;
 }
 @media (max-width: 768px) {
@@ -2534,7 +2571,7 @@ nav img {
   font-weight: bold;
   width: 200px;
   border-radius: 30px;
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -3514,6 +3551,20 @@ nav img {
 #cyber-security i,
 #developer-course i {
   padding-right: 0.6rem;
+}
+#bespoke-software .triangle,
+#it-support .triangle,
+#digital-marketing .triangle,
+#telecoms-services .triangle,
+#web-design .triangle,
+#cyber-security .triangle,
+#developer-course .triangle {
+  width: 0;
+  height: 0;
+  border-left: 68px solid transparent;
+  border-right: 68px solid transparent;
+  border-top: 25px solid #2441d0;
+  z-index: 1000;
 }
 
 .sidebar {
