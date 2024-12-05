@@ -12,6 +12,9 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -55,6 +58,7 @@ body {
     }
 
 }
+
 .container-nav {
     @media (max-width: 768px) {
         height: 100px;

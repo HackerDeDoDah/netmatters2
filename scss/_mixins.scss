@@ -28,9 +28,6 @@
             flex-wrap: wrap;
             flex-direction: column;
         }
-        // .grid-container-articles {
-        //     grid-template-rows: repeat(3, 1fr);
-        // }
         .notables {
             display: flex;
         }
@@ -113,27 +110,27 @@
 @mixin buttons {
 
     .btn-blue {
-        background-color: #4287f5;
+        background-color: #4183d7;
         color: #fff;
     }
 
     .btn-red {
-        background-color: rgb(240, 18, 107);
+        background-color: #f62459;
         color: #fff;
     }
 
     .btn-green {
-        background-color: rgb(60, 244, 78);
+        background-color: #2ecc71;
         color: #fff;
     }
 
     .btn-brown {
-        background-color: brown;
+        background-color: #ce4125;
         color: #fff;
     }
 
     .btn-orange {
-        background-color: orange;
+        background-color: #f7b322;
         color: #fff;
     }
 
@@ -143,7 +140,7 @@
     }
 
     .btn-purple {
-        background-color: purple;
+        background-color: #926fb1;
         color: #fff;
     }
     .btn-dark-grey {
@@ -171,22 +168,22 @@
     }
 }
 .c-1 {
-    background-color: orange;
+    background-color: #f7b322;
 }
 .c-2 {
-    background-color: #4287f5;
+    background-color: #4183d7;
 }
 .c-3 {
-    background-color: rgb(60, 244, 78);
+    background-color: #2ecc71;
 }
 .c-4, .c-7 {
-    background-color: brown;
+    background-color: #ce4125;
 }
 .c-5 {
-    background-color: purple;
+    background-color: #926fb1;
 }
 .c-6 {
-    background-color: rgb(240, 18, 107);
+    background-color: #f62459;
 }
 
 @mixin s-c {
@@ -208,43 +205,43 @@
         color: rgb(100, 99, 97);
     }
     .n-2 {
-        color: #4287f5;
+        color: #4183d7;
     }
 
     .n-3 {
-        color: green;
+        color: #2ecc71;
     }
 
     .n-4, .n-7 {
-        color: brown;
+        color: #ce4125;
     }
 
     .n-5 {
-        color: purple;
+        color: #926fb1;
     }
 
     .n-6 {
-        color: rgb(240, 18, 107);
+        color: #C13584;
     }
 }
 @mixin no-c {
     .cc-1 {
-        background-color: orange;
+        background-color: #f7b322;
     }
     .cc-2 {
-        background-color: #4287f5;
+        background-color: #4183d7;
     }
     .cc-3 {
-        background-color: rgb(60, 244, 78);
+        background-color: #2ecc71;
     }
     .cc-4, .cc-7 {
-        background-color: brown;
+        background-color: #ce4125;
     }
     .cc-5 {
-        background-color: purple;
+        background-color: #926fb1;
     }
     .cc-6 {
-        background-color: rgb(240, 18, 107);
+        background-color: #f62459;
     }
 }
 @mixin dds {
@@ -260,4 +257,15 @@
     background-color: #262833;
     max-height: fit-content;
     z-index: 200;
+}
+
+@mixin tri {
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 68px solid transparent;
+        border-right: 68px solid transparent;
+        border-top: 25px solid #2441d0; 
+        z-index: 1000;
+    }
 }

@@ -5,27 +5,27 @@
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 body {
@@ -169,27 +169,27 @@ body {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 footer {
@@ -480,27 +480,27 @@ a:hover {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .partner-banner {
@@ -560,23 +560,23 @@ a:hover {
   z-index: 200;
 }
 .tool-tip .tool-tip-text .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-yellow {
@@ -584,7 +584,7 @@ a:hover {
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 .tool-tip .tool-tip-text .btn-dark-grey {
@@ -623,27 +623,27 @@ a:hover {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 :root {
@@ -653,27 +653,27 @@ a:hover {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .card-container {
@@ -979,23 +979,23 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 .card-button-top .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 .card-button-top .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 .card-button-top .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 .card-button-top .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 .card-button-top .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 .card-button-top .btn-yellow {
@@ -1003,7 +1003,7 @@ a:hover {
   color: #fff;
 }
 .card-button-top .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 .card-button-top .btn-dark-grey {
@@ -1058,7 +1058,7 @@ a:hover {
 }
 
 #top3:hover {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -1077,11 +1077,11 @@ a:hover {
   background-color: #fff;
 }
 #top3:hover .fa-solid {
-  color: rgb(60, 244, 78);
+  color: #2ecc71;
 }
 
 #top4:hover {
-  background-color: brown;
+  background-color: #ce4125;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -1100,11 +1100,11 @@ a:hover {
   background-color: #fff;
 }
 #top4:hover .fa-solid {
-  color: brown;
+  color: #ce4125;
 }
 
 #top5:hover {
-  background-color: purple;
+  background-color: #926fb1;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -1123,11 +1123,11 @@ a:hover {
   background-color: #fff;
 }
 #top5:hover .fa-solid {
-  color: purple;
+  color: #926fb1;
 }
 
 #top6:hover {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -1146,11 +1146,11 @@ a:hover {
   background-color: #fff;
 }
 #top6:hover .fa-solid {
-  color: rgb(240, 18, 107);
+  color: #f62459;
 }
 
 #top7:hover {
-  background-color: brown;
+  background-color: #ce4125;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
@@ -1169,7 +1169,7 @@ a:hover {
   background-color: #fff;
 }
 #top7:hover .fa-solid {
-  color: brown;
+  color: #ce4125;
 }
 
 .card-icon {
@@ -1227,7 +1227,7 @@ a:hover {
 #top5 .btn-blue,
 #top6 .btn-blue,
 #top7 .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 #top1 .btn-red,
@@ -1237,7 +1237,7 @@ a:hover {
 #top5 .btn-red,
 #top6 .btn-red,
 #top7 .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 #top1 .btn-green,
@@ -1247,7 +1247,7 @@ a:hover {
 #top5 .btn-green,
 #top6 .btn-green,
 #top7 .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 #top1 .btn-brown,
@@ -1257,7 +1257,7 @@ a:hover {
 #top5 .btn-brown,
 #top6 .btn-brown,
 #top7 .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 #top1 .btn-orange,
@@ -1267,7 +1267,7 @@ a:hover {
 #top5 .btn-orange,
 #top6 .btn-orange,
 #top7 .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 #top1 .btn-yellow,
@@ -1287,7 +1287,7 @@ a:hover {
 #top5 .btn-purple,
 #top6 .btn-purple,
 #top7 .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 #top1 .btn-dark-grey,
@@ -1308,27 +1308,27 @@ a:hover {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .article-container {
@@ -1468,31 +1468,31 @@ a:hover {
 .business .btn-blue,
 .marketing .btn-blue,
 .notables .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 .business .btn-red,
 .marketing .btn-red,
 .notables .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 .business .btn-green,
 .marketing .btn-green,
 .notables .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 .business .btn-brown,
 .marketing .btn-brown,
 .notables .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 .business .btn-orange,
 .marketing .btn-orange,
 .notables .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 .business .btn-yellow,
@@ -1504,7 +1504,7 @@ a:hover {
 .business .btn-purple,
 .marketing .btn-purple,
 .notables .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 .business .btn-dark-grey,
@@ -1558,16 +1558,16 @@ a:hover {
 }
 
 .business h3 {
-  color: orange;
+  color: #f7b322;
   padding-bottom: 30px;
 }
 
 .marketing h3 {
-  color: green;
+  color: #2ecc71;
 }
 
 .notables h3 {
-  color: purple;
+  color: #926fb1;
   margin-top: 20px;
 }
 
@@ -1600,7 +1600,7 @@ header {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  height: 88px;
+  height: 80px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -1632,11 +1632,11 @@ nav img {
 .button {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 16px;
-  font-size: 20px;
+  gap: 10px;
+  padding: 18px;
+  font-size: 18px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   color: #fff;
   transition: background-color 0.3s ease;
@@ -1647,11 +1647,11 @@ nav img {
 }
 
 .btn-blue {
-  background-color: #007bff;
+  background-color: #4183d7;
 }
 
 .btn-light-grey {
-  background-color: #afafaf;
+  background-color: #898989;
 }
 
 .button i {
@@ -1666,16 +1666,15 @@ nav img {
   align-items: center;
   gap: 5px;
   width: 290px;
+  border: 2px solid #afafaf;
+  border-radius: 0 7px 7px 0;
 }
 
 .search-input {
   padding: 8px 12px 8px 12px;
   font-size: 14px;
-  border: 2px solid #ccc;
-  border-radius: 0 5px 5px 0;
   outline: none;
-  width: 100%;
-  height: 56px;
+  height: 52px;
   box-sizing: border-box;
 }
 
@@ -1686,7 +1685,7 @@ nav img {
   font-size: 1.5rem;
   background-color: #afafaf;
   border: 1px solid transparent;
-  padding: 13px 20px;
+  padding: 11px 20px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   z-index: 2;
@@ -1696,9 +1695,8 @@ nav img {
   display: none;
 }
 
-/* General styling for the hamburger container */
 .hamburger {
-  min-width: 50px;
+  width: 50px;
   height: 50px;
   display: flex;
   flex-direction: column;
@@ -1713,11 +1711,10 @@ nav img {
   border: 10px solid #444;
 }
 
-/* Styling for the lines */
 .hamburger span {
   display: block;
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: #fff;
   transition: 0.3s ease;
   transform-origin: center;
@@ -1739,8 +1736,8 @@ nav img {
   display: none;
   border: 1px solid transparent;
   background-color: #afafaf;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   padding: 15px 10px;
   font-size: 1.5rem;
@@ -1755,14 +1752,13 @@ nav img {
 .search-bar2 {
   display: none;
   align-items: center;
-  width: 300px; /* Set the desired width */
+  width: 300px;
   border: 2px solid #ccc;
   border-radius: 25px;
   overflow: hidden;
   background-color: #f9f9f9;
 }
 
-/* Search input styling */
 .search-input {
   flex: 1;
   padding: 10px;
@@ -1771,7 +1767,6 @@ nav img {
   font-size: 16px;
 }
 
-/* Search button styling */
 .search-button {
   background-color: #ccc;
   border: none;
@@ -1783,9 +1778,8 @@ nav img {
   transition: background-color 0.3s;
 }
 
-/* Button hover effect */
 .search-button:hover {
-  background-color: #bbb;
+  background-color: #a0a0a0;
 }
 
 :root {
@@ -1795,27 +1789,27 @@ nav img {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .container {
@@ -2223,23 +2217,23 @@ nav img {
   line-height: 1.7rem;
 }
 .grid-container2 #welcome .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 .grid-container2 #welcome .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 .grid-container2 #welcome .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 .grid-container2 #welcome .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 .grid-container2 #welcome .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 .grid-container2 #welcome .btn-yellow {
@@ -2247,7 +2241,7 @@ nav img {
   color: #fff;
 }
 .grid-container2 #welcome .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 .grid-container2 #welcome .btn-dark-grey {
@@ -2283,23 +2277,23 @@ nav img {
   line-height: 1.7rem;
 }
 .grid-container2 #services .btn-blue {
-  background-color: #4287f5;
+  background-color: #4183d7;
   color: #fff;
 }
 .grid-container2 #services .btn-red {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
   color: #fff;
 }
 .grid-container2 #services .btn-green {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
   color: #fff;
 }
 .grid-container2 #services .btn-brown {
-  background-color: brown;
+  background-color: #ce4125;
   color: #fff;
 }
 .grid-container2 #services .btn-orange {
-  background-color: orange;
+  background-color: #f7b322;
   color: #fff;
 }
 .grid-container2 #services .btn-yellow {
@@ -2307,7 +2301,7 @@ nav img {
   color: #fff;
 }
 .grid-container2 #services .btn-purple {
-  background-color: purple;
+  background-color: #926fb1;
   color: #fff;
 }
 .grid-container2 #services .btn-dark-grey {
@@ -2391,32 +2385,32 @@ nav img {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .hero img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -2427,8 +2421,8 @@ nav img {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -400px;
-  max-width: 1200px;
+  margin-top: -500px;
+  max-width: 1169px;
   z-index: 2;
 }
 @media (max-width: 768px) {
@@ -2559,27 +2553,27 @@ nav img {
 }
 
 .c-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 
 .c-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 
 .c-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 
 .c-4, .c-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 
 .c-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 
 .c-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .menu {
@@ -2592,8 +2586,7 @@ nav img {
 .drop-down-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 1100px;
+  width: 1200px;
   height: 100px;
   margin: 0 auto;
 }
@@ -2602,7 +2595,7 @@ nav img {
   position: relative;
   left: 0;
   right: 0;
-  width: 157px;
+  width: 167.14px;
   border: 1px solid transparent;
   background-color: #333645;
   text-align: center;
@@ -2619,59 +2612,62 @@ nav img {
   color: rgb(100, 99, 97);
 }
 .menu-item:not(:hover) .n-2 {
-  color: #4287f5;
+  color: #4183d7;
 }
 .menu-item:not(:hover) .n-3 {
-  color: green;
+  color: #2ecc71;
 }
 .menu-item:not(:hover) .n-4, .menu-item:not(:hover) .n-7 {
-  color: brown;
+  color: #ce4125;
 }
 .menu-item:not(:hover) .n-5 {
-  color: purple;
+  color: #926fb1;
 }
 .menu-item:not(:hover) .n-6 {
-  color: rgb(240, 18, 107);
+  color: #C13584;
 }
 .menu-item:hover .cc-1 {
-  background-color: orange;
+  background-color: #f7b322;
 }
 .menu-item:hover .cc-2 {
-  background-color: #4287f5;
+  background-color: #4183d7;
 }
 .menu-item:hover .cc-3 {
-  background-color: rgb(60, 244, 78);
+  background-color: #2ecc71;
 }
 .menu-item:hover .cc-4, .menu-item:hover .cc-7 {
-  background-color: brown;
+  background-color: #ce4125;
 }
 .menu-item:hover .cc-5 {
-  background-color: purple;
+  background-color: #926fb1;
 }
 .menu-item:hover .cc-6 {
-  background-color: rgb(240, 18, 107);
+  background-color: #f62459;
 }
 
 .dropdown-content {
   display: none;
   position: relative;
-  top: 8px;
+  width: 100vw;
+  top: 7px;
   z-index: 999;
   opacity: 0;
   transition: opacity 0.3s ease;
-}
-.dropdown-content .triangle {
-  width: 0;
-  height: 0;
-  border-left: 66px solid transparent;
-  border-right: 66px solid transparent;
-  border-top: 25px solid #2441d0;
 }
 
 .menu-item:hover .dropdown-content,
 .menu-item:focus .dropdown-content {
   display: flex;
   opacity: 1;
+}
+.menu-item:hover .dropdown-content .triangle,
+.menu-item:focus .dropdown-content .triangle {
+  width: 0;
+  height: 0;
+  border-left: 68px solid transparent;
+  border-right: 68px solid transparent;
+  border-top: 25px solid #2441d0;
+  z-index: 1000;
 }
 
 .dropdown-content p {

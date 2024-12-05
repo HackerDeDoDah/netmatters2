@@ -15,7 +15,7 @@ header {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    height: 88px;
+    height: 80px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -30,7 +30,7 @@ nav {
 
 // plane style
 .plane {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 // Logo Styling 
@@ -52,11 +52,11 @@ nav img {
 .button {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 16px;
-    font-size: 20px;
+    gap: 10px;
+    padding: 18px;
+    font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
     color: #fff;
     transition: background-color 0.3s ease;
@@ -67,11 +67,11 @@ nav img {
 }
 
 .btn-blue {
-    background-color: #007bff;
+    background-color: #4183d7;
 }
 
 .btn-light-grey {
-    background-color: #afafaf;
+    background-color: #898989;
 }
 
 .button i {
@@ -86,17 +86,16 @@ nav img {
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 290px
+    width: 290px;
+    border: 2px solid #afafaf;
+    border-radius: 0 7px 7px 0;
 }
 
 .search-input {
     padding: 8px 12px 8px 12px;
     font-size: 14px;
-    border: 2px solid #ccc;
-    border-radius: 0 5px 5px 0;
     outline: none;
-    width: 100%;
-    height:56px;
+    height:52px;
     box-sizing: border-box;
 }
 
@@ -107,7 +106,7 @@ nav img {
     font-size: 1.5rem;
     background-color: #afafaf;
     border: 1px solid transparent;
-    padding: 13px 20px;
+    padding: 11px 20px;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     z-index: 2;
@@ -121,9 +120,9 @@ nav img {
 
 
 
-/* General styling for the hamburger container */
+// General styling for the hamburger container
 .hamburger {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -133,16 +132,16 @@ nav img {
     justify-content: space-between;
     cursor: pointer;
     &:hover {
-      background-color: #444;
-      border: 10px solid #444
+        background-color: #444;
+        border: 10px solid #444
     }
 }
 
-/* Styling for the lines */
+// Styling for the lines
 .hamburger span {
     display: block;
     width: 100%;
-    height: 5px;
+    height: 4px;
     background-color: #fff;
     transition: 0.3s ease;
     transform-origin: center;
@@ -164,8 +163,8 @@ nav img {
     display: none;
     border: 1px solid transparent;
     background-color: #afafaf;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     padding:  15px 10px;
     font-size: 1.5rem;
@@ -173,42 +172,42 @@ nav img {
 }
 
 .phone {
-  display: none;
-  font-size: 1.5rem;
+    display: none;
+    font-size: 1.5rem;
 }
 
 .search-bar2 {
-  display: none;
-  align-items: center;
-  width: 300px; /* Set the desired width */
-  border: 2px solid #ccc;
-  border-radius: 25px;
-  overflow: hidden;
-  background-color: #f9f9f9;
+    display: none;
+    align-items: center;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f9f9f9;
 }
 
-/* Search input styling */
+
 .search-input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-  font-size: 16px;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
 }
 
-/* Search button styling */
+
 .search-button {
-  background-color: #ccc;
-  border: none;
-  color: #333;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  border-left: 1px solid #ccc;
-  transition: background-color 0.3s;
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 1px solid #ccc;
+    transition: background-color 0.3s;
 }
 
-/* Button hover effect */
+
 .search-button:hover {
-  background-color: #bbb;
+    background-color: #a0a0a0;
 }
