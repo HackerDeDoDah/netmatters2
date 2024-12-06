@@ -46,17 +46,18 @@
 .tool-tip .tool-tip-text {
     visibility: hidden;
     width: 220px;
-    background-color: #333645;
+    background-color: var(--bg-color);
     color: #fff;
     text-align: center;
     padding: 8px;
     border-radius: 6px;
     position: absolute;
-    bottom: 200%;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     z-index: 200;
+    transition: opacity 0.3s, visibility 0.3s;
     @include m.buttons;
     button {
         margin-top: 10px;
@@ -65,19 +66,19 @@
         cursor: pointer;
         font-size: .7rem;
     }
-    .triangle2 {
-        position: absolute;
-        bottom: 210%;
-        left: 50%;
-        transform: translateX(-50%) rotate(45deg);
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #333645;
-        z-index: 201;
-    }
 }
+
+.tool-tip .tool-tip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--bg-color) transparent transparent transparent;
+}
+
 
 .tool-tip:hover .tool-tip-text {
     visibility: visible;

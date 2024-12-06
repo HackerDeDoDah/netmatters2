@@ -11,7 +11,7 @@
 .drop-down-menu {
     display: flex;
     flex-direction: row; 
-    width: 1200px;
+    width: 100vw;
     height: 100px;
     margin: 0 auto;
 }
@@ -32,17 +32,18 @@
     .fa-sharp {
         color: #fff;
     }
-    &:not(:hover) {
+    :not(:hover) {
         @include m.n-c;
     }
-    &:hover {
+    :hover {
         @include m.no-c;
+        background-color: #43475a;
     }
 }
 
 .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute;
     width: 100vw;
     top: 7px;
     z-index: 999; 
