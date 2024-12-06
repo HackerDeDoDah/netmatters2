@@ -4,16 +4,17 @@
 .menu {
     display: flex; 
     justify-content: center; 
-    width: 100%; 
+    width: 100vw; 
     background-color: #333645;
 }
 
 .drop-down-menu {
     display: flex;
     flex-direction: row; 
-    width: 100vw;
+    width: 1200px;
     height: 100px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-item {
@@ -186,5 +187,5 @@
     i {
         padding-right: .6rem;
     }
-    @include m.tri;
+    // @include m.tri;
 }
