@@ -8,48 +8,56 @@
 }
 
 .hero-container {
-    width: 1200px;
-}
-
-.hero-overlay {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 40px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -500px;
-    z-index: 2;
-    @include m.responsive;
-    h1 {
-        max-width: 400px;
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #fff;
-    }
-    p {
-        max-width: 400px;
-        font-size: 1.2rem;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        line-height: 1.5rem;
-        color: #fff;
-    }
-    .car-btn {
-        padding: 15px;
-        font-size: 1rem;
-        font-weight: bold;
-        width: 200px;
-        border-radius: 30px;
-        background-color: #926fb1;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-} 
+    .hero-overlay {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -500px;
+        z-index: 2;
+        @include m.responsive;
+        h1 {
+            max-width: 400px;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        p {
+            max-width: 400px;
+            font-size: 1.2rem;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            line-height: 1.5rem;
+            color: #fff;
+        }
+        .car-btn {
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 200px;
+            border-radius: 30px;
+            background-color: #926fb1;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            :hover {
+                background-color: #7a5f9a;
+            }
+        }
+    } 
+}
+
+
 .p1 a {
     font-size: 50px;
 }
