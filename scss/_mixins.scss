@@ -23,13 +23,9 @@
             grid-column: span 12;
             align-self: stretch;
         }
-        .article-container {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        .notables {
-            display: flex;
+        .grid-container-articles {
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 
@@ -53,6 +49,13 @@
         }
         .grid-container-articles {
             grid-template-columns: repeat(2, 1.5fr);
+        }
+    }
+
+    @media (max-width: 792px) {
+        width: 792;
+        .menu {
+            display: none;
         }
     }
 

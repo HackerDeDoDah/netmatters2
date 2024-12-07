@@ -19,10 +19,10 @@
 .grid-container1{
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
-    grid-template-rows: repeat(2, 300px);
-    max-width: minmax(250px, 800px);
+    grid-template-rows: repeat(2, 315px);
+    width: minmax(250px, 1200px);
     gap: 25px;
-    padding: 5px;
+    
     position: relative;
     padding-bottom: 20px;
     @include m.responsive;

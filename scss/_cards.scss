@@ -117,17 +117,21 @@
 
 .top-cards {
     display: grid;
-    height: 300px;
-    gap: 10px;
+    height: 315px;
+    gap: 0;
+    border: 1px solid #ccc;
     border-radius: 15px;
     align-items: center;
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
     overflow: hidden;
 }
 
 .top-cards .fa-solid {
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .card-button-top {
@@ -135,12 +139,15 @@
     flex-direction: row;
     margin-left:auto;
     margin-right:auto;
-    padding: 10px 15px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     @include m.buttons;
+    font-size: 1rem;
+    font-weight: 200;
 }
 #top1:hover {
     background-color: rgb(109, 107, 104);
@@ -247,10 +254,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 25px;
     .circle-background {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -259,15 +266,14 @@
         margin-right: auto;
     }
     .circle-background img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 .card-content-top {
-    padding: 0px 15px;
     color: #333;
     @include m.color;
     align-items: center;
@@ -275,17 +281,18 @@
 
 .card-title-top {
     justify-self: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 200;
     color: #333;
-    margin: 8px;
-    padding-bottom: 5px;
+    margin-top: 0;
 }
 
 .card-description-top {
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     color: #333;
-    margin-bottom: 10px;
+    margin: 8px 8px;
+    
 }
 
 #top1,
