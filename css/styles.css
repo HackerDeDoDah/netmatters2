@@ -5,7 +5,7 @@
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -30,12 +30,16 @@
 
 body {
   margin: 0;
-  @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
   font-family: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .full-container {
@@ -171,7 +175,7 @@ body {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -486,7 +490,7 @@ a:hover {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -605,7 +609,7 @@ a:hover {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -635,7 +639,7 @@ a:hover {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -1304,7 +1308,7 @@ a:hover {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -1580,7 +1584,7 @@ a:hover {
 }
 .card-footer-container p {
   font-size: 14px;
-  margin: 0;
+  margin-left: 10px;
   padding: 0;
 }
 
@@ -1591,7 +1595,7 @@ a:hover {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -1818,7 +1822,7 @@ nav img {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -2362,7 +2366,7 @@ nav img {
   color: #fff;
 }
 .grid-container2 #services h1 {
-  font-size: x-large;
+  font-size: 2.4rem;
 }
 .grid-container2 #services a {
   text-decoration: none;
@@ -2370,9 +2374,6 @@ nav img {
 }
 .grid-container2 #services a:hover {
   text-decoration: underline;
-}
-.grid-container2 #services p {
-  font-size: 1rem;
 }
 .grid-container2 #services .fa-star {
   font-size: 3rem;
@@ -2387,6 +2388,12 @@ nav img {
 }
 .grid-container2 #services p {
   font-size: 1.3rem;
+}
+.grid-container2 #services .btn-blue:hover {
+  background-color: #346bb3;
+}
+.grid-container2 #services .btn-green:hover {
+  background-color: #26a159;
 }
 
 .card-button {
@@ -2438,7 +2445,7 @@ nav img {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -2467,6 +2474,14 @@ nav img {
   object-fit: cover;
 }
 
+.overlay {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(59, 5, 75, 0.776));
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 20;
+}
+
 .hero-container {
   display: flex;
   width: 1200px;
@@ -2481,7 +2496,7 @@ nav img {
   margin-left: auto;
   margin-right: auto;
   margin-top: -500px;
-  z-index: 2;
+  z-index: 22;
 }
 @media (max-width: 768px) {
   .hero-container .hero-overlay {
@@ -2619,7 +2634,7 @@ nav img {
 }
 
 .c-1 {
-  background-color: #f7b322;
+  background-color: rgb(100, 99, 97);
 }
 
 .c-2 {
@@ -2693,9 +2708,6 @@ nav img {
 .menu-item :not(:hover) .n-6 {
   color: #C13584;
 }
-.menu-item :hover {
-  background-color: #43475a;
-}
 .menu-item :hover .cc-1 {
   background-color: #f7b322;
 }
@@ -2713,6 +2725,27 @@ nav img {
 }
 .menu-item :hover .cc-6 {
   background-color: #f62459;
+}
+.menu-item :hover #bs {
+  background-color: rgb(100, 99, 97);
+}
+.menu-item :hover #it {
+  background-color: #4183d7;
+}
+.menu-item :hover #in {
+  background-color: #2ecc71;
+}
+.menu-item :hover #nt {
+  background-color: #ce4125;
+}
+.menu-item :hover #ntc {
+  background-color: #926fb1;
+}
+.menu-item :hover #ic {
+  background-color: #f62459;
+}
+.menu-item :hover #nts {
+  background-color: #f7b322;
 }
 
 .dropdown-content {
@@ -2734,6 +2767,7 @@ nav img {
 .menu-item:focus .dropdown-content .triangle {
   width: 0;
   height: 0;
+  top: 100px;
   border-left: 68px solid transparent;
   border-right: 68px solid transparent;
   border-top: 25px solid #2441d0;
@@ -3612,6 +3646,70 @@ nav img {
 #cyber-security i,
 #developer-course i {
   padding-right: 0.6rem;
+}
+
+#bs #bs,
+#it #bs,
+#dm #bs,
+#ts #bs,
+#wd #bs,
+#cs #bs,
+#dc:hover #bs {
+  background-color: rgb(100, 99, 97);
+}
+#bs #it,
+#it #it,
+#dm #it,
+#ts #it,
+#wd #it,
+#cs #it,
+#dc:hover #it {
+  background-color: #4183d7;
+}
+#bs #in,
+#it #in,
+#dm #in,
+#ts #in,
+#wd #in,
+#cs #in,
+#dc:hover #in {
+  background-color: #2ecc71;
+}
+#bs #nt,
+#it #nt,
+#dm #nt,
+#ts #nt,
+#wd #nt,
+#cs #nt,
+#dc:hover #nt {
+  background-color: #ce4125;
+}
+#bs #ntc,
+#it #ntc,
+#dm #ntc,
+#ts #ntc,
+#wd #ntc,
+#cs #ntc,
+#dc:hover #ntc {
+  background-color: #926fb1;
+}
+#bs #ic,
+#it #ic,
+#dm #ic,
+#ts #ic,
+#wd #ic,
+#cs #ic,
+#dc:hover #ic {
+  background-color: #f62459;
+}
+#bs #nts,
+#it #nts,
+#dm #nts,
+#ts #nts,
+#wd #nts,
+#cs #nts,
+#dc:hover #nts {
+  background-color: #f7b322;
 }
 
 .sidebar {

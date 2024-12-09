@@ -171,7 +171,7 @@
     }
 }
 .c-1 {
-    background-color: #f7b322;
+    background-color: rgb(100, 99, 97);
 }
 .c-2 {
     background-color: #4183d7;
@@ -266,6 +266,7 @@
     .triangle {
         width: 0;
         height: 0;
+        top: 100px;
         border-left: 68px solid transparent;
         border-right: 68px solid transparent;
         border-top: 25px solid #2441d0; 
@@ -273,3 +274,26 @@
     }
 }
 
+@mixin back-color {
+    #bs {
+        background-color: rgb(100, 99, 97);
+    }
+    #it {
+        background-color: #4183d7;
+    }
+    #in {
+        background-color: #2ecc71;
+    }
+    #nt {
+        background-color: #ce4125;
+    }
+    #ntc {
+        background-color: #926fb1;
+    }
+    #ic {
+        background-color: #f62459;
+    }
+    #nts {
+        background-color: #f7b322;
+    }
+}

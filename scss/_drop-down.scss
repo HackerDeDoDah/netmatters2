@@ -38,7 +38,7 @@
     }
     :hover {
         @include m.no-c;
-        background-color: #43475a;
+        @include m.back-color;
     }
 }
 
@@ -187,5 +187,14 @@
     i {
         padding-right: .6rem;
     }
-    // @include m.tri;
+
+}
+#bs,
+#it,
+#dm,
+#ts,
+#wd,
+#cs,
+#dc:hover {
+    @include m.back-color;
 }

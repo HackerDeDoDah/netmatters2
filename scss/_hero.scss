@@ -5,8 +5,15 @@
     width: 100%;
     height: 600px;
     object-fit: cover;
+    
 }
-
+.overlay {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(59, 5, 75, 0.776));
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 20;
+}
 .hero-container {
     display: flex;
     width: 1200px;
@@ -20,7 +27,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: -500px;
-        z-index: 2;
+        z-index: 22;
         @include m.responsive;
         h1 {
             max-width: 400px;
