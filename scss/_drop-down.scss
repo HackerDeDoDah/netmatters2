@@ -1,11 +1,29 @@
 @use 'mixins' as m;
 
 
+
 .menu {
-    display: flex; 
+    display: none; 
     justify-content: center; 
     width: 100vw; 
     background-color: #333645;
+
+    @media (max-width: 768px) {
+    }
+
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+        display: flex;
+    }
+
+    @media (min-width: 1260px) {
+        width: 1200px;
+        
+    }
 }
 
 .drop-down-menu {
@@ -187,14 +205,16 @@
     i {
         padding-right: .6rem;
     }
-
 }
+
 #bs,
 #it,
 #dm,
 #ts,
 #wd,
 #cs,
-#dc:hover {
-    @include m.back-color;
+#dc {
+    &:hover{
+        @include m.back-color;
+    }
 }

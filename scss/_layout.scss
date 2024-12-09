@@ -37,7 +37,7 @@ body {
 
     @media (min-width: 992px) {
         width: 970px;
-
+        
     }
 
     @media (min-width: 1260px) {
@@ -60,6 +60,9 @@ body {
 
     @media (min-width: 992px) {
         width: 970px;
+        .menu {
+            display: flex;
+        }
     }
 
     @media (min-width: 1260px) {

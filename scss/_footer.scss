@@ -50,7 +50,7 @@ a {
 
 .footer-menu {   
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
    gap: 20px; 
    height: 300px;
    margin-bottom: 30px;
@@ -60,10 +60,10 @@ a {
    @media (min-width: 768px) {
       grid-template-rows: repeat(5, 1fr);
       grid-template-areas:
-      'f0'
-      'f1'
-      'f2'
-      'f3'
+      'f0',
+      'f1',
+      'f2',
+      'f3',
       'f4';
    }
 
@@ -126,7 +126,8 @@ a {
 }
 //--------- social icons ----------------
 .social-icons {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
    gap: 10px;
    border: 1px solid #eee;
    height: 60px;
