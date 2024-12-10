@@ -74,7 +74,7 @@ nav img {
 }
 
 .btn-light-grey {
-    background-color: #898989;
+    background-color: #919191;
 }
 
 .button i {
@@ -89,7 +89,7 @@ nav img {
     display: flex;
     align-items: center;
     width: 290px;
-    border: 1px solid #898989;
+    border: 1px solid #919191;
     border-radius: 0 3px 3px 0;
 }
 
@@ -106,7 +106,7 @@ nav img {
     right: 0px;
     color: #fff;
     font-size: 1.5rem;
-    background-color: #898989;
+    background-color: #919191;
     border: 1px solid transparent;
     padding: 12px 16px;
     border-radius: 0 2px 2px 0;
@@ -121,14 +121,14 @@ nav img {
 
 // General styling for the hamburger container
 .hamburger {
-    width: 50px;
+    width: 55px;
     height: 50px;
     display: flex;
     flex-direction: column;
-    border: 10px solid #111;
+    border: 10px solid #333645;
     border-radius: 3px;
-    background-color: #111;
-    padding: 5px;
+    background-color: #333645;
+    padding: 4px;
     justify-content: space-between;
     cursor: pointer;
     &:hover {
@@ -141,14 +141,15 @@ nav img {
 .hamburger span {
     display: block;
     width: 100%;
-    height: 4px;
+    height: 3px;
+    border-radius: 1px;
     background-color: #fff;
     transition: 0.3s ease;
     transform-origin: center;
 }
 
 .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 4px);
+    transform: rotate(45deg) translate(12px, 6px);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -156,7 +157,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -4px);
+    transform: rotate(-45deg) translate(12px, -6px);
 }
 
 .search-block {

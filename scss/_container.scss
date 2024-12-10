@@ -1,5 +1,5 @@
-// fit in a grid system here for the footer and welcom section
-// make it flexable 
+// fit in a grid system here for the footer and welcome section
+// make it flexible 
 @use 'mixins' as m;
 
 .container {
@@ -12,7 +12,6 @@
     background-color: #323544;
     @include m.responsive;
     max-height: fit-content;
-    
 }
 
 // grid for cards
@@ -22,17 +21,15 @@
     grid-template-rows: repeat(2, 315px);
     width: minmax(250px, 1200px);
     gap: 25px;
-    
     position: relative;
     padding-bottom: 20px;
     @include m.responsive;
 }
+
 .container-main {
     display: flex;
     flex-direction: row;
     flex: 100%;
-    // padding-left: 15px;
-    // padding-right: 15px;
     background-color: #333645;
     @include m.responsive;
     max-height: fit-content;
@@ -70,7 +67,7 @@
         line-height: 1.7rem;
         @include m.buttons;
         h1 {
-            font-size: x-large;
+            font-size: 2.4rem;
         }
         a {
             text-decoration: none;

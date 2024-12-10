@@ -8,7 +8,6 @@
     align-items: center;
     width: 100vw; 
     background-color: #333645;
-
 }
 
 .drop-down-menu {
@@ -36,10 +35,10 @@
     .fa-sharp {
         color: #fff;
     }
-    :not(:hover) {
+    &:not(:hover) {
         @include m.n-c;
     }
-    :hover {
+    &:hover {
         @include m.no-c;
         @include m.back-color;
     }
@@ -61,7 +60,6 @@
 .menu-item:focus .dropdown-content {
     display: flex;
     opacity: 1;
-    @include m.arrow;
 }
 
 .dropdown-content p {
@@ -118,6 +116,7 @@
     left: 0;
     width: 100vw;
     background-color: #43475a;
+    opacity: 1;
 }
 
 #it:hover ~ #it-support,
@@ -225,4 +224,20 @@
     &:hover{
         @include m.back-color;
     }
+}
+
+.triangle {
+    display: inline-block;
+    position: relative;
+    z-index: 2000;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 40px 83px 0 83px;
+    border-color: #FF4532 transparent transparent transparent;
+    left: 0;
+    top: -100px;
+    margin-top: 12px;
+    display: none;
+    align-self: center;
 }
