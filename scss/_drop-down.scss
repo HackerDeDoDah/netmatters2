@@ -3,27 +3,12 @@
 
 
 .menu {
-    display: none; 
+    display: flex; 
     justify-content: center; 
+    align-items: center;
     width: 100vw; 
     background-color: #333645;
 
-    @media (max-width: 768px) {
-    }
-
-    @media (min-width: 768px) {
-        width: 750px;
-    }
-
-    @media (min-width: 992px) {
-        width: 970px;
-        display: flex;
-    }
-
-    @media (min-width: 1260px) {
-        width: 1200px;
-        
-    }
 }
 
 .drop-down-menu {
@@ -63,7 +48,9 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 100vw;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     top: 7px;
     z-index: 999; 
     opacity: 0; 
@@ -73,8 +60,8 @@
 .menu-item:hover .dropdown-content,
 .menu-item:focus .dropdown-content {
     display: flex;
-    opacity: 1; 
-    @include m.tri;
+    opacity: 1;
+    @include m.arrow;
 }
 
 .dropdown-content p {
@@ -127,42 +114,63 @@
 #bs:hover ~ #bespoke-software,
 #bespoke-software:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: #43475a;
 }
 
 #it:hover ~ #it-support,
 #it-support:hover { 
     display : block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: #4287fa;
 }
 
 #dm:hover ~ #digital-marketing,
 #digital-marketing:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: green;
 }
 
 #ts:hover ~ #telecoms-services,
 #telecoms-services:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: brown;
 }
 
 #wd:hover ~ #web-design,
 #web-design:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: purple;
 }
 
 #cs:hover ~ #cyber-security,
 #cyber-security:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: rgb(240, 18, 107);
 }
 
 #dc:hover ~ #developer-course,
 #developer-course:hover {
     display: block;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     background-color: brown;
 }
 

@@ -52,13 +52,6 @@
         }
     }
 
-    @media (max-width: 792px) {
-        width: 792;
-        .menu {
-            display: none;
-        }
-    }
-
     @media (min-width: 992px) {
         width: 970px;
         #top1,
@@ -156,9 +149,11 @@
     .down-arrow {
         width: 0;
         height: 0;
+        top:100px;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 20px solid #fff; 
+        z-index: 2000;
     }
 }
 
@@ -262,17 +257,17 @@
     z-index: 200;
 }
 
-@mixin tri {
-    .triangle {
-        width: 0;
-        height: 0;
-        top: 100px;
-        border-left: 68px solid transparent;
-        border-right: 68px solid transparent;
-        border-top: 25px solid #2441d0; 
-        z-index: 1000;
-    }
-}
+// @mixin tri {
+//     .triangle {
+//         width: 0;
+//         height: 0;
+//         top: 200px;
+//         border-left: 68px solid transparent;
+//         border-right: 68px solid transparent;
+//         border-top: 25px solid #2441d0; 
+//         z-index: 1000;
+//     }
+// }
 
 @mixin back-color {
     #bs {
