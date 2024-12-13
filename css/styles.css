@@ -209,7 +209,7 @@ footer {
   color: #fff;
   padding: 30px 0 0;
   position: relative;
-  min-height: 390px;
+  min-height: 420px;
 }
 
 img {
@@ -2672,11 +2672,11 @@ nav img {
   right: 0;
   width: 167.14px;
   border: 1px solid transparent;
-  background-color: #333645;
   text-align: center;
   justify-content: center;
   padding: 20px;
   color: #fff;
+  background-color: #333645;
   cursor: pointer;
 }
 .menu-item .fa-solid,
@@ -3664,9 +3664,9 @@ nav img {
 }
 
 .triangle {
-  display: inline-block;
+  display: none;
   position: relative;
-  z-index: 2000;
+  z-index: 2001;
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -3675,8 +3675,19 @@ nav img {
   left: 0;
   top: -100px;
   margin-top: 12px;
-  display: none;
   align-self: center;
+}
+
+.content-container {
+  display: flex;
+  max-width: 1200px;
+  height: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 116px;
+}
+.content-container ~ .triangle {
+  display: block;
 }
 
 .sidebar {
