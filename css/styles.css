@@ -1208,7 +1208,7 @@ a:hover {
 }
 
 .card-title-top {
-  justify-self: center;
+  text-align: center;
   font-size: 1.3rem;
   font-weight: 200;
   color: #333;
@@ -2719,44 +2719,18 @@ nav img {
 .menu-item:hover .cc-6 {
   background-color: #f62459;
 }
-.menu-item:hover #bs {
-  background-color: rgb(100, 99, 97);
-}
-.menu-item:hover #it {
-  background-color: #4183d7;
-}
-.menu-item:hover #dm {
-  background-color: #2ecc71;
-}
-.menu-item:hover #ts {
-  background-color: #ce4125;
-}
-.menu-item:hover #wd {
-  background-color: #926fb1;
-}
-.menu-item:hover #cs {
-  background-color: #f62459;
-}
-.menu-item:hover #dc {
-  background-color: #f7b322;
-}
 
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 7px;
+  width: 100vw;
   z-index: 999;
-  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .menu-item:hover .dropdown-content,
 .menu-item:focus .dropdown-content {
   display: flex;
-  opacity: 1;
 }
 
 .dropdown-content p {
@@ -3470,17 +3444,18 @@ nav img {
 #bespoke-software:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: #43475a;
-  opacity: 1;
 }
 
 #it:hover ~ #it-support,
 #it-support:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: #4287fa;
 }
@@ -3489,7 +3464,8 @@ nav img {
 #digital-marketing:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: green;
 }
@@ -3498,7 +3474,8 @@ nav img {
 #telecoms-services:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: brown;
 }
@@ -3507,7 +3484,8 @@ nav img {
 #web-design:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: purple;
 }
@@ -3516,7 +3494,8 @@ nav img {
 #cyber-security:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: rgb(240, 18, 107);
 }
@@ -3525,7 +3504,8 @@ nav img {
 #developer-course:hover {
   display: block;
   position: absolute;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100vw;
   background-color: brown;
 }
@@ -3539,9 +3519,8 @@ nav img {
 #developer-course h3 {
   font-size: 2rem;
   color: #fff;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 #bespoke-software ul,
 #it-support ul,
@@ -3599,95 +3578,155 @@ nav img {
   padding-right: 0.6rem;
 }
 
-#bs:hover #bs,
-#it:hover #bs,
-#dm:hover #bs,
-#ts:hover #bs,
-#wd:hover #bs,
-#cs:hover #bs,
-#dc:hover #bs {
+#bs:hover {
   background-color: rgb(100, 99, 97);
 }
-#bs:hover #it,
-#it:hover #it,
-#dm:hover #it,
-#ts:hover #it,
-#wd:hover #it,
-#cs:hover #it,
-#dc:hover #it {
-  background-color: #4183d7;
-}
-#bs:hover #dm,
-#it:hover #dm,
-#dm:hover #dm,
-#ts:hover #dm,
-#wd:hover #dm,
-#cs:hover #dm,
-#dc:hover #dm {
-  background-color: #2ecc71;
-}
-#bs:hover #ts,
-#it:hover #ts,
-#dm:hover #ts,
-#ts:hover #ts,
-#wd:hover #ts,
-#cs:hover #ts,
-#dc:hover #ts {
-  background-color: #ce4125;
-}
-#bs:hover #wd,
-#it:hover #wd,
-#dm:hover #wd,
-#ts:hover #wd,
-#wd:hover #wd,
-#cs:hover #wd,
-#dc:hover #wd {
-  background-color: #926fb1;
-}
-#bs:hover #cs,
-#it:hover #cs,
-#dm:hover #cs,
-#ts:hover #cs,
-#wd:hover #cs,
-#cs:hover #cs,
-#dc:hover #cs {
-  background-color: #f62459;
-}
-#bs:hover #dc,
-#it:hover #dc,
-#dm:hover #dc,
-#ts:hover #dc,
-#wd:hover #dc,
-#cs:hover #dc,
-#dc:hover #dc {
-  background-color: #f7b322;
+#bs:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: rgb(100, 99, 97) transparent transparent transparent;
+  top: 87px;
+  left: 0;
+  margin-top: 12px;
+  align-self: center;
 }
 
-.triangle {
-  display: none;
-  position: relative;
-  z-index: 2001;
-  width: 0px;
-  height: 0px;
+#it:hover {
+  background-color: #4183d7;
+}
+#it:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
   border-style: solid;
-  border-width: 40px 83px 0 83px;
-  border-color: #FF4532 transparent transparent transparent;
+  border-width: 30px 83px 0 83px;
+  border-color: #4183d7 transparent transparent transparent;
+  top: 87px;
   left: 0;
-  top: -100px;
+  margin-top: 12px;
+  align-self: center;
+}
+
+#dm:hover {
+  background-color: #2ecc71;
+}
+#dm:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: #2ecc71 transparent transparent transparent;
+  top: 87px;
+  left: 0;
+  margin-top: 12px;
+  align-self: center;
+}
+
+#ts:hover {
+  background-color: #ce4125;
+}
+#ts:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: #ce4125 transparent transparent transparent;
+  top: 87px;
+  left: 0;
+  margin-top: 12px;
+  align-self: center;
+}
+
+#wd:hover {
+  background-color: #926fb1;
+}
+#wd:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: #926fb1 transparent transparent transparent;
+  top: 87px;
+  left: 0;
+  margin-top: 12px;
+  align-self: center;
+}
+
+#cs:hover {
+  background-color: #f62459;
+}
+#cs:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: #f62459 transparent transparent transparent;
+  top: 87px;
+  left: 0;
+  margin-top: 12px;
+  align-self: center;
+}
+
+#dc:hover {
+  background-color: #ce4125;
+}
+#dc:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 83px 0 83px;
+  border-color: #ce4125 transparent transparent transparent;
+  top: 87px;
+  left: 0;
   margin-top: 12px;
   align-self: center;
 }
 
 .content-container {
   display: flex;
-  max-width: 1200px;
+  width: 100vw;
   height: fit-content;
   margin: 0 auto;
   position: absolute;
-  top: 116px;
+  top: 113px;
+  left: 0;
 }
-.content-container ~ .triangle {
-  display: block;
+
+.content_box {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sidebar {
