@@ -1,11 +1,15 @@
 @use 'mixins' as m;
 
 .menu {
-    display: flex; 
+    display: none; 
     justify-content: center; 
     align-items: center;
     width: 100vw; 
     background-color: #333645;
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
 }
 
 .drop-down-menu {

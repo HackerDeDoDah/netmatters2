@@ -54,8 +54,6 @@ a {
    gap: 20px; 
    height: 300px;
    margin-bottom: 30px;
-   grid-template-areas: 
-   'f0 f1 f2 f3 f4';
    
    @media (min-width: 768px) {
       grid-template-rows: repeat(5, 1fr);
