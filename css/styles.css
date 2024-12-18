@@ -46,6 +46,13 @@ body {
   width: 100vw;
 }
 
+.carousel-wrapper {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -510,29 +517,48 @@ a:hover {
   background-color: #f62459;
 }
 
-.partner-banner {
+.partner-banner-carousel {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   max-height: 70px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.partner-banner img {
+.partner-banner-carousel img {
   max-height: 60px;
   width: auto;
   padding-left: 90px;
   filter: grayscale(2);
 }
-.partner-banner img:hover {
+.partner-banner-carousel img:hover {
   filter: none;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-wrapper img {
+  flex: 0 0 auto;
+  max-height: 60px;
+  width: auto;
+  padding: 0 45px;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: filter 0.3s;
+  object-fit: contain;
 }
 
 .partner-banner2 {
   width: 100%;
-  overflow: visible;
-  max-height: 70px;
+  overflow: hidden;
+  height: fit-content;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .tool-tip {
