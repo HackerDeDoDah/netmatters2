@@ -1,3 +1,22 @@
+
+
+// let prevScrollpos = window.scrollY; 
+// const sticky = document.getElementById("sticky-container");
+
+// window.onscroll = function () {
+//     const currentScrollPos = window.scrollY;
+//     if (prevScrollpos > currentScrollPos) {
+//         sticky.style.top = "0";
+//     } else {
+//         sticky.style.top = `-${sticky.offsetHeight}px`;
+//     }
+//     prevScrollpos = currentScrollPos;
+// };
+
+
+
+// sidebar popout
+
 function openNav() {
     document.getElementById("mySidebar").style.width = "300px";
     document.getElementById("main").style.marginRight = "300px";
@@ -91,3 +110,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// cookie popup
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cookieAccepted = localStorage.getItem('cookieAccepted');
+    const cookiePopup = document.getElementById('cookie-popup');
+
+    if (!cookieAccepted) {
+        cookiePopup.style.display = 'block';
+    }
+
+    document.getElementById('accept-cookies').addEventListener('click', () => {
+        localStorage.setItem('cookieAccepted', 'true');
+        cookiePopup.style.display = 'none';
+    });
+});
