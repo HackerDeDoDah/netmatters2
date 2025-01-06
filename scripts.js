@@ -19,11 +19,11 @@ window.onscroll = function () {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "360px";
-    document.getElementById("main").style.marginRight = "360px";
+    document.getElementsByClassName("full-container").style.marginRight = "360px";
 }
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
+    document.getElementsByClassName("full-container").style.marginRight= "0";
 }
 
 

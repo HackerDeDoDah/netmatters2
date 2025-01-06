@@ -2740,6 +2740,8 @@ nav img {
   width: 100vw;
   background-color: #333645;
   margin-top: 80px;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media (min-width: 992px) {
   .menu {
@@ -3824,7 +3826,7 @@ nav img {
   z-index: 1000;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #363B48;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
