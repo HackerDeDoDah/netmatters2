@@ -74,8 +74,6 @@ body {
 }
 
 .container-main {
-  padding-left: 15px;
-  padding-right: 15px;
   min-height: 600px;
 }
 @media (min-width: 768px) {
@@ -186,9 +184,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #fff;
   color: white;
-  padding: 10px 20px;
   transition: top 0.3s ease;
   z-index: 1000;
 }
@@ -605,7 +602,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  z-index: 200;
+  z-index: 999;
   transition: opacity 0.3s, visibility 0.3s;
 }
 .tool-tip .tool-tip-text button {
@@ -1837,21 +1834,20 @@ nav img {
   display: none;
 }
 
-.hamburger {
+.burger-container {
   width: 55px;
   height: 50px;
   display: flex;
   flex-direction: column;
-  border: 10px solid #333645;
   border-radius: 3px;
   background-color: #333645;
   padding: 4px;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   cursor: pointer;
 }
-.hamburger:hover {
+.burger-container:hover {
   background-color: #444;
-  border: 10px solid #444;
 }
 
 .center {
@@ -1863,8 +1859,8 @@ nav img {
 
 .center:before,
 .center:after,
-.center div {
-  background: #444;
+.center span {
+  background: #fff;
   content: "";
   display: block;
   height: 6px;
@@ -1873,15 +1869,15 @@ nav img {
   transition: 0.5s;
 }
 
-.center:hover:before {
+.center.open:before {
   transform: translateY(12px) rotate(135deg);
 }
 
-.center:hover:after {
+.center.open:after {
   transform: translateY(-12px) rotate(-135deg);
 }
 
-.center:hover div {
+.center.open span {
   transform: scale(0);
 }
 
@@ -2743,7 +2739,7 @@ nav img {
   align-items: center;
   width: 100vw;
   background-color: #333645;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 @media (min-width: 992px) {
   .menu {
@@ -2756,8 +2752,6 @@ nav img {
   flex-direction: row;
   width: 1200px;
   height: 80px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu-item {
@@ -3685,7 +3679,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: rgb(100, 99, 97) transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3704,7 +3698,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #4183d7 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3723,7 +3717,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #2ecc71 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3742,7 +3736,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3761,7 +3755,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #926fb1 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3780,7 +3774,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #f62459 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3799,7 +3793,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 82px;
+  top: 69px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3811,7 +3805,7 @@ nav img {
   height: fit-content;
   margin: 0 auto;
   position: absolute;
-  top: 113px;
+  top: 76px;
   left: 0;
 }
 
@@ -3857,6 +3851,7 @@ nav img {
 
 .sidebar li:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .sidebar .closebtn {

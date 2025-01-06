@@ -123,24 +123,24 @@ nav img {
 }
 
 // General styling for the hamburger container
-.hamburger {
+.burger-container {
     width: 55px;
     height: 50px;
     display: flex;
     flex-direction: column;
-    border: 10px solid #333645;
     border-radius: 3px;
     background-color: #333645;
     padding: 4px;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
     cursor: pointer;
     &:hover {
         background-color: #444;
-        border: 10px solid #444
     }
 }
 
 // Styling for the lines
+
 // .hamburger span {
 //     display: block;
 //     width: 100%;
@@ -162,7 +162,9 @@ nav img {
 // .hamburger.open span:nth-child(3) {
 //     transform: rotate(-45deg) translate(12px, -6px);
 // }
+
 // -------------
+
 .center {
     top: 50%;
     left: 50%;
@@ -172,8 +174,8 @@ nav img {
 
 .center:before,
 .center:after,
-.center div {
-    background: #444;
+.center span {
+    background: #fff;
     content: "";
     display: block;
     height: 6px;
@@ -181,17 +183,18 @@ nav img {
     margin: 7px 0;
     transition: 0.5s;
 }
-.center:hover:before {
+.center.open:before {
     transform: translateY(12px) rotate(135deg);
 }
-.center:hover:after {
+.center.open:after {
     transform: translateY(-12px) rotate(-135deg);
 }
-.center:hover div {
+.center.open span {
     transform: scale(0);
 }
 
 // ---------------
+
 .search-block {
     display: none;
     border: 1px solid transparent;
