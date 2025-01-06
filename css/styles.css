@@ -54,8 +54,8 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 @media (min-width: 768px) {
   .container {
@@ -182,14 +182,15 @@ body {
 }
 
 #sticky-container {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: #fff;
-  z-index: 999;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  transition: top 0.3s ease;
+  z-index: 1000;
 }
 
 :root {
@@ -1853,26 +1854,35 @@ nav img {
   border: 10px solid #444;
 }
 
-.hamburger span {
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #444;
+  content: "";
   display: block;
-  width: 100%;
-  height: 3px;
-  border-radius: 1px;
-  background-color: #fff;
-  transition: 0.3s ease;
-  transform-origin: center;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
 }
 
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(12px, 6px);
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
 }
 
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
 }
 
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(12px, -6px);
+.center:hover div {
+  transform: scale(0);
 }
 
 .search-block {
@@ -2733,6 +2743,7 @@ nav img {
   align-items: center;
   width: 100vw;
   background-color: #333645;
+  margin-top: 100px;
 }
 @media (min-width: 992px) {
   .menu {
@@ -2744,7 +2755,7 @@ nav img {
   display: flex;
   flex-direction: row;
   width: 1200px;
-  height: 100px;
+  height: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3674,7 +3685,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: rgb(100, 99, 97) transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3693,7 +3704,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #4183d7 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3712,7 +3723,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #2ecc71 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3731,7 +3742,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3750,7 +3761,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #926fb1 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3769,7 +3780,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #f62459 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3788,7 +3799,7 @@ nav img {
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 87px;
+  top: 82px;
   left: 0;
   margin-top: 12px;
   align-self: center;

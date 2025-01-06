@@ -1,25 +1,25 @@
 
 
-// let prevScrollpos = window.scrollY; 
-// const sticky = document.getElementById("sticky-container");
+let prevScrollpos = window.scrollY; 
+const sticky = document.getElementById("sticky-container");
 
-// window.onscroll = function () {
-//     const currentScrollPos = window.scrollY;
-//     if (prevScrollpos > currentScrollPos) {
-//         sticky.style.top = "0";
-//     } else {
-//         sticky.style.top = `-${sticky.offsetHeight}px`;
-//     }
-//     prevScrollpos = currentScrollPos;
-// };
+window.onscroll = function () {
+    const currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+        sticky.style.top = "0";
+    } else {
+        sticky.style.top = `-${sticky.offsetHeight}px`;
+    }
+    prevScrollpos = currentScrollPos;
+};
 
 
 
 // sidebar popout
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "300px";
-    document.getElementById("main").style.marginRight = "300px";
+    document.getElementById("mySidebar").style.width = "360px";
+    document.getElementById("main").style.marginRight = "360px";
 }
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
@@ -73,16 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const carouselWrapper2 = document.querySelector(".carousel-wrapper2");
     const items = document.querySelectorAll(".tool-tip");
-    const itemWidth = items[0].offsetWidth + 15;
+    const images = document.querySelectorAll(".carousel-wrapper2 img");
+    const totalImages = images.length;
+    const imageWidth = images[0].offsetWidth + 15;
     let scrollPosition = 0;
     let interval;
 
     function scrollCarousel() {
-        scrollPosition -= 200;
-        
-        if (Math.abs(scrollPosition) >= carouselWrapper2.scrollWidth) {
+        scrollPosition -= 300;
+        if (Math.abs(scrollPosition) >= (totalImages / 2) * imageWidth) {
             carouselWrapper2.style.transition = "none";
-            scrollPosition = 0;
+            scrollPosition = 1200;
             carouselWrapper2.style.transform = `translateX(${scrollPosition}px)`;
 
             setTimeout(() => {

@@ -22,7 +22,7 @@ header {
     padding: 0 20px;
     margin: 0 auto;
     @media (min-width: 768px) {
-        height: 80px
+        height: 80px;
     }
 }
 
@@ -141,28 +141,57 @@ nav img {
 }
 
 // Styling for the lines
-.hamburger span {
+// .hamburger span {
+//     display: block;
+//     width: 100%;
+//     height: 3px;
+//     border-radius: 1px;
+//     background-color: #fff;
+//     transition: 0.3s ease;
+//     transform-origin: center;
+// }
+
+// .hamburger.open span:nth-child(1) {
+//     transform: rotate(45deg) translate(12px, 6px);
+// }
+
+// .hamburger.open span:nth-child(2) {
+//     opacity: 0; 
+// }
+
+// .hamburger.open span:nth-child(3) {
+//     transform: rotate(-45deg) translate(12px, -6px);
+// }
+// -------------
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+}
+
+.center:before,
+.center:after,
+.center div {
+    background: #444;
+    content: "";
     display: block;
-    width: 100%;
-    height: 3px;
-    border-radius: 1px;
-    background-color: #fff;
-    transition: 0.3s ease;
-    transform-origin: center;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+.center:hover:before {
+    transform: translateY(12px) rotate(135deg);
+}
+.center:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+.center:hover div {
+    transform: scale(0);
 }
 
-.hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(12px, 6px);
-}
-
-.hamburger.open span:nth-child(2) {
-    opacity: 0; 
-}
-
-.hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(12px, -6px);
-}
-
+// ---------------
 .search-block {
     display: none;
     border: 1px solid transparent;

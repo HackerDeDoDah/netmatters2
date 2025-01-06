@@ -33,8 +33,8 @@ body {
 .container {
     // margin-right: auto;
     // margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
 
     @media (min-width: 768px) {
         width: 750px;
@@ -160,12 +160,13 @@ body {
 }
 
 #sticky-container {
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: #fff;
-    z-index: 999;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    transition: top 0.3s ease;
+    z-index: 1000;
 }
