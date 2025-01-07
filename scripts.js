@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function scrollCarousel() {
         scrollPosition -= 300;
-        if (Math.abs(scrollPosition) >= (totalImages / 2) * imageWidth) {
-            carouselWrapper.style.transition = "none";
-            scrollPosition = 1200;
-            carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
+        if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
+            const firstImage = images[0];
+            carouselWrapper.appendChild(firstImage); // Move the first image to the end
+            scrollPosition += imageWidth; // Adjust scroll position
 
             setTimeout(() => {
                 carouselWrapper.style.transition = "transform 0.5s ease-in-out";
@@ -77,14 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalImages = images.length;
     const imageWidth = images[0].offsetWidth + 15;
     let scrollPosition = 0;
-    let interval;
+
 
     function scrollCarousel() {
         scrollPosition -= 300;
-        if (Math.abs(scrollPosition) >= (totalImages / 2) * imageWidth) {
-            carouselWrapper2.style.transition = "none";
-            scrollPosition = 1200;
-            carouselWrapper2.style.transform = `translateX(${scrollPosition}px)`;
+        if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
+            const firstImage = images[0];
+            carouselWrapper2.appendChild(firstImage); // Move the first image to the end
+            scrollPosition += imageWidth; // Adjust scroll position
 
             setTimeout(() => {
                 carouselWrapper2.style.transition = "transform 0.5s ease-in-out";
@@ -102,12 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(interval);
     }
 
-    items.forEach(item => {
-        item.addEventListener("mouseover", stopCarousel);
-        item.addEventListener("mouseout", startCarousel);
-    });
+    let interval = setInterval(scrollCarousel, 3000);
 
-    startCarousel();
+carouselWrapper2.addEventListener("mouseover", stopCarousel);
+carouselWrapper2.addEventListener("mouseout", startCarousel);
+
 });
 
 

@@ -43,7 +43,7 @@ body {
 }
 
 .full-container {
-  width: 100vw;
+  width: 100%;
 }
 
 .carousel-wrapper {
@@ -232,7 +232,7 @@ footer {
 }
 
 img {
-  width: 300px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2246,7 +2246,7 @@ nav img {
   display: flex;
   flex-direction: row;
   flex: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #333645;
   min-height: 500px;
 }
