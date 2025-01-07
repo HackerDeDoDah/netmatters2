@@ -108,6 +108,9 @@ body {
   .container-nav .button, .container-nav .search-bar {
     display: none;
   }
+  .container-nav .search-bar2 {
+    display: none;
+  }
   .container-nav .phone {
     display: block;
   }
@@ -115,9 +118,6 @@ body {
 @media (min-width: 768px) {
   .container-nav {
     max-width: 750px;
-  }
-  .container-nav .search-bar2 {
-    display: none;
   }
   .container-nav .search-bar {
     display: block;
@@ -669,6 +669,15 @@ a:hover {
 
 #cookie-popup button:hover {
   background-color: #0056b3;
+}
+
+.p2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .p2 {
+    display: block;
+  }
 }
 
 :root {
@@ -1745,7 +1754,7 @@ header {
   width: 100%;
   height: 160px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .container-nav {
@@ -1766,7 +1775,7 @@ nav {
 
 nav img {
   display: flex;
-  height: 64px;
+  max-height: 64px;
   width: auto;
 }
 
@@ -1858,35 +1867,27 @@ nav img {
   background-color: #444;
 }
 
-.center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-}
-
-.center:before,
-.center:after,
-.center span {
-  background: #fff;
-  content: "";
+.hamburger span {
   display: block;
+  width: 100%;
   height: 6px;
   border-radius: 3px;
+  background-color: #fff;
   margin: 7px 0;
-  transition: 0.5s;
+  transition: 0.3s ease;
+  transform-origin: center;
 }
 
-.center.open:before {
+.hamburger.open span:nth-child(1) {
   transform: translateY(12px) rotate(135deg);
 }
 
-.center.open:after {
-  transform: translateY(-12px) rotate(-135deg);
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
 }
 
-.center.open span {
-  transform: scale(0);
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-12px) rotate(-135deg);
 }
 
 .search-block {
@@ -1915,16 +1916,14 @@ nav img {
   overflow: hidden;
   background-color: #f9f9f9;
 }
-
-.search-input {
+.search-bar2 .search-input {
   flex: 1;
   padding: 10px;
   border: none;
   outline: none;
   font-size: 16px;
 }
-
-.search-button {
+.search-bar2 .search-button {
   background-color: #ccc;
   border: none;
   color: #333;
@@ -1934,8 +1933,7 @@ nav img {
   border-left: 1px solid #ccc;
   transition: background-color 0.3s;
 }
-
-.search-button:hover {
+.search-bar2 .search-button:hover {
   background-color: #a0a0a0;
 }
 
@@ -1974,8 +1972,6 @@ nav img {
   flex-direction: row;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: #323544;
   max-height: fit-content;
 }
@@ -2754,7 +2750,7 @@ nav img {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #333645;
   margin-top: 80px;
   margin-left: 0;

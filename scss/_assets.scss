@@ -147,3 +147,9 @@
     background-color: #0056b3;
 } 
 
+.p2 {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        }
+}

@@ -89,7 +89,9 @@ body {
         .button, .search-bar {
             display: none;
         }
-        
+        .search-bar2 {
+            display: none;
+        }
         .phone {
             display: block;
         }
@@ -97,12 +99,8 @@ body {
     @media (min-width: 768px) {
         max-width: 750px;
         
-        .search-bar2 {
-            display: none;
-        }
         .search-bar {
             display: block;
-            
         }
         .button, .search-block {
             display: none;
