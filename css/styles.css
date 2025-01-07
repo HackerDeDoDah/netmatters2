@@ -1743,6 +1743,7 @@ header {
   justify-content: center;
   border-bottom: 1px solid transparent;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 
 .container-nav {
@@ -2561,6 +2562,12 @@ nav img {
   width: 100%;
   height: 600px;
   object-fit: cover;
+  margin-top: 125px;
+}
+@media (min-width: 768px) {
+  .hero img {
+    margin-top: 0;
+  }
 }
 
 .overlay {
@@ -2569,6 +2576,12 @@ nav img {
   width: 100%;
   height: 600px;
   z-index: 20;
+  margin-top: 125px;
+}
+@media (min-width: 768px) {
+  .overlay {
+    margin-top: 0;
+  }
 }
 
 .hero-container {
@@ -2588,6 +2601,7 @@ nav img {
   z-index: 22;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .hero-container .hero-overlay {
@@ -2755,6 +2769,7 @@ nav img {
   margin-top: 80px;
   margin-left: 0;
   margin-right: 0;
+  height: 90px;
 }
 @media (min-width: 992px) {
   .menu {

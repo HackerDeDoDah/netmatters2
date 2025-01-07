@@ -9,6 +9,7 @@
     margin-top: 80px;
     margin-left: 0;
     margin-right: 0;
+    height: 90px;
     @media (min-width: 992px) {
         display: flex;
     }
@@ -346,7 +347,6 @@
         align-self: center;
     }
 }
-
 
 .content-container {
     display: flex;

@@ -17,12 +17,12 @@ window.addEventListener('scroll', () => {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "360px";
-    document.querySelector(".full-container").style.marginRight = "360px";
+    document.querySelector(".main").style.marginRight = "360px";
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.querySelector(".full-container").style.marginRight = "0";
+    document.querySelector(".main").style.marginRight = "0";
 }
 
 // partner carousel top -----------------
