@@ -272,11 +272,13 @@ a:hover {
   height: 1500px;
   margin-bottom: 30px;
   grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   grid-template-areas: "f0", "f1", "f2", "f3", "f4";
 }
 @media (min-width: 992px) {
   .footer-menu {
     grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f0 f0", "f1 f2", "f3 f4";
   }
 }
@@ -284,7 +286,7 @@ a:hover {
   .footer-menu {
     height: 300px;
     margin-bottom: 40px;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "f0 f1 f2 f3 f4";
   }
 }
@@ -623,6 +625,7 @@ a:hover {
 .tool-tip .tool-tip-text::after {
   content: "";
   position: absolute;
+  z-index: 999;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -633,6 +636,8 @@ a:hover {
 
 .tool-tip:hover .tool-tip-text {
   visibility: visible;
+  overflow: visible;
+  z-index: 999;
   opacity: 1;
 }
 
@@ -1758,8 +1763,13 @@ nav {
 
 nav img {
   display: flex;
-  height: 64px;
-  width: auto;
+  height: 32px;
+}
+@media (min-width: 768px) {
+  nav img {
+    height: 64px;
+    width: auto;
+  }
 }
 
 .right-align {
@@ -2404,6 +2414,7 @@ nav img {
 .grid-container2 #welcome button {
   width: 250px;
   padding-top: 15px;
+  margin-bottom: 6px;
 }
 .grid-container2 #welcome button:hover {
   background-color: #16161d;
@@ -2581,6 +2592,8 @@ nav img {
   margin-right: auto;
   margin-top: -500px;
   z-index: 22;
+  text-align: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .hero-container .hero-overlay {
@@ -2697,6 +2710,12 @@ nav img {
 }
 .hero-container .hero-overlay .car-btn:hover {
   background-color: #7a5f9a;
+}
+@media (min-width: 768px) {
+  .hero-container .hero-overlay {
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .p1 a {

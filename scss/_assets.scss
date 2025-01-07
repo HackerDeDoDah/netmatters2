@@ -102,16 +102,20 @@
 .tool-tip .tool-tip-text::after {
     content: "";
     position: absolute;
+    z-index: 999;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 10px;
     border-style: solid;
     border-color: var(--bg-color) transparent transparent transparent;
+    
 }
 
 .tool-tip:hover .tool-tip-text {
     visibility: visible;
+    overflow: visible;
+    z-index: 999;
     opacity: 1;
 }
 

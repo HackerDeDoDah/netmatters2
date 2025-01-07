@@ -55,6 +55,7 @@ a {
    height: 1500px;
    margin-bottom: 30px;
    grid-template-rows: repeat(5, 1fr);
+   grid-template-columns: 1fr;
    grid-template-areas:
    'f0',
    'f1',
@@ -64,6 +65,7 @@ a {
 
    @media (min-width: 992px) {
       grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 
       'f0 f0',
       'f1 f2',
@@ -73,7 +75,7 @@ a {
    @media (min-width: 1260px) {
       height: 300px;
       margin-bottom: 40px;
-      grid-template-rows: 1fr;
+      grid-template-columns: repeat(5, 1fr);
       grid-template-areas: 
       'f0 f1 f2 f3 f4';
    }

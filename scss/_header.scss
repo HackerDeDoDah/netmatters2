@@ -42,8 +42,12 @@ nav {
 // Logo Styling 
 nav img {
     display: flex;
-    height: 64px;
-    width: auto;
+    height: 32px;
+
+    @media (min-width: 768px) {
+        height: 64px;
+        width: auto;
+    }
 }
 
 // Right-Aligned Section 

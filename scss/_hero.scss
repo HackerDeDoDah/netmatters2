@@ -29,6 +29,8 @@
         margin-right: auto;
         margin-top: -500px;
         z-index: 22;
+        text-align: center;
+        align-items: center; 
         @include m.responsive;
         h1 {
             max-width: 400px;
@@ -61,6 +63,10 @@
             &:hover {
                 background-color: #7a5f9a;
             }
+        }
+        @media (min-width: 768px) {
+            text-align: left;
+            align-items: flex-start;
         }
     } 
 }

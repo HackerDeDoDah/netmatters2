@@ -1,35 +1,33 @@
 
 
-let prevScrollpos = window.scrollY; 
+let previousScrollPosition = window.scrollY;
 const sticky = document.getElementById("sticky-container");
 
-window.onscroll = function () {
+window.addEventListener('scroll', () => {
     const currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
+    if (previousScrollPosition > currentScrollPos) {
         sticky.style.top = "0";
     } else {
         sticky.style.top = `-${sticky.offsetHeight}px`;
     }
-    prevScrollpos = currentScrollPos;
-};
-
-
+    previousScrollPosition = currentScrollPos;
+});
 
 // sidebar popout
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "360px";
-    document.getElementsByClassName("full-container").style.marginRight = "360px";
-}
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementsByClassName("full-container").style.marginRight= "0";
+    document.querySelector(".full-container").style.marginRight = "360px";
 }
 
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.querySelector(".full-container").style.marginRight = "0";
+}
 
 // partner carousel top -----------------
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const carouselWrapper = document.querySelector(".carousel-wrapper");
     const images = document.querySelectorAll(".carousel-wrapper img");
     const totalImages = images.length;
