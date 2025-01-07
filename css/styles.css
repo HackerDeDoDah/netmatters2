@@ -98,15 +98,15 @@ body {
   }
 }
 
+.container-nav .search-bar2 {
+  display: flex;
+}
 @media (max-width: 768px) {
   .container-nav {
     height: 100px;
   }
   .container-nav .button, .container-nav .search-bar {
     display: none;
-  }
-  .container-nav .search-bar2 {
-    display: flex;
   }
   .container-nav .phone {
     display: block;
@@ -115,6 +115,9 @@ body {
 @media (min-width: 768px) {
   .container-nav {
     max-width: 750px;
+  }
+  .container-nav .search-bar2 {
+    display: none;
   }
   .container-nav .search-bar {
     display: block;
@@ -1763,13 +1766,8 @@ nav {
 
 nav img {
   display: flex;
-  height: 32px;
-}
-@media (min-width: 768px) {
-  nav img {
-    height: 64px;
-    width: auto;
-  }
+  height: 64px;
+  width: auto;
 }
 
 .right-align {
