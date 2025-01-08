@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
             const firstImage = images[0];
             carouselWrapper.appendChild(firstImage); // Move the first image to the end
-            scrollPosition += imageWidth; // Adjust scroll position
+            scrollPosition += imageWidth; // scroll position
 
             setTimeout(() => {
                 carouselWrapper.style.transition = "transform 0.5s ease-in-out";
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
             const firstImage = images[0];
             carouselWrapper2.appendChild(firstImage); // Move the first image to the end
-            scrollPosition += imageWidth; // Adjust scroll position
+            scrollPosition += imageWidth; // scroll position
 
             setTimeout(() => {
                 carouselWrapper2.style.transition = "transform 0.5s ease-in-out";
@@ -110,16 +110,33 @@ carouselWrapper2.addEventListener("mouseout", startCarousel);
 
 // cookie popup
 
-window.addEventListener('DOMContentLoaded', () => {
-    const cookieAccepted = localStorage.getItem('cookieAccepted');
-    const cookiePopup = document.getElementById('cookie-popup');
+const cookiePopup = document.getElementById('cookie-popup');
+const changeSettingsButton = document.getElementById('change-settings');
+const acceptCookiesButton = document.getElementById('accept-cookies');
 
-    if (!cookieAccepted) {
-        cookiePopup.style.display = 'block';
+// Change Settings button click
+changeSettingsButton.addEventListener('click', () => {
+    alert('Redirecting to settings page...');
+    window.location.href = '#';
+});
+
+// Accept Cookies button click
+acceptCookiesButton.addEventListener('click', () => {
+  // store in localStorage
+    localStorage.setItem('cookiesAccepted', 'true');
+
+  // Hide
+    cookiePopup.style.display = 'none';
+});
+
+// Check accepted
+document.addEventListener('DOMContentLoaded', () => {
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+    if (cookiesAccepted === 'true') {
+    // Hide if cookies accepted
+    cookiePopup.style.display = 'none';
+    } else {
+    // Show if cookies not accepted
+    cookiePopup.style.display = 'block';
     }
-
-    document.getElementById('accept-cookies').addEventListener('click', () => {
-        localStorage.setItem('cookieAccepted', 'true');
-        cookiePopup.style.display = 'none';
-    });
 });

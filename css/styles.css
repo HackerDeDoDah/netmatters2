@@ -186,6 +186,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   background-color: #fff;
   color: white;
@@ -607,7 +608,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  z-index: 999;
+  z-index: 998;
   transition: opacity 0.3s, visibility 0.3s;
 }
 .tool-tip .tool-tip-text button {
@@ -645,39 +646,50 @@ a:hover {
 }
 
 #cookie-popup {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
+  position: absolute;
+  justify-self: center;
+  top: 100px;
+  left: 50%;
+  right: 50%;
+  background: #a7a7a7;
+  border: 1px solid #5d5d5d;
+  border-radius: 2px;
+  width: 600px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: none;
-  z-index: 1000;
+  z-index: 999;
+  text-transform: uppercase;
+}
+
+#cookie-popup h1, #cookie-popup h3 {
+  margin: 0 0 20px;
 }
 
 #cookie-popup button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
+  margin-right: 30px;
   padding: 10px 20px;
-  margin-left: 10px;
-  cursor: pointer;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
-#cookie-popup button:hover {
-  background-color: #0056b3;
+#change-settings {
+  background: #f1c40f;
+  color: #000;
 }
 
-.p2 {
-  display: none;
+#accept-cookies {
+  background: #2ecc71;
+  color: #fff;
 }
-@media (min-width: 768px) {
-  .p2 {
-    display: block;
-  }
+
+#cookie-popup hr {
+  border: none;
+  height: 2px;
+  background-color: #5d5d5d;
+  margin: 10px 0;
 }
 
 :root {
@@ -1906,6 +1918,7 @@ nav img {
 .phone {
   display: none;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .search-bar2 {
@@ -2781,7 +2794,7 @@ nav img {
   display: flex;
   flex-direction: row;
   width: 1200px;
-  height: 80px;
+  height: 90px;
 }
 
 .menu-item {
@@ -3703,13 +3716,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: rgb(100, 99, 97) transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3722,13 +3735,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #4183d7 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3741,13 +3754,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #2ecc71 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3760,13 +3773,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3779,13 +3792,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #926fb1 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3798,13 +3811,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #f62459 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3817,13 +3830,13 @@ nav img {
   content: "";
   display: block;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 83px 0 83px;
   border-color: #ce4125 transparent transparent transparent;
-  top: 69px;
+  top: 77px;
   left: 0;
   margin-top: 12px;
   align-self: center;
@@ -3835,7 +3848,7 @@ nav img {
   height: fit-content;
   margin: 0 auto;
   position: absolute;
-  top: 76px;
+  top: 85px;
   left: 0;
 }
 
