@@ -1,19 +1,54 @@
 
+// sticky header
+// let previousScrollPosition = window.scrollY;
+// const sticky = document.getElementById("sticky-container");
 
-let previousScrollPosition = window.scrollY;
-const sticky = document.getElementById("sticky-container");
+// window.addEventListener('scroll', () => {
+//     const currentScrollPos = window.scrollY;
+//     if (previousScrollPosition > currentScrollPos) {
+//         sticky.style.top = "0";
+//     } else {
+//         sticky.style.top = `-${sticky.offsetHeight}px`;
+//     }
+//     previousScrollPosition = currentScrollPos;
+// });
 
-window.addEventListener('scroll', () => {
-    const currentScrollPos = window.scrollY;
-    if (previousScrollPosition > currentScrollPos) {
-        sticky.style.top = "0";
-    } else {
-        sticky.style.top = `-${sticky.offsetHeight}px`;
-    }
-    previousScrollPosition = currentScrollPos;
+let lastScrollTop = 0;
+const stickyContainer = document.querySelector('.sticky-container');
+let didScroll = false;
+
+window.addEventListener('scroll', function() {
+    didScroll = true;
 });
 
-// sidebar popout
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    const scrollTop = window.scrollY;
+
+  // Make sure they scroll more than 5px
+    if (Math.abs(lastScrollTop - scrollTop) <= 5) {
+        return;
+    }
+
+  // If scrolling down and past the header, keep the sticky container hidden
+    if (scrollTop > lastScrollTop) {
+        stickyContainer.classList.remove('show');
+    } else {
+    // If scrolling up, show the sticky container
+        stickyContainer.classList.add('show');
+    }
+
+    lastScrollTop = scrollTop;
+}
+
+
+// sidebar pop out
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "360px";

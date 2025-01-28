@@ -194,6 +194,10 @@ body {
   z-index: 1000;
 }
 
+.sticky-container .show {
+  top: 0;
+}
+
 :root {
   --primary-color: #3498db;
   --secondary-color: #4287f5;
@@ -1765,7 +1769,7 @@ header {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  height: 160px;
+  height: 180px;
   padding: 0 20px;
   margin: 0;
 }
@@ -1788,15 +1792,16 @@ nav {
 
 nav img {
   display: flex;
-  max-height: 64px;
+  max-height: 68px;
   width: auto;
+  margin-left: 0;
 }
 
 .right-align {
   display: flex;
   align-items: center;
   margin-left: auto;
-  gap: 22px;
+  gap: 20px;
 }
 
 .button {
@@ -1822,6 +1827,9 @@ nav img {
 
 .btn-light-grey {
   background-color: #919191;
+}
+.btn-light-grey:hover {
+  background-color: #7a7a7a;
 }
 
 .button i {
@@ -1884,7 +1892,6 @@ nav img {
   display: block;
   width: 100%;
   height: 6px;
-  border-radius: 3px;
   background-color: #fff;
   margin: 7px 0;
   transition: 0.3s ease;
@@ -2573,7 +2580,7 @@ nav img {
 
 .hero img {
   width: 100%;
-  height: 600px;
+  height: 550px;
   object-fit: cover;
   margin-top: 125px;
 }
@@ -2587,7 +2594,7 @@ nav img {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.776));
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 550px;
   z-index: 20;
   margin-top: 125px;
 }
@@ -2779,9 +2786,7 @@ nav img {
   align-items: center;
   width: 100%;
   background-color: #333645;
-  margin-top: 80px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 10px 0 0 0;
   height: 90px;
 }
 @media (min-width: 992px) {
@@ -2832,6 +2837,9 @@ nav img {
 .menu-item:not(:hover) .n-6 {
   color: #C13584;
 }
+.menu-item:hover {
+  border-bottom: solid 3px #333645;
+}
 .menu-item:hover .cc-1 {
   background-color: #f7b322;
 }
@@ -2857,6 +2865,7 @@ nav img {
   width: 100vw;
   z-index: 999;
   transition: opacity 0.3s ease;
+  top: 20px;
 }
 
 .menu-item:hover .dropdown-content,
@@ -3628,7 +3637,7 @@ nav img {
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
-  background-color: rgb(240, 18, 107);
+  background-color: #cf1846;
 }
 
 #dc:hover ~ #developer-course,
@@ -3834,7 +3843,7 @@ nav img {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 84px 0 84px;
   border-color: #ce4125 transparent transparent transparent;
   top: 77px;
   left: 0;
@@ -3848,7 +3857,7 @@ nav img {
   height: fit-content;
   margin: 0 auto;
   position: absolute;
-  top: 85px;
+  top: 91px;
   left: 0;
 }
 
@@ -3913,9 +3922,9 @@ nav img {
   border: none;
 }
 
-#main {
+.main {
   transition: margin-right 0.5s;
-  padding: 16px;
+  padding: 0px;
 }
 
 @media screen and (max-height: 450px) {

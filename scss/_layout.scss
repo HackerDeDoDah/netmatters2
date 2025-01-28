@@ -167,3 +167,9 @@ body {
     transition: top 0.3s ease;
     z-index: 1000;
 }
+
+.sticky-container {
+    .show {
+        top: 0; // When scrolling up, move to the top of the screen
+    }
+}

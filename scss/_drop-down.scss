@@ -6,9 +6,7 @@
     align-items: center;
     width: 100%; 
     background-color: #333645;
-    margin-top: 80px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 10px 0 0 0;
     height: 90px;
     @media (min-width: 992px) {
         display: flex;
@@ -43,6 +41,7 @@
     }
     &:hover {
         @include m.no-c;
+        border-bottom: solid 3px #333645;
     }
 }
 
@@ -52,6 +51,7 @@
     width: 100vw;
     z-index: 999; 
     transition: opacity 0.3s ease;
+    top: 20px;
 }
 
 .menu-item:hover,
@@ -167,7 +167,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    background-color: rgb(240, 18, 107);
+    background-color: #cf1846;
 }
 
 #dc:hover ~ #developer-course,
@@ -339,7 +339,7 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 30px 83px 0 83px;
+        border-width: 30px 84px 0 84px;
         border-color: #ce4125 transparent transparent transparent;
         top: 77px;
         left: 0;
@@ -354,7 +354,7 @@
     height: fit-content;
     margin: 0 auto;
     position: absolute;
-    top: 85px;
+    top: 91px;
     left: 0;
 }
 .content_box {

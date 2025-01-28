@@ -19,7 +19,7 @@ header {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    height: 160px;
+    height: 180px;
     padding: 0 20px;
     margin: 0;
     @media (min-width: 768px) {
@@ -43,8 +43,9 @@ nav {
 // Logo Styling 
 nav img {
     display: flex;
-    max-height: 64px;
+    max-height: 68px;
     width: auto;
+    margin-left: 0;
 }
 
 // Right-Aligned Section 
@@ -52,7 +53,7 @@ nav img {
     display: flex;
     align-items: center;
     margin-left: auto;
-    gap: 22px;
+    gap: 20px;
 }
 
 // Button Styling 
@@ -79,6 +80,9 @@ nav img {
 
 .btn-light-grey {
     background-color: #919191;
+    &:hover {
+        background-color: #7a7a7a;
+    }
 }
 
 .button i {
@@ -146,7 +150,6 @@ nav img {
     display: block;
     width: 100%;
     height: 6px;
-    border-radius: 3px;
     background-color: #fff;
     margin: 7px 0;
     transition: 0.3s ease;
