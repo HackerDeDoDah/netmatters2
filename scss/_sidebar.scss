@@ -14,7 +14,10 @@
 .sidebar h3 {
     color: #fff;
     font-size: 1.2rem;
-    margin-left: 2rem;
+    border: 2px solid #2a2d36;
+    background-color: #2a2d36;
+    padding: 10px;
+    width: auto;
 }
 
 .sidebar ul {
@@ -51,7 +54,7 @@
     border: none;
 }
 
-.main {
+body {
     transition: margin-right .5s;
     padding: 0px;
 }
@@ -61,4 +64,16 @@
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar ul {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .sidebar h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }

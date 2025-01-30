@@ -51,14 +51,30 @@ function hasScrolled() {
 // sidebar pop out
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "360px";
-    document.querySelector(".main").style.marginRight = "360px";
+    var screenWidth = window.innerWidth;
+    var sidebar = document.getElementById("mySidebar");
+    var body = document.querySelector("body");
+
+    if (screenWidth < 768) {
+        sidebar.style.width = "100%";
+        body.style.marginRight = "0";
+    } else {
+        sidebar.style.width = "360px"; 
+        body.style.marginRight = "360px";
+    }
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.querySelector(".main").style.marginRight = "0";
+    document.querySelector("body").style.marginRight = "0";
 }
+
+window.addEventListener('resize', function() {
+    if (document.getElementById("mySidebar").style.width !== "0") {
+        openNav();
+    }
+});
+
 
 // partner carousel top -----------------
 

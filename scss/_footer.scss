@@ -43,13 +43,11 @@ a {
    margin-left: auto;
    margin-right: auto;
    text-align: left;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 .footer-menu {
    flex: 1;
-   // justify-content: space-evenly;
-   gap: 20px;
    ul {
       display: flex;
       flex-direction: column;
@@ -57,10 +55,12 @@ a {
       padding: 0;
       margin: 0;
       font-size: 16px;
+      line-height: 1.5rem;
       a {
          margin-bottom: 5px; 
          color: #fff;
          font-size: 14px;
+         line-height: 10px;
       }
       p {
          text-transform: uppercase;
@@ -71,9 +71,23 @@ a {
    }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+//------- Small screens: Stack vertically ----------
+@media (max-width: 768px) {
    .footer-grid {
-      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      gap: 20px;
+      text-align: left;
+   }
+
+   .footer-menu {
+      width: 100%;
+   }
+}
+
+//--------- medium screens: Stack 2x2 horizontally ----------
+@media (max-width: 991px) {
+   .footer-grid {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, auto);
       gap: 20px;
@@ -85,25 +99,10 @@ a {
    }
 }
 
-//------- Small screens: Stack vertically ----------
-@media (max-width: 768px) {
-   .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(4, auto);
-      gap: 20px;
-      text-align: left;
-   }
-
-   .footer-menu {
-      width: 100%;
-   }
-}
-
+//--------- large screens:in line horizontal ----------
 @media (min-width: 992px) {
    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); 
+      grid-template-columns: repeat(5, 1fr); 
       grid-template-rows: 1fr; 
       gap: 20px;
       text-align: left;
@@ -114,15 +113,14 @@ a {
    }
 }
 
+//--------- sitemap -----------------
 #sitemap {
    display: flex;
-   justify-content: flex-start;
-   flex-wrap: wrap;
    padding: 15px;
    margin-left: auto;
    margin-right: auto;
    margin: 0;
-   max-width: 1200px;
+   width: 1200px;
    z-index: 10;
    @include m.responsive;
    p {
@@ -167,6 +165,7 @@ a {
    @include m.s-c;
 }
 
+//--------- consent ----------------
 .consent {
    position: fixed;
    bottom: 0;
@@ -189,6 +188,7 @@ a {
    }
 }
 
+//--------- sofia ----------------
 .sofia {
    position: fixed;
    bottom: 25px;
