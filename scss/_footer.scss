@@ -13,6 +13,7 @@ footer .container{
    height: fit-content;
    width: 100%;
 }
+
 img {
    width: 310px;
    margin-left: auto;
@@ -38,6 +39,10 @@ a {
 
 .footer-grid {   
    display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-areas: 
+      "f-0 f-1 f-2 f-3 f-4"; 
+   gap: 20px;
    height: fit-content;
    margin-bottom: 30px;
    margin-left: auto;
@@ -47,7 +52,6 @@ a {
 }
 
 .footer-menu {
-   flex: 1;
    ul {
       display: flex;
       flex-direction: column;
@@ -72,46 +76,45 @@ a {
 }
 
 //------- Small screens: Stack vertically ----------
-@media (max-width: 768px) {
-   .footer-grid {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(5, auto);
-      gap: 20px;
-      text-align: left;
-   }
 
-   .footer-menu {
-      width: 100%;
+@media screen and (max-width: 768px) {
+   .footer-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+         "f-0"
+         "f-1"
+         "f-2"
+         "f-3"
+         "f-4";
    }
 }
 
-//--------- medium screens: Stack 2x2 horizontally ----------
-@media (max-width: 991px) {
+//----------------Medium screens: Stack in 2x2 layout--------------
+@media screen and (max-width: 991px) {
    .footer-grid {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 20px;
-      text-align: left;
-   }
-
-   .footer-menu {
-      width: 100%;
+      grid-template-areas: 
+         "f-0 f-0"
+         "f-1 f-2"
+         "f-3 f-4";
    }
 }
 
-//--------- large screens:in line horizontal ----------
-@media (min-width: 992px) {
+//-------------------Large screens: Keep all in one row-------------
+@media screen and (min-width: 992px) {
    .footer-grid {
-      grid-template-columns: repeat(5, 1fr); 
-      grid-template-rows: 1fr; 
-      gap: 20px;
-      text-align: left;
-   }
-
-   .footer-menu {
-      width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas: 
+         "f-0 f-1 f-2 f-3 f-4";
    }
 }
+
+//-------Assign grid areas---------------
+#f-0 { grid-area: f-0; }
+#f-1 { grid-area: f-1; }
+#f-2 { grid-area: f-2; }
+#f-3 { grid-area: f-3; }
+#f-4 { grid-area: f-4; }
 
 //--------- sitemap -----------------
 #sitemap {
