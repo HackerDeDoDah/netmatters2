@@ -84,14 +84,14 @@ body {
             display: none;
         }
         .search-bar2 {
-            display: none;
+            display: flex;
         }
         .phone {
             display: block;
         }
     }
-    @media (min-width: 768px) {
-        max-width: 750px;
+    @media (min-width: 769px) {
+        min-width: 769px;
         
         .search-bar {
             display: block;
@@ -102,7 +102,7 @@ body {
     }
 
     @media (min-width: 992px) {
-        max-width: 970px;
+        min-width: 970px;
         .search-bar {
             display: none;
         }
@@ -115,7 +115,7 @@ body {
     }
 
     @media (min-width: 1260px) {
-        max-width: 1200px;
+        width: 1200px;
         .button, .search-bar {
             display: block;
         }
