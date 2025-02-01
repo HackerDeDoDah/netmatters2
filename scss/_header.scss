@@ -46,6 +46,9 @@ nav img {
     max-height: auto;
     max-width: auto;
     margin-left: 0;
+    @media (max-width: 450px) {
+        width: 220px;
+    }
 }
 
 // Right-Aligned Section 
@@ -54,6 +57,9 @@ nav img {
     align-items: center;
     margin-left: auto;
     gap: 20px;
+    @media (max-width: 450px) {
+        gap:10px;
+    }
 }
 
 // Button Styling 

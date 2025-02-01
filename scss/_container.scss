@@ -13,7 +13,7 @@
 }
 
 // grid for cards
-.grid-container1{
+.grid-container1 {
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     grid-template-rows: repeat(2, 315px);
@@ -43,7 +43,7 @@
     min-height: 500px;
 }
 
-.grid-container2{
+.grid-container2 {
     display: flex;
     flex-direction: row;
     flex: 100%;
@@ -66,6 +66,7 @@
         @include m.buttons;
         h1 {
             font-size: 2.4rem;
+            line-height: 2.4rem;
         }
         a {
             text-decoration: none;
@@ -97,6 +98,7 @@
         @include m.buttons;
         h1 {
             font-size: 2.4rem;
+            line-height: 2.4rem;
         }
         a {
             text-decoration: none;
@@ -119,6 +121,9 @@
         p {
             font-size: 1.3rem;
         }
+        button {
+            margin-bottom: 6px;
+        }
         .btn-blue:hover {
             background-color: #346bb3;
         }
@@ -131,44 +136,3 @@
 .card-button {
     margin-top: auto;
 }
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr repeat(4, 200px);
-    grid-template-rows: 1fr;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-gap: 10px;
-    padding: 5px;
-    grid-template-areas:
-    'f0 f1 f2 f3 f4';
-
-}
-
-.sitemap-container {
-    display: flex;
-    flex-direction: row;
-    flex: 100%;
-    background-color: #1c202c;
-    gap: 20px;
-    font-family: 'Poppins', sans-serif;
-    align-items: left;
-    justify-content: flex-start;
-    a {
-        color: #fff;
-        font-size: large;
-        text-decoration: none;
-    }
-    
-}
-.social-icons {
-    display: flex;
-    gap: 10px;
-    border: 1px solid transparent;
-    height: 50px;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: space-evenly;
-}
-

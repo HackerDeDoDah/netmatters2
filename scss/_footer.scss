@@ -5,13 +5,14 @@
 footer .container{
    display: flex;
    flex-direction: row;
-   justify-content: space-between; 
    background-color: #323544;
    color: #fff;
    padding: 30px 0 0;
    position: relative;
    height: fit-content;
    width: 100%;
+   // justify-content: center;
+   // align-items: center;
 }
 
 img {
@@ -31,27 +32,33 @@ a {
 
 .social-container {
    display: flex;
-   width: 100%;
-   width: 100%;
+   width: 310px;
    margin-right: 40px;
    margin-top: 40px;
 }
 
 .footer-grid {   
    display: grid;
-   grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(5, auto);
    grid-template-areas: 
-      "f-0 f-1 f-2 f-3 f-4"; 
+      "f-0"
+      "f-1"
+      "f-2"
+      "f-3"
+      "f-4";
+   max-width: 1200px;
    gap: 20px;
    height: fit-content;
    margin-bottom: 30px;
    margin-left: auto;
    margin-right: auto;
    text-align: left;
-   justify-content: space-evenly;
+   align-items: start;
+   justify-items: start;
 }
 
-.footer-menu {
+.footer-menu{
    ul {
       display: flex;
       flex-direction: column;
@@ -75,55 +82,68 @@ a {
    }
 }
 
-//------- Small screens: Stack vertically ----------
+//------- Medium screens: Stack 2x2 vertically ----------
 
-@media screen and (max-width: 768px) {
-   .footer-grid {
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-         "f-0"
-         "f-1"
-         "f-2"
-         "f-3"
-         "f-4";
-   }
-}
-
-//----------------Medium screens: Stack in 2x2 layout--------------
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) {
    .footer-grid {
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
       grid-template-areas: 
-         "f-0 f-0"
+         "f-0 . "
          "f-1 f-2"
          "f-3 f-4";
    }
 }
 
 //-------------------Large screens: Keep all in one row-------------
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
    .footer-grid {
+      gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
       grid-template-areas: 
          "f-0 f-1 f-2 f-3 f-4";
    }
 }
 
 //-------Assign grid areas---------------
-#f-0 { grid-area: f-0; }
-#f-1 { grid-area: f-1; }
-#f-2 { grid-area: f-2; }
-#f-3 { grid-area: f-3; }
-#f-4 { grid-area: f-4; }
+.footer-menu:nth-last-of-type(1) {
+   grid-area: f-4;
+}
+.footer-menu:nth-last-of-type(2) {
+   grid-area: f-3;
+}
+.footer-menu:nth-last-of-type(3) {
+   grid-area: f-2;
+}
+.footer-menu:nth-last-of-type(4) {
+   grid-area: f-1;
+}
+.footer-menu:nth-last-of-type(5) {
+   grid-area: f-0;
+}
+
 
 //--------- sitemap -----------------
+
+.sitemap-container {
+   display: flex;
+   flex-direction: row;
+   flex: 100%;
+   background-color: #1c202c;
+   gap: 20px;
+   font-family: 'Poppins', sans-serif;
+   align-items: left;
+   justify-content: flex-start;
+}
+
 #sitemap {
    display: flex;
    padding: 15px;
    margin-left: auto;
    margin-right: auto;
    margin: 0;
-   width: 1200px;
+   max-width: 100%;
    z-index: 10;
    @include m.responsive;
    p {
@@ -134,8 +154,9 @@ a {
       font-size: 12px;
    }
    a {
-      display: flex;
+      color: #fff;
       font-size: 12px;
+      text-decoration: none;
    }
 }
 
@@ -144,7 +165,6 @@ a {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 5px;
-   border: 1px solid #eee;
    height: 30px;
    align-items: center;
    justify-content: space-evenly;

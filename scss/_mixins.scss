@@ -10,7 +10,7 @@
 
 @mixin responsive {
     @media (max-width: 768px) {
-        min-width: 430px;
+        width: 100%;
         margin-right: auto;
         margin-left: auto;
         #top1,
@@ -26,6 +26,14 @@
         .grid-container-articles {
             display: grid;
             grid-template-columns: 1fr;
+            width: 98%;
+        }
+        .card-tags {
+            align-content: center;
+            justify-content: center;
+        }
+        .p2 {
+            display: none;
         }
     }
 

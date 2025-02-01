@@ -1,51 +1,70 @@
 
-// sticky header
-// let previousScrollPosition = window.scrollY;
-// const sticky = document.getElementById("sticky-container");
-
-// window.addEventListener('scroll', () => {
-//     const currentScrollPos = window.scrollY;
-//     if (previousScrollPosition > currentScrollPos) {
-//         sticky.style.top = "0";
-//     } else {
-//         sticky.style.top = `-${sticky.offsetHeight}px`;
+// // sticky header
+// window.onscroll = function(){
+//     let currentScrollPos = window.scrollY;
+//     console.log(currentScrollPos);
+//     if(currentScrollPos <= 400 || prevScrollPos <= 400){
+//         $('.sticky-container').removeClass('header-hidden');
+//         $('.sticky-container').removeClass('header-visible');
+//         $('.sticky-container').css({
+//             'position': 'relative'
+//         })
 //     }
-//     previousScrollPosition = currentScrollPos;
+//     else if(prevScrollPos < currentScrollPos && currentScrollPos > 400){
+//         $('.sticky-container').css({
+//             'position': 'sticky'
+//         })
+//         setTimeout(()=>{
+//             document.getElementById('.sticky-container').classList.add('header-hidden');
+//             document.getElementById('.sticky-container').classList.remove('header-visible');
+//         }, 300);
+//     }
+//     else{
+//         $('.sticky-container').css({
+//             'position': 'sticky'
+//         })
+//         setTimeout(()=>{
+//             document.getElementById('.sticky-container').classList.add('header-visible');
+//             document.getElementById('.sticky-container').classList.remove('header-hidden');
+//         }, 300);
+//     }
+//     prevScrollPos = currentScrollPos;
+// }
+
+
+// let lastScrollTop = 0;
+// const stickyContainer = document.querySelector('.sticky-container');
+// let didScroll = false;
+
+// window.addEventListener('scroll', function() {
+//     didScroll = true;
 // });
 
-let lastScrollTop = 0;
-const stickyContainer = document.querySelector('.sticky-container');
-let didScroll = false;
+// setInterval(function() {
+//     if (didScroll) {
+//         hasScrolled();
+//         didScroll = false;
+//     }
+// }, 250);
 
-window.addEventListener('scroll', function() {
-    didScroll = true;
-});
+// function hasScrolled() {
+//     const scrollTop = window.scrollY;
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
+//   // Make sure they scroll more than 5px
+//     if (Math.abs(lastScrollTop - scrollTop) <= 5) {
+//         return;
+//     }
 
-function hasScrolled() {
-    const scrollTop = window.scrollY;
+//   // If scrolling down and past the header, keep the sticky container hidden
+//     if (scrollTop > lastScrollTop) {
+//         stickyContainer.classList.remove('show');
+//     } else {
+//     // If scrolling up, show the sticky container
+//         stickyContainer.classList.add('show');
+//     }
 
-  // Make sure they scroll more than 5px
-    if (Math.abs(lastScrollTop - scrollTop) <= 5) {
-        return;
-    }
-
-  // If scrolling down and past the header, keep the sticky container hidden
-    if (scrollTop > lastScrollTop) {
-        stickyContainer.classList.remove('show');
-    } else {
-    // If scrolling up, show the sticky container
-        stickyContainer.classList.add('show');
-    }
-
-    lastScrollTop = scrollTop;
-}
+//     lastScrollTop = scrollTop;
+// }
 
 
 // sidebar pop out
