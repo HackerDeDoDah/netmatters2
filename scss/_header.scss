@@ -3,24 +3,26 @@
 
 // Container and Header Styling
 header {
+    display: flex;
+    visibility: visible;
     background-color: #fff;
     width: 100%;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid transparent;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin: 0;
 }
 
 .container-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #fff;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    height: 180px;
-    padding: 0 20px;
+    height: 100px;
     margin: 0;
     @media (min-width: 768px) {
         height: 80px;
@@ -45,9 +47,10 @@ nav img {
     display: flex;
     max-height: auto;
     max-width: auto;
+    max-width: 370px;
     margin-left: 0;
     @media (max-width: 450px) {
-        width: 220px;
+        width: 200px;
     }
 }
 
@@ -85,7 +88,7 @@ nav img {
 }
 
 .btn-light-grey {
-    background-color: #919191;
+    background-color: #999aa2;
     &:hover {
         background-color: #7a7a7a;
     }
@@ -104,13 +107,14 @@ nav img {
     display: flex;
     align-items: center;
     width: 290px;
-    border: 1px solid #a8a8a897;
+    border: 0.5px solid #999aa2;
     border-radius: 0 3px 3px 0;
 }
 
 .search-input {
     padding: 8px 10px 8px 10px;
     font-size: 14px;
+    color: #999aa2;
     outline: none;
     height: 52px;
     box-sizing: border-box;
@@ -122,7 +126,7 @@ nav img {
     right: 0px;
     color: #fff;
     font-size: 1.5rem;
-    background-color: #919191;
+    background-color: #999aa2;
     border: 1px solid transparent;
     padding: 12px 16px;
     border-radius: 4px;
@@ -137,15 +141,16 @@ nav img {
 
 // General styling for the hamburger container
 .burger-container {
-    width: 55px;
-    height: 52px;
-    display: flex;
+    min-width: 63px;
+    height: 55px;
+    display: block;
     flex-direction: column;
     border-radius: 3px;
-    background-color: #21232c;
+    background-color: #2f313d;
     padding: 0 12px;
     justify-content: center;
     align-content: center;
+    z-index: 1001;
     cursor: pointer;
     &:hover {
         background-color: #0a0a0d;
@@ -159,7 +164,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 33px;
     height: 55px;
     cursor: pointer;
 }
@@ -169,7 +174,9 @@ nav img {
     width: 100%;
     height: 4px;
     background: #fff;
-    margin: 3px 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -194,7 +201,7 @@ nav img {
 .search-block {
     display: none;
     border: 1px solid transparent;
-    background-color: #afafaf;
+    background-color: #999aa2;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -204,17 +211,20 @@ nav img {
 }
 
 .phone {
-    display: block;
-    font-size: 1.5rem;
+    display: flex;
+    color: #2f313d;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
 .search-bar2 {
+    position: relative;
     display: none;
     align-items: center;
-    width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 25px;
+    min-width: 300px;
+    height: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     overflow: hidden;
     background-color: #f9f9f9;
     .search-input {
@@ -224,18 +234,16 @@ nav img {
         outline: none;
         font-size: 16px;
     }
-    
     .search-button {
-        background-color: #ccc;
+        background-color: #999aa2;
         border: none;
         color: #333;
         padding: 10px;
         cursor: pointer;
         font-size: 16px;
-        border-left: 1px solid #ccc;
+        border-left: 1px solid #999aa2;
         transition: background-color 0.3s;
     }
-    
     .search-button:hover {
         background-color: #a0a0a0;
     }

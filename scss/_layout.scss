@@ -75,9 +75,7 @@ body {
 }
 
 .container-nav {
-    .search-bar2 {
-        display: flex;
-    }
+    height: fit-content;
     @media (max-width: 768px) {
         height: 100px;
         .button, .search-bar {
@@ -87,7 +85,7 @@ body {
             display: flex;
         }
         .phone {
-            display: block;
+            display: flex;
         }
     }
     @media (min-width: 769px) {
@@ -99,10 +97,16 @@ body {
         .button, .search-block {
             display: none;
         }
+        .search-bar2 {
+            display: none;
+        }
     }
 
     @media (min-width: 992px) {
         min-width: 970px;
+        .search-bar2 {
+            display: none;
+        }
         .search-bar {
             display: none;
         }
@@ -111,6 +115,9 @@ body {
         }
         .button {
             display: block;
+        }
+        .phone {
+            display: none;
         }
     }
 
@@ -156,18 +163,24 @@ body {
 }
 
 .sticky-container {
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     width: 100%;
     background-color: #fff;
     color: white;
-    transition: top 0.3s ease;
+    padding: 15px 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sticky-container.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
     z-index: 1000;
 }
 
-// .sticky-container {
-//     .show {
-//         top: 0; // When scrolling up, move to the top of the screen
-//     }
-// }
+.sticky-container.sticky.show {
+    transform: translateY(0);
+}

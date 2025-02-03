@@ -39,8 +39,8 @@ body {
 
 // On smaller screens
 
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
+@media screen and (max-width: 450px) {
+    .sidebar {padding-top: 80px;}
     .sidebar a {font-size: 18px;}
 }
 
@@ -54,4 +54,31 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
+}
+
+#mySidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0; // Starts hidden
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+// .burger-container {
+//     position: fixed;
+//     top: 10px;
+//     left: 10px;
+//     cursor: pointer;
+//     z-index: 1001;
+// }
+
+.hamburger {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.open {
+    transform: rotate(90deg);
 }

@@ -43,17 +43,17 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    height: fit-content;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 100px;
+    // margin-top: 30px;
+    // margin-bottom: 30px;
     position: relative;
 }
 
 .tool-tip {
     position: relative;
     display: inline-block;
-    overflow-y: visible;
-    z-index: 999;
+    overflow: visible;
+    z-index: 9999;
 }
 
 .tool-tip img {
@@ -71,55 +71,67 @@
 }
 
 .tool-tip .tool-tip-text {
-    visibility: hidden;
+    opacity: 0;
     width: 220px;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color, #333);
     color: #fff;
     text-align: center;
     padding: 8px;
     border-radius: 6px;
     position: absolute;
-    bottom: 100%;
+    bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 999;
-    transition: visibility 0.3s;
-
-    button {
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 0.7rem;
-        background-color: var(--button-bg, #007bff);
-        color: #fff;
-        border: none;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: var(--button-hover-bg, #0056b3);
-        }
-    }
+    z-index: 99999; /* Ensure it's above everything */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    pointer-events: none; /* Prevents flickering on hover */
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Tooltip arrow */
 .tool-tip .tool-tip-text::after {
     content: "";
     position: absolute;
-    z-index: 999;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 10px;
     border-style: solid;
-    border-color: var(--bg-color) transparent transparent transparent;
-    
+    border-color: var(--bg-color, #333) transparent transparent transparent;
 }
 
-.tool-tip:hover .tool-tip-text {
-    visibility: visible;
-    overflow: visible;
-    z-index: 999;
+/* Ensure button inside tooltip is styled properly */
+.tool-tip .tool-tip-text button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    background-color: var(--button-bg, #007bff);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
 }
+
+.tool-tip .tool-tip-text button:hover {
+    background-color: var(--button-hover-bg, #0056b3);
+}
+
+/* Show tooltip on hover */
+.tool-tip:hover .tool-tip-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Override parent containers restricting visibility */
+body, .tool-tip {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 99999 !important;
+}
+
+
 
 
 // cookie popup
