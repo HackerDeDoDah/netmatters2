@@ -75,21 +75,40 @@ body {
 }
 
 .container-nav {
-    height: fit-content;
-    @media (max-width: 768px) {
-        height: 100px;
-        .button, .search-bar {
-            display: none;
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo phone burger"
+            "search2 search2 search2";
+
+
+        img {
+            grid-area: logo;
         }
-        .search-bar2 {
+
+        .phone {
+            grid-area: phone;
             display: flex;
         }
-        .phone {
+
+        .burger-container {
+            grid-area: burger;
+        }
+
+        .button,
+        .search-bar {
+            display: none;
+        }
+
+        .container-nav .search-bar2 {
+            grid-area: search2;
             display: flex;
         }
     }
+
     @media (min-width: 769px) {
-        min-width: 769px;
         
         .search-bar {
             display: block;
@@ -103,7 +122,6 @@ body {
     }
 
     @media (min-width: 992px) {
-        min-width: 970px;
         .search-bar2 {
             display: none;
         }
@@ -122,7 +140,6 @@ body {
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;
         .button, .search-bar {
             display: block;
         }

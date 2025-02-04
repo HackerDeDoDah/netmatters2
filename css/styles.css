@@ -99,27 +99,33 @@ body {
   }
 }
 
-.container-nav {
-  height: fit-content;
-}
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container-nav {
-    height: 100px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo phone burger" "search2 search2 search2";
   }
-  .container-nav .button, .container-nav .search-bar {
-    display: none;
-  }
-  .container-nav .search-bar2 {
-    display: flex;
+  .container-nav img {
+    grid-area: logo;
   }
   .container-nav .phone {
+    grid-area: phone;
+    display: flex;
+  }
+  .container-nav .burger-container {
+    grid-area: burger;
+  }
+  .container-nav .button,
+  .container-nav .search-bar {
+    display: none;
+  }
+  .container-nav .container-nav .search-bar2 {
+    grid-area: search2;
     display: flex;
   }
 }
 @media (min-width: 769px) {
-  .container-nav {
-    min-width: 769px;
-  }
   .container-nav .search-bar {
     display: block;
   }
@@ -131,9 +137,6 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .container-nav {
-    min-width: 970px;
-  }
   .container-nav .search-bar2 {
     display: none;
   }
@@ -151,9 +154,6 @@ body {
   }
 }
 @media (min-width: 1260px) {
-  .container-nav {
-    width: 1200px;
-  }
   .container-nav .button, .container-nav .search-bar {
     display: block;
   }
@@ -1866,7 +1866,7 @@ header {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  height: 100px;
+  height: fit-content;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -2048,10 +2048,13 @@ nav img {
 }
 
 .phone {
-  display: flex;
+  display: none;
   color: #2f313d;
   font-size: 1.7rem;
   cursor: pointer;
+}
+.phone:hover {
+  text-decoration: underline;
 }
 
 .search-bar2 {
