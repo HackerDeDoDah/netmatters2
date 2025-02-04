@@ -1889,8 +1889,8 @@ nav {
 nav img {
   display: flex;
   max-height: auto;
-  max-width: auto;
   max-width: 370px;
+  width: 100%;
   margin-left: 0;
 }
 @media (max-width: 450px) {
