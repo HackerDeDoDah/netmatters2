@@ -1,79 +1,106 @@
 @use 'mixins' as m;
 
+.example {
+    position: relative;
 
-.hero img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    margin-top: 0px;
-}
+    .hero img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        margin-top: 0px;
+    }
 
-.overlay {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.776));
-    position: absolute;
-    width: 100%;
-    height: 550px;
-    z-index: 20;
-    margin-top: 0px;
-}
-
-.hero-container {
-    display: flex;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    .hero-overlay {
-        display: flex;
-        flex-direction: column;
+    .overlay {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.776));
         position: absolute;
-        padding: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -500px;
-        z-index: 22;
-        text-align: center;
-        align-items: center; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        z-index: 2; 
+    }
+
+    .hero-container {
+        display: flex;
         justify-content: center;
-        @include m.responsive;
-        h1 {
-            max-width: 400px;
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-        p {
-            max-width: 400px;
-            font-size: 1.2rem;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            line-height: 1.5rem;
-            color: #fff;
-        }
-        .car-btn {
-            padding: 15px;
-            font-size: 1rem;
-            font-weight: bold;
-            width: 200px;
-            border-radius: 30px;
-            background-color: #926fb1;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            &:hover {
-                background-color: #7a5f9a;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 1200px;
+        z-index: 3; 
+
+        .hero-overlay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            max-width: 700px;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                color: #fff;
+                margin-bottom: 20px;
+                max-width: 400px;
+            }
+
+            .car-btn {
+                padding: 15px;
+                font-size: 1rem;
+                font-weight: bold;
+                width: 200px;
+                border-radius: 30px;
+                color: #fff;
+                border: none;
+                background-color: #926fb1;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #7a5f9a;
+                }
             }
         }
-        @media (min-width: 768px) {
-            text-align: left;
-            align-items: flex-start;
-        }
-    } 
+    }
 }
 
-.p1 a {
-    font-size: 50px;
+//--- Dots ----
+.square1-dots {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 4;
+
+    button {
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &.active {
+            background-color: #fff;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
 }

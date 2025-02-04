@@ -266,3 +266,22 @@ sidebar.addEventListener("touchmove", function (event) {
         toggleNav();
     }
 }, false);
+
+
+//-----image carousel----------------
+
+$(document).ready(function() {
+    $('.example').square1({
+        auto_start: true, // Autoplay enabled
+        lazy_load: true,  // Enable lazy loading
+        animation: 'slide', // Slide transition effect
+        slide_duration: 5000, // 5 seconds per slide
+        transition_time: 500, // Transition speed
+        prev_next_nav: 'none', // Show navigation arrows
+        dots_nav: 'inside', // Show pagination dots
+        caption: 'outside', // Show captions outside slider
+        keyboard: true, // Enable keyboard navigation
+        gestures: true, // Enable touch gestures
+        fill_mode: 'cover' // Ensure images fit properly
+    });
+});
