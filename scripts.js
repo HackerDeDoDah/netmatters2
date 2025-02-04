@@ -47,50 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// // sidebar pop out
-
-// function toggleNav() {
-//     var sidebar = document.getElementById("mySidebar");
-//     var body = document.querySelector("body");
-//     var hamburger = document.querySelector(".hamburger");
-
-//     if (sidebar.style.width === "0px" || sidebar.style.width === "" || sidebar.style.width === "0") {
-//         var screenWidth = window.innerWidth;
-
-//         if (screenWidth < 768) {
-//             sidebar.style.width = "100%";
-//             body.style.marginRight = "0";
-//         } else {
-//             sidebar.style.width = "360px"; 
-//             body.style.marginRight = "360px";
-//         }
-
-//         // Add 'open' class to animate hamburger icon
-//         hamburger.classList.add("open");
-
-//     } else {
-//         sidebar.style.width = "0";
-//         body.style.marginRight = "0";
-
-//         // Remove 'open' class to revert hamburger icon
-//         hamburger.classList.remove("open");
-//     }
-// }
-
-// // Attach event listener to the button
-// document.querySelector(".burger-container").addEventListener('click', toggleNav);
-
-// // Ensure sidebar state is maintained on resize
-// window.addEventListener('resize', function() {
-//     var sidebar = document.getElementById("mySidebar");
-//     if (sidebar.style.width !== "0px" && sidebar.style.width !== "") {
-//         toggleNav();
-//     }
-// });
-
-
-
-
 // partner carousel top -----------------
 
 document.addEventListener("DOMContentLoaded", () => {
