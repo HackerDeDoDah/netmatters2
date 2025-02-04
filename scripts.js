@@ -270,18 +270,16 @@ sidebar.addEventListener("touchmove", function (event) {
 
 //-----image carousel----------------
 
-$(document).ready(function() {
-    $('.example').square1({
-        auto_start: true, // Autoplay enabled
-        lazy_load: true,  // Enable lazy loading
-        animation: 'slide', // Slide transition effect
-        slide_duration: 5000, // 5 seconds per slide
-        transition_time: 500, // Transition speed
-        prev_next_nav: 'none', // Show navigation arrows
-        dots_nav: 'inside', // Show pagination dots
-        caption: 'outside', // Show captions outside slider
-        keyboard: true, // Enable keyboard navigation
-        gestures: true, // Enable touch gestures
-        fill_mode: 'cover' // Ensure images fit properly
+$(document).ready(function(){
+    $('.slick-carousel').slick({
+        autoplay: true,           // Auto-play enabled
+        autoplaySpeed: 5000,      // Slide duration in milliseconds
+        speed: 300,               // Transition speed
+        fade: false,              // fade effect
+        dots: true,               // Pagination dots
+        arrows: false,            // navigation arrows
+        infinite: true,           // Infinite loop
+        pauseOnHover: true,       // pause on hover
+        cssEase: 'linear'         // transition effect
     });
 });
