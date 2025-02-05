@@ -1119,7 +1119,7 @@ body, .tool-tip {
 }
 .card-tags .p2 a {
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #222323;
 }
 .card-tags .p2 a:hover {
@@ -2936,12 +2936,12 @@ nav img {
   display: flex;
   gap: 10px;
   list-style: none;
+  z-index: 300;
 }
 @media screen and (max-width: 768px) {
   .slick-dots {
     gap: 5px;
     width: 200px;
-    left: auto;
   }
 }
 
@@ -2967,8 +2967,9 @@ nav img {
   display: block;
 }
 
-.slick-dots li.slick-active button:before {
+ul.slick-dots li.slick-active::before {
   color: orange;
+  font-size: 2rem;
 }
 
 /* Outer ring only appears on the active dot */
@@ -3041,7 +3042,6 @@ nav img {
   position: relative;
   left: 0;
   right: 0;
-  width: 167.14px;
   border: 1px solid transparent;
   text-align: center;
   justify-content: center;
@@ -3089,6 +3089,11 @@ nav img {
 }
 .menu-item:hover .cc-6 {
   background-color: #f62459;
+}
+@media screen and (min-width: 992px) {
+  .menu-item {
+    width: 100%;
+  }
 }
 
 .dropdown-content {

@@ -234,6 +234,8 @@ $(document).ready(function(){
         infinite: true,           // Infinite loop
         pauseOnHover: true,       // pause on hover
         cssEase: 'linear'         // transition effect
+        // ,
+        // appendDots: $('.dots')
     });
 });
 
@@ -243,7 +245,7 @@ $(document).on("afterChange", ".slick-slider", function () {
         if ($(this).hasClass("slick-active")) {
             button.css("background-color", "#fff");
         } else {
-            button.css("background-color", "transparent");
+            button.css("background-color", "#fff");
         }
     });
 });

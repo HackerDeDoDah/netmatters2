@@ -25,7 +25,6 @@
     position: relative;
     left: 0;
     right: 0; 
-    width: 167.14px; 
     border: 1px solid transparent;
     text-align: center;
     justify-content: center;
@@ -42,6 +41,9 @@
     }
     &:hover {
         @include m.no-c;
+    }
+    @media screen and (min-width: 992px) {
+        width: 100%;
     }
 }
 
