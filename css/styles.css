@@ -2048,10 +2048,8 @@ nav img {
   transition: all 0.3s ease-in-out;
 }
 
-/* Hamburger animation when sidebar is open */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 9px);
-  margin-left: 5px;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -2060,7 +2058,6 @@ nav img {
 
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -9px);
-  margin-left: 5px;
 }
 
 .search-block {
@@ -2771,6 +2768,7 @@ nav img {
   align-items: left;
   flex-direction: column;
   position: absolute;
+  margin-left: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2783,6 +2781,7 @@ nav img {
     align-items: center;
     text-align: center;
     width: 90%;
+    margin-left: auto;
   }
 }
 .slick-carousel .slide .hero-container .hero-overlay {
@@ -2929,6 +2928,7 @@ nav img {
 
 /* Pagination Dots */
 .slick-dots {
+  width: 250px;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -2939,24 +2939,47 @@ nav img {
 }
 @media screen and (max-width: 768px) {
   .slick-dots {
-    gap: 5;
+    gap: 5px;
+    width: 200px;
+    left: auto;
   }
 }
+
+.slick-dots li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* Ensure enough space for the outer ring */
+  height: 24px;
+}
+
+/* All dots are always visible */
 .slick-dots li button {
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
-  border: 2px solid transparent;
+  width: 10px; /* Make dots slightly smaller */
+  height: 10px;
+  background-color: #fff; /* Always white */
+  border: none;
   border-radius: 50%;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
 }
-.slick-dots li.slick-active button {
-  background-color: #fff;
-  border-color: #fff;
+
+.slick-dots li.slick-active button:before {
+  color: orange;
 }
-.slick-dots li button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+
+/* Outer ring only appears on the active dot */
+.slick-dots li.slick-active::after {
+  content: "";
+  position: absolute;
+  width: 18px; /* Outer ring */
+  height: 18px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 :root {

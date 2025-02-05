@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    // Set placeholder height equal to sticky container (for layout stability)
+    // Set placeholder height equal to sticky container
     placeholder.style.height = `${stickyContainer.offsetHeight}px`;
 
     function checkSticky() {
@@ -169,26 +169,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleNav() {
     var sidebar = document.getElementById("mySidebar");
-    var body = document.querySelector("body");
+    var body = document.querySelector(".full-container");
     var hamburger = document.querySelector(".hamburger");
 
     if (sidebar.style.width === "0px" || sidebar.style.width === "" || sidebar.style.width === "0") {
         var screenWidth = window.innerWidth;
+        var sidebarWidth = screenWidth < 450 ? 250 : 360;
 
-        if (screenWidth < 768) {
-            sidebar.style.width = "100%";
-            body.style.marginRight = "0";
-        } else {
-            sidebar.style.width = "360px"; 
-            body.style.marginRight = "360px";
-        }
+        sidebar.style.width = sidebarWidth + "px";
+        body.style.transform = "translateX(-" + sidebarWidth + "px)";
+        body.style.transition = "transform 0.3s ease";
 
         // Add 'open' class to animate hamburger icon
         hamburger.classList.add("open");
 
     } else {
         sidebar.style.width = "0";
-        body.style.marginRight = "0";
+        body.style.transform = "translateX(0)";
 
         // Remove 'open' class to revert hamburger icon
         hamburger.classList.remove("open");
@@ -218,7 +215,7 @@ sidebar.addEventListener("touchmove", function (event) {
     let moveX = event.touches[0].clientX;
     let diffX = moveX - startX;
 
-    if (diffX < -50) { // If swiping left
+    if (diffX < 50) { // If swiping right
         toggleNav();
     }
 }, false);
@@ -237,5 +234,16 @@ $(document).ready(function(){
         infinite: true,           // Infinite loop
         pauseOnHover: true,       // pause on hover
         cssEase: 'linear'         // transition effect
+    });
+});
+
+$(document).on("afterChange", ".slick-slider", function () {
+    $(".slick-dots li").each(function () {
+        let button = $(this).find("button");
+        if ($(this).hasClass("slick-active")) {
+            button.css("background-color", "#fff");
+        } else {
+            button.css("background-color", "transparent");
+        }
     });
 });

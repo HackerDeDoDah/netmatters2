@@ -29,6 +29,7 @@
             align-items: left;
             flex-direction: column;
             position: absolute;
+            margin-left: 40px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -39,6 +40,7 @@
                 align-items: center;
                 text-align: center;
                 width: 90%;
+                margin-left: auto;
             }
             .hero-overlay {
                 display: flex;
@@ -95,6 +97,7 @@
 
 /* Pagination Dots */
 .slick-dots {
+    width: 250px;
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -102,28 +105,47 @@
     display: flex;
     gap: 10px;
     list-style: none;
+    
     @media screen and (max-width: 768px) {
-        gap: 5;
+        gap: 5px;
+        width: 200px;
+        left: auto;
     }
+}
 
-    li {
-        button {
-            width: 16px;
-            height: 16px;
-            background-color: transparent;
-            border: 2px solid transparent;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        
-        &.slick-active button {
-            background-color: #fff;
-            border-color: #fff;
-        }
+.slick-dots li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Ensure enough space for the outer ring */
+    height: 24px;
+}
 
-        button:hover {
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-    }
+/* All dots are always visible */
+.slick-dots li button {
+    width: 10px; /* Make dots slightly smaller */
+    height: 10px;
+    background-color: #fff; /* Always white */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+}
+
+.slick-dots li.slick-active button:before{
+    color: orange
+}
+
+/* Outer ring only appears on the active dot */
+.slick-dots li.slick-active::after {
+    content: "";
+    position: absolute;
+    width: 18px; /* Outer ring */
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
