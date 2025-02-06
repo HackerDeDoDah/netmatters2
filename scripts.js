@@ -167,41 +167,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Sidebar Pop-out & Swipe-to-Close
 
+// function toggleNav() {
+//     var sidebar = document.getElementById("mySidebar");
+//     var body = document.querySelector(".full-container");
+//     var hamburger = document.querySelector(".hamburger");
+
+//     if (sidebar.style.width === "0px" || sidebar.style.width === "" || sidebar.style.width === "0") {
+//         var screenWidth = window.innerWidth;
+//         var sidebarWidth = screenWidth < 450 ? 250 : 360;
+
+//         sidebar.style.width = sidebarWidth + "px";
+//         body.style.transform = "translateX(-" + sidebarWidth + "px)";
+//         body.style.transition = "transform 0.3s ease";
+
+//         // Add 'open' class to animate hamburger icon
+//         hamburger.classList.add("open");
+
+//     } else {
+//         sidebar.style.width = "0";
+//         body.style.transform = "translateX(0)";
+
+//         // Remove 'open' class to revert hamburger icon
+//         hamburger.classList.remove("open");
+//     }
+// }
+
+// // Attach event listener to the button
+// document.querySelector(".burger-container").addEventListener('click', toggleNav);
+
+// // Ensure sidebar state is maintained on resize
+// window.addEventListener('resize', function() {
+//     var sidebar = document.getElementById("mySidebar");
+//     if (sidebar.style.width !== "0px" && sidebar.style.width !== "") {
+//         toggleNav();
+//     }
+// });
+
 function toggleNav() {
-    var sidebar = document.getElementById("mySidebar");
     var body = document.querySelector(".full-container");
+    // var overlay = document.querySelector(".overlay");
     var hamburger = document.querySelector(".hamburger");
 
-    if (sidebar.style.width === "0px" || sidebar.style.width === "" || sidebar.style.width === "0") {
-        var screenWidth = window.innerWidth;
-        var sidebarWidth = screenWidth < 450 ? 250 : 360;
+    var isOpen = body.style.transform === "translateX(-360px)";
 
-        sidebar.style.width = sidebarWidth + "px";
-        body.style.transform = "translateX(-" + sidebarWidth + "px)";
-        body.style.transition = "transform 0.3s ease";
-
-        // Add 'open' class to animate hamburger icon
+    if (!isOpen) {
+        body.style.transform = "translateX(-360px)";
         hamburger.classList.add("open");
-
+        // overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     } else {
-        sidebar.style.width = "0";
         body.style.transform = "translateX(0)";
-
-        // Remove 'open' class to revert hamburger icon
         hamburger.classList.remove("open");
+        // overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
 }
 
 // Attach event listener to the button
 document.querySelector(".burger-container").addEventListener('click', toggleNav);
 
-// Ensure sidebar state is maintained on resize
-window.addEventListener('resize', function() {
-    var sidebar = document.getElementById("mySidebar");
-    if (sidebar.style.width !== "0px" && sidebar.style.width !== "") {
-        toggleNav();
-    }
-});
 
 // Swipe-to-close on Mobile
 let startX = 0;

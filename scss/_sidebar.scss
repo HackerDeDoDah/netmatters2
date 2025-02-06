@@ -2,7 +2,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     top: 0;
     right: 0;
     background-color: #363B48;
@@ -56,29 +56,21 @@ body {
     }
 }
 
-#mySidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0; // Starts hidden
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: width 0.3s ease-in-out;
-    overflow-x: hidden;
-}
-
-// .burger-container {
-//     position: fixed;
-//     top: 10px;
-//     left: 10px;
-//     cursor: pointer;
-//     z-index: 1001;
-// }
-
 .hamburger {
     transition: transform 0.3s ease-in-out;
 }
 
 .hamburger.open {
     transform: rotate(90deg);
+}
+
+#mySidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    height: 100%;
+    background-color: #333;
+    z-index: 1; 
+    transition: transform 0.3s ease;
 }

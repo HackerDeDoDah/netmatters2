@@ -19,9 +19,8 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-            z-index: 2;
+            z-index: 4;
         }
-    
     
         .hero-container {
             display: flex;
@@ -35,7 +34,7 @@
             transform: translate(-50%, -50%);
             width: 100%;
             max-width: 1200px;
-            z-index: 3;
+            z-index: 5;
             @media screen and (max-width: 768px) {
                 align-items: center;
                 text-align: center;
@@ -50,7 +49,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: -550px;
-                z-index: 27;
+                z-index: 40;
                 text-align: center;
                 align-items: center; 
                 justify-content: center;
@@ -95,7 +94,7 @@
 }
 
 
-/* Pagination Dots */
+//---- Pagination Dots-----
 .slick-dots {
     width: 250px;
     position: absolute;
@@ -119,15 +118,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px; /* Ensure enough space for the outer ring */
+    width: 24px; 
     height: 24px;
 }
 
-/* All dots are always visible */
+//---- All dots always visible ----
 .slick-dots li button {
-    width: 10px; /* Make dots slightly smaller */
+    width: 10px; 
     height: 10px;
-    background-color: #fff; /* Always white */
+    background-color: #fff;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -141,11 +140,11 @@ ul.slick-dots li.slick-active::before{
     font-size: 2rem;
 }
 
-/* Outer ring only appears on the active dot */
+//---- Outer ring on active dot---
 .slick-dots li.slick-active::after {
     content: "";
     position: absolute;
-    width: 18px; /* Outer ring */
+    width: 18px; //--- Outer ring
     height: 18px;
     border: 2px solid white;
     border-radius: 50%;
