@@ -86,7 +86,7 @@
                 cursor: pointer;
                 transition: background-color 0.3s ease;
                 &:hover {
-                    background-color: #7a5f9a;
+                    @include m.n-c;
                 }
             }
         }
@@ -98,11 +98,11 @@
 .slick-dots {
     width: 250px;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 5px;
     list-style: none;
     z-index: 300;
     
@@ -124,8 +124,8 @@
 
 //---- All dots always visible ----
 .slick-dots li button {
-    width: 10px; 
-    height: 10px;
+    width: 12px; 
+    height: 12px;
     background-color: #fff;
     border: none;
     border-radius: 50%;
@@ -133,19 +133,27 @@
     transition: all 0.3s ease;
     position: relative;
     display: block;
+    &:hover {
+        background-color: #727070;
+    }
 }
 
-ul.slick-dots li.slick-active::before{
-    color: orange;
+.slick-dots li button:before {
+    content: '';
+
+}
+
+ul.slick-dots li.slick-active::before {
     font-size: 2rem;
+    content: none;
 }
 
 //---- Outer ring on active dot---
 .slick-dots li.slick-active::after {
     content: "";
     position: absolute;
-    width: 18px; //--- Outer ring
-    height: 18px;
+    width: 24px; //--- Outer ring
+    height: 24px;
     border: 2px solid white;
     border-radius: 50%;
     box-sizing: border-box;

@@ -2053,7 +2053,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 9px);
+  transform: rotate(45deg) translate(5px, 10px);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -2061,7 +2061,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -9px);
+  transform: rotate(-45deg) translate(5px, -10px);
 }
 
 .search-block {
@@ -2926,18 +2926,33 @@ nav img {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.slick-carousel .slide .hero-container .car-btn:hover {
-  background-color: #7a5f9a;
+.slick-carousel .slide .hero-container .car-btn:hover .n-1 {
+  color: #67809f;
+}
+.slick-carousel .slide .hero-container .car-btn:hover .n-2 {
+  color: #4183d7;
+}
+.slick-carousel .slide .hero-container .car-btn:hover .n-3 {
+  color: #2ecc71;
+}
+.slick-carousel .slide .hero-container .car-btn:hover .n-4, .slick-carousel .slide .hero-container .car-btn:hover .n-7 {
+  color: #ce4125;
+}
+.slick-carousel .slide .hero-container .car-btn:hover .n-5 {
+  color: #926fb1;
+}
+.slick-carousel .slide .hero-container .car-btn:hover .n-6 {
+  color: #C13584;
 }
 
 .slick-dots {
   width: 250px;
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 5px;
   list-style: none;
   z-index: 300;
 }
@@ -2958,8 +2973,8 @@ nav img {
 }
 
 .slick-dots li button {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: #fff;
   border: none;
   border-radius: 50%;
@@ -2968,17 +2983,24 @@ nav img {
   position: relative;
   display: block;
 }
+.slick-dots li button:hover {
+  background-color: #727070;
+}
+
+.slick-dots li button:before {
+  content: "";
+}
 
 ul.slick-dots li.slick-active::before {
-  color: orange;
   font-size: 2rem;
+  content: none;
 }
 
 .slick-dots li.slick-active::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border: 2px solid white;
   border-radius: 50%;
   box-sizing: border-box;
@@ -4022,7 +4044,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #67809f transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4041,7 +4063,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #4183d7 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4060,7 +4082,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #2ecc71 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4079,7 +4101,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #ce4125 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4098,7 +4120,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #926fb1 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4117,7 +4139,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 83px 0 83px;
+  border-width: 30px 85px 0 85px;
   border-color: #f62459 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4136,7 +4158,7 @@ ul.slick-dots li.slick-active::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 30px 84px 0 84px;
+  border-width: 30px 85px 0 85px;
   border-color: #ce4125 transparent transparent transparent;
   top: 83px;
   left: 0;
@@ -4239,4 +4261,134 @@ body {
   background-color: #333;
   z-index: 1;
   transition: transform 0.3s ease;
+}
+
+.slick-list {
+  overflow: hidden !important;
+}
+
+.slick-track {
+  display: flex; /* Ensures proper alignment */
+}
+
+.slick-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4287f5;
+  --bg-color: #333645;
+}
+
+.c-1 {
+  background-color: #67809f;
+}
+
+.c-2 {
+  background-color: #4183d7;
+}
+
+.c-3 {
+  background-color: #2ecc71;
+}
+
+.c-4, .c-7 {
+  background-color: #ce4125;
+}
+
+.c-5 {
+  background-color: #926fb1;
+}
+
+.c-6 {
+  background-color: #f62459;
+}
+
+.c-8 {
+  background-color: #f7b322;
+}
+
+.mobile-body {
+  background-color: #535870;
+}
+
+.mobile-menu-item {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid transparent;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #333645;
+  cursor: pointer;
+}
+.mobile-menu-item .fa-solid,
+.mobile-menu-item .fa-sharp {
+  color: #fff;
+}
+.mobile-menu-item:not(:hover) .n-1 {
+  color: #67809f;
+}
+.mobile-menu-item:not(:hover) .n-2 {
+  color: #4183d7;
+}
+.mobile-menu-item:not(:hover) .n-3 {
+  color: #2ecc71;
+}
+.mobile-menu-item:not(:hover) .n-4, .mobile-menu-item:not(:hover) .n-7 {
+  color: #ce4125;
+}
+.mobile-menu-item:not(:hover) .n-5 {
+  color: #926fb1;
+}
+.mobile-menu-item:not(:hover) .n-6 {
+  color: #C13584;
+}
+.mobile-menu-item:hover .cc-1 {
+  background-color: #f7b322;
+}
+.mobile-menu-item:hover .cc-2 {
+  background-color: #4183d7;
+}
+.mobile-menu-item:hover .cc-3 {
+  background-color: #2ecc71;
+}
+.mobile-menu-item:hover .cc-4, .mobile-menu-item:hover .cc-7 {
+  background-color: #ce4125;
+}
+.mobile-menu-item:hover .cc-5 {
+  background-color: #926fb1;
+}
+.mobile-menu-item:hover .cc-6 {
+  background-color: #f62459;
+}
+
+.mobile-content-container {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 105px;
+  left: 0;
+  z-index: 1000;
+}
+
+.mobile-drop-down-menu h3 {
+  text-align: center;
+  color: #fff;
+}
+.mobile-drop-down-menu li {
+  color: #fff;
+  list-style-type: none;
+  padding: 10px;
+}
+.mobile-drop-down-menu li .fa-solid, .mobile-drop-down-menu li .fa-regular {
+  margin-right: 15px;
 }/*# sourceMappingURL=styles.css.map */

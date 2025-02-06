@@ -74,3 +74,16 @@ body {
     z-index: 1; 
     transition: transform 0.3s ease;
 }
+
+.slick-list {
+    overflow: hidden !important;
+}
+
+.slick-track {
+    display: flex; /* Ensures proper alignment */
+}
+
+.slick-slide {
+    margin: 0 !important;
+    padding: 0 !important;
+}

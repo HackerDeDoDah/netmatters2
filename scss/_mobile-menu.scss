@@ -1,0 +1,60 @@
+@use 'mixins' as m;
+
+.mobile-body {
+    background-color: #535870;
+}
+
+.mobile-menu-item {
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+    top: 0;
+    left: 0;
+    right: 0; 
+    border: 1px solid transparent;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #333645;
+    cursor: pointer;
+    .fa-solid,
+    .fa-sharp {
+        color: #fff;
+    }
+    &:not(:hover) {
+        @include m.n-c;
+    }
+    &:hover {
+        @include m.no-c;
+    }
+}
+
+.mobile-content-container {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 1000;
+}
+
+.mobile-drop-down-menu {
+
+    h3 {
+        text-align: center;
+        color: #fff;
+    }
+    li {
+        color: #fff;
+        list-style-type: none;
+        padding: 10px;
+        .fa-solid, .fa-regular {
+            margin-right: 15px;
+            
+        }
+    }
+    
+}
