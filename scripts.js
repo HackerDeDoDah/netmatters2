@@ -183,7 +183,7 @@ function toggleNav() {
 function openNav() {
     var body = document.querySelector(".full-container");
     var screenWidth = window.innerWidth;
-    var sidebarWidth = screenWidth < 450 ? 250 : 360;
+    var sidebarWidth = screenWidth < 450 ? 275 : 360;
 
     body.style.transform = "translateX(-" + sidebarWidth + "px)";
     body.style.transition = "transform 0.3s ease";

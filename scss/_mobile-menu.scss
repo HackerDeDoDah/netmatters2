@@ -1,26 +1,33 @@
 @use 'mixins' as m;
 
 .mobile-body {
-    background-color: #535870;
+    display: flex;
+    background-color: #333645;
+    .fa-regular, .fa-solid {
+        width: 25px;
+    }
+    @media screen and (max-width: 450px) {
+        width: 275px;
+    }
 }
 
 .mobile-menu-item {
     display: flex;
     flex-direction: column;
-    // position: relative;
+    width: 167px;
     top: 0;
-    left: 0;
-    right: 0; 
-    border: 1px solid transparent;
+    margin-left: auto;
+    margin-right: auto; 
     text-align: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     background-color: #333645;
     cursor: pointer;
     .fa-solid,
     .fa-sharp {
         color: #fff;
+        margin-top: 20px;
     }
     &:not(:hover) {
         @include m.n-c;
@@ -32,13 +39,14 @@
 
 .mobile-content-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     margin: 0 auto;
     position: absolute;
-    top: 105px;
+    top: 0;
     left: 0;
     z-index: 1000;
+    overflow-y: visible;
 }
 
 .mobile-drop-down-menu {
@@ -56,5 +64,15 @@
             
         }
     }
+    
+}
+
+.box {
+    border: 2px solid #605f5f;
+}
+
+
+
+@media screen and (max-width: 768px) {
     
 }
