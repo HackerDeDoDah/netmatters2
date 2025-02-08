@@ -4201,6 +4201,31 @@ ul.slick-dots li.slick-active::before {
   background-color: #333645;
   overflow-x: hidden;
   transition: 0.5s;
+  text-transform: uppercase;
+}
+.sidebar .fa-angles-right {
+  justify-self: center;
+  align-self: center;
+  color: #fff;
+  font-size: 8px;
+  margin: 5px;
+  border: 1px solid transparent;
+}
+
+.sidething {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #333645;
+}
+.sidething i {
+  color: #fff;
+  font-size: 8px;
+  margin: 10px;
+}
+.sidething li {
+  align-items: center;
+  justify-items: center;
 }
 
 .sidebar h3 {
@@ -4223,7 +4248,9 @@ ul.slick-dots li.slick-active::before {
   transition: 0.5s;
 }
 .sidebar ul li {
+  display: flex;
   list-style-type: none;
+  border: 1px solid transparent;
 }
 
 body {
@@ -4233,7 +4260,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .sidebar {
-    padding-top: 80px;
+    width: 275px;
   }
   .sidebar a {
     font-size: 18px;
@@ -4262,7 +4289,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 360px;
+  max-width: 360px;
   height: 100%;
   background-color: #333;
   z-index: 1;
@@ -4319,6 +4346,7 @@ body {
 .mobile-body {
   display: none;
   background-color: #333645;
+  justify-content: center;
 }
 .mobile-body .fa-regular, .mobile-body .fa-solid {
   width: 25px;
@@ -4326,19 +4354,32 @@ body {
 @media screen and (max-width: 450px) {
   .mobile-body {
     width: 275px;
+    margin: 0;
   }
+}
+@media screen and (max-width: 768px) {
+  .mobile-body {
+    display: flex;
+  }
+}
+
+.mobile-contact h3 {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid transparent;
 }
 
 .mobile-menu-item {
   display: flex;
   flex-direction: column;
-  width: 167px;
+  width: 235px;
+  height: 200px;
   top: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   justify-content: center;
-  padding: 10px;
   color: #fff;
   background-color: #333645;
   cursor: pointer;
@@ -4397,6 +4438,10 @@ body {
   overflow-y: visible;
 }
 
+.mobile-drop-down-menu ul {
+  background-color: #2a2d36;
+  width: 235px;
+}
 .mobile-drop-down-menu h3 {
   text-align: center;
   color: #fff;
@@ -4404,12 +4449,13 @@ body {
 .mobile-drop-down-menu li {
   color: #fff;
   list-style-type: none;
-  padding: 10px;
-}
-.mobile-drop-down-menu li .fa-solid, .mobile-drop-down-menu li .fa-regular {
-  margin-right: 15px;
+  border: 1px solid transparent;
+  text-align: center;
+  justify-content: center;
 }
 
 .box {
   border: 2px solid #605f5f;
+  height: 120px;
+  align-content: center;
 }/*# sourceMappingURL=styles.css.map */
