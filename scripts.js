@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleNav() {
     var body = document.querySelector(".full-container");
-    var hamburger = document.querySelector(".hamburger");
+    // var hamburger = document.querySelector(".hamburger");
 
     var isOpen = body.style.transform === "translateX(-360px)";
 
@@ -190,6 +190,10 @@ function openNav() {
 
     var hamburger = document.querySelector(".hamburger");
     hamburger.classList.add("open");
+
+    // Close the overlay
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "flex";
 }
 
 function closeNav() {
@@ -198,10 +202,18 @@ function closeNav() {
 
     var hamburger = document.querySelector(".hamburger");
     hamburger.classList.remove("open");
+
+    // Close the overlay
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "none";
 }
 
 // ----event listener for button
 document.querySelector(".burger-container").addEventListener('click', toggleNav);
+
+document.querySelector(".overlay").addEventListener('click', function() {
+    closeNav();
+});
 
 
 // Swipe-to-close on Mobile

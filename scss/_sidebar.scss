@@ -1,6 +1,6 @@
 .sidebar {
     height: 100%;
-    width: 0;
+    width: 360px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -32,6 +32,7 @@
     li {
         align-items: center;
         justify-items: center;
+        cursor: pointer;
     }
 }
 
@@ -43,6 +44,7 @@
     background-color: #2a2d36;
     padding: 10px;
     width: auto;
+    margin-top: 0;
 }
 
 .sidebar ul {
@@ -57,7 +59,6 @@
         display: flex;
         list-style-type: none;
         border: 1px solid transparent;
-
     }
 }
 

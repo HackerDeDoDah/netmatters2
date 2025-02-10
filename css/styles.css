@@ -223,11 +223,18 @@ body {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 768px) {
-  .mobile-view {
-    display: flex;
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2000;
+  display: none;
+  flex-direction: column;
 }
+
 :root {
   --primary-color: #3498db;
   --secondary-color: #4287f5;
@@ -4009,6 +4016,7 @@ ul.slick-dots li.slick-active::before {
   line-height: 2rem;
   color: #fff;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 #bespoke-software li:hover,
 #it-support li:hover,
@@ -4193,7 +4201,7 @@ ul.slick-dots li.slick-active::before {
 
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 360px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -4226,6 +4234,7 @@ ul.slick-dots li.slick-active::before {
 .sidething li {
   align-items: center;
   justify-items: center;
+  cursor: pointer;
 }
 
 .sidebar h3 {
@@ -4236,6 +4245,7 @@ ul.slick-dots li.slick-active::before {
   background-color: #2a2d36;
   padding: 10px;
   width: auto;
+  margin-top: 0;
 }
 
 .sidebar ul {
@@ -4434,7 +4444,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1001;
   overflow-y: visible;
 }
 
