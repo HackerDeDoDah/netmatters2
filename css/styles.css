@@ -128,7 +128,7 @@ body {
   .container-nav .search-bar {
     display: none;
   }
-  .container-nav .container-nav .search-bar2 {
+  .container-nav .search-bar2 {
     grid-area: search2;
     display: flex;
   }
@@ -4367,7 +4367,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 825px) {
   .mobile-body {
     display: flex;
   }
