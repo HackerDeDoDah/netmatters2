@@ -34,6 +34,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: auto;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -67,14 +68,15 @@
 }
 
 .article-content {
-    margin: 20px;
+    margin: 5px 20px 20px 20px;
     font-size: 16px;
     line-height: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    h3, p {
-        padding: 10px;
+    h3 {
+        padding: 0 10px 10px 10px;
     }
     p {
+        padding: 10px 10px 20px 10px;
         margin-bottom: 10px;
     }
 }
