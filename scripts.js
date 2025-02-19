@@ -136,6 +136,35 @@ const cookiePopup = document.getElementById('cookie-popup');
 const changeSettingsButton = document.getElementById('change-settings');
 const acceptCookiesButton = document.getElementById('accept-cookies');
 
+// Function disable scrolling
+function disableScrolling() {
+    document.body.classList.add('popup-active');
+    document.addEventListener('wheel', preventScroll, { passive: false });
+    document.addEventListener('touchmove', preventScroll, { passive: false });
+    document.addEventListener('keydown', preventKeys);
+}
+
+// Function enable scrolling
+function enableScrolling() {
+    document.body.classList.remove('popup-active');
+    document.removeEventListener('wheel', preventScroll);
+    document.removeEventListener('touchmove', preventScroll);
+    document.removeEventListener('keydown', preventKeys);
+}
+
+// Prevent key scrolling (arrow keys, space, page up/down)
+function preventKeys(e) {
+    const keys = ['ArrowUp', 'ArrowDown', 'Space', 'PageUp', 'PageDown'];
+    if (keys.includes(e.code)) {
+        e.preventDefault();
+    }
+}
+
+// Prevent scrolling via touch or mouse wheel
+function preventScroll(e) {
+    e.preventDefault();
+}
+
 // Change Settings button click
 changeSettingsButton.addEventListener('click', () => {
     alert('Redirecting to settings page...');
@@ -144,22 +173,23 @@ changeSettingsButton.addEventListener('click', () => {
 
 // Accept Cookies button click
 acceptCookiesButton.addEventListener('click', () => {
-  // store in localStorage
+    // Store in localStorage
     localStorage.setItem('cookiesAccepted', 'true');
 
-  // Hide
+    // Hide popup and enable scrolling
     cookiePopup.style.display = 'none';
+    enableScrolling();
 });
 
-// Check accepted
+// Check accepted cookies on page load
 document.addEventListener('DOMContentLoaded', () => {
     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
     if (cookiesAccepted === 'true') {
-    // Hide if cookies accepted
-    cookiePopup.style.display = 'none';
+        cookiePopup.style.display = 'none';
+        enableScrolling();
     } else {
-    // Show if cookies not accepted
-    cookiePopup.style.display = 'block';
+        cookiePopup.style.display = 'block';
+        disableScrolling();
     }
 });
 
@@ -208,7 +238,7 @@ function closeNav() {
     overlay.style.display = "none";
 }
 
-// ----event listener for button
+// event listener for button
 document.querySelector(".burger-container").addEventListener('click', toggleNav);
 
 document.querySelector(".overlay").addEventListener('click', function() {

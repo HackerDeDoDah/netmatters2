@@ -182,6 +182,11 @@
     background-color: brown;
 }
 
+.menu-container:hover .arrow, 
+.red-section:hover .arrow {
+    display: block;
+}
+
 #bespoke-software,
 #it-support,
 #digital-marketing,
@@ -242,6 +247,7 @@
         align-self: center;
     }
 }
+
 #it:hover {
     background-color: #4183d7;
     &::after {
@@ -260,6 +266,7 @@
         align-self: center;
     }
 }
+
 #dm:hover {
     background-color: #2ecc71;
     &::after {
@@ -278,6 +285,7 @@
         align-self: center;
     }
 }
+
 #ts:hover {
     background-color: #ce4125;
     &::after {
@@ -296,6 +304,7 @@
         align-self: center;
     }
 }
+
 #wd:hover {
     background-color: #926fb1;
     &::after {
@@ -314,6 +323,7 @@
         align-self: center;
     }
 }
+
 #cs:hover {
     background-color: #f62459;
     &::after {
@@ -332,6 +342,7 @@
         align-self: center;
     }
 }
+
 #dc:hover {
     background-color: #ce4125;
     &::after {
@@ -361,6 +372,7 @@
     left: 0;
     z-index: 1000;
 }
+
 .content_box {
     display: flex;
     flex-direction: column;

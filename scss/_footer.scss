@@ -16,7 +16,7 @@ footer .container{
 }
 
 img {
-   width: 310px;
+   width: 300px;
    margin-left: auto;
    margin-right: auto;
 } 
@@ -32,7 +32,7 @@ a {
 
 .social-container {
    display: flex;
-   width: 310px;
+   width: 300px;
    margin-right: 40px;
    margin-top: 40px;
 }
@@ -98,7 +98,7 @@ a {
 //-------------------Large screens: Keep all in one row-------------
 @media only screen and (min-width: 992px) {
    .footer-grid {
-      gap: 20px;
+      gap: 30px;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: auto;
       grid-template-areas: 
