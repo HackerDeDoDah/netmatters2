@@ -15,31 +15,27 @@ function toggleNav() {
 
 function openNav() {
     var body = document.querySelector(".full-container");
+    var overlay = document.querySelector(".overlay");
     var screenWidth = window.innerWidth;
     var sidebarWidth = screenWidth < 450 ? 275 : 360;
 
-    body.style.transform = "translateX(-" + sidebarWidth + "px)";
+    body.style.transform = `translateX(-${sidebarWidth}px)`;
     body.style.transition = "transform 0.3s ease";
-
-    var hamburger = document.querySelector(".hamburger");
-    hamburger.classList.add("open");
-
-    // Close the overlay
-    var overlay = document.querySelector(".overlay");
     overlay.style.display = "flex";
+
+    document.dispatchEvent(new Event("sidebarOpen")); // Notify sticky.js
 }
 
 function closeNav() {
     var body = document.querySelector(".full-container");
-    body.style.transform = "translateX(0)";
-
-    var hamburger = document.querySelector(".hamburger");
-    hamburger.classList.remove("open");
-
-    // Close the overlay
     var overlay = document.querySelector(".overlay");
+
+    body.style.transform = "translateX(0)";
     overlay.style.display = "none";
+
+    document.dispatchEvent(new Event("sidebarClose")); // Notify sticky.js
 }
+
 
 // event listener for button
 document.querySelector(".burger-container").addEventListener('click', toggleNav);

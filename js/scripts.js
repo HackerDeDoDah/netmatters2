@@ -3,24 +3,94 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const carouselWrapper = document.querySelector(".carousel-wrapper");
-    const images = document.querySelectorAll(".carousel-wrapper img");
-    const totalImages = images.length;
-    const imageWidth = images[0].offsetWidth + 15;
+
+    function updateImageList() {
+        return document.querySelectorAll(".carousel-wrapper img"); // Get images dynamically
+    }
+
+    let images = updateImageList();
+    let imageWidth = images[0].getBoundingClientRect().width; // Get accurate width
     let scrollPosition = 0;
 
     function scrollCarousel() {
-        scrollPosition -= 200;
-        if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
-            const firstImage = images[0];
-            carouselWrapper.appendChild(firstImage); // Move the first image to the end
-            scrollPosition += imageWidth; // scroll position
+        // Ensure images list updates dynamically
+        images = updateImageList();
+        imageWidth = images[0].getBoundingClientRect().width;
 
+        // Move wrapper left by one image width
+        scrollPosition -= imageWidth;
+        carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+        carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
+
+        setTimeout(() => {
+            // Move first image to the end
+            let firstImage = carouselWrapper.firstElementChild;
+            carouselWrapper.appendChild(firstImage);
+
+            // Instantly reset position without a visual jump
+            carouselWrapper.style.transition = "none";
+            scrollPosition += imageWidth;
+            carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
+
+            // Re-enable smooth transition for the next move
             setTimeout(() => {
                 carouselWrapper.style.transition = "transform 0.5s ease-in-out";
             }, 50);
-        } else {
+        }, 500); // Wait for animation to finish
+    }
+
+    function startCarousel() {
+        interval = setInterval(scrollCarousel, 5000);
+    }
+
+    function stopCarousel() {
+        clearInterval(interval);
+    }
+
+    let interval = setInterval(scrollCarousel, 5000);
+
+    carouselWrapper.addEventListener("mouseover", stopCarousel);
+    carouselWrapper.addEventListener("mouseout", startCarousel);
+});
+
+// carousel partners bottom ------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+    const carouselWrapper = document.querySelector(".carousel-wrapper2");
+
+    function updateImageList() {
+        return document.querySelectorAll(".carousel-wrapper2 img"); // Get images dynamically
+    }
+
+    let images = updateImageList();
+    let imageWidth = images[0].getBoundingClientRect().width; // Get accurate width
+    let scrollPosition = 0;
+
+    function scrollCarousel() {
+        // Ensure images list updates dynamically
+        images = updateImageList();
+        imageWidth = images[0].getBoundingClientRect().width;
+
+        // Move wrapper left by one image width
+        scrollPosition -= imageWidth;
+        carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+        carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
+
+        setTimeout(() => {
+            // Move first image to the end
+            let firstImage = carouselWrapper.firstElementChild;
+            carouselWrapper.appendChild(firstImage);
+
+            // Instantly reset position without a visual jump
+            carouselWrapper.style.transition = "none";
+            scrollPosition += imageWidth;
             carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
-        }
+
+            // Re-enable smooth transition for the next move
+            setTimeout(() => {
+                carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+            }, 50);
+        }, 500); // Wait for animation to finish
     }
 
     function startCarousel() {
@@ -38,60 +108,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// carousel partners bottom ------------------
-
-document.addEventListener("DOMContentLoaded", function () {
-    const carouselWrapper2 = document.querySelector(".carousel-wrapper2");
-    const items = document.querySelectorAll(".tool-tip");
-    const images = document.querySelectorAll(".carousel-wrapper2 img");
-    const totalImages = images.length;
-    const imageWidth = images[0].offsetWidth + 15;
-    let scrollPosition = 0;
-
-
-    function scrollCarousel() {
-        scrollPosition -= 200;
-        if (Math.abs(scrollPosition) >= (totalImages * imageWidth)) {
-            const firstImage = images[0];
-            carouselWrapper2.appendChild(firstImage); // Move the first image to the end
-            scrollPosition += imageWidth; // scroll position
-
-            setTimeout(() => {
-                carouselWrapper2.style.transition = "transform 0.5s ease-in-out";
-            }, 50);
-        } else {
-            carouselWrapper2.style.transform = `translateX(${scrollPosition}px)`;
-        }
-    }
-
-    function startCarousel() {
-        interval = setInterval(scrollCarousel, 5000);
-    }
-
-    function stopCarousel() {
-        clearInterval(interval);
-    }
-
-    let interval = setInterval(scrollCarousel, 5000);
-
-carouselWrapper2.addEventListener("mouseover", stopCarousel);
-carouselWrapper2.addEventListener("mouseout", startCarousel);
-
-});
-
-
 //-----image carousel----------------
 
 $(document).ready(function(){
     $('.slick-carousel').slick({
-        autoplay: true,           // Auto-play enabled
+        autoplay: true,           
         autoplaySpeed: 5000,      // Slide duration in milliseconds
         speed: 300,               // Transition speed
-        fade: false,              // fade effect
+        fade: false,              
         dots: true,               // Pagination dots
         arrows: false,            // navigation arrows
         infinite: true,           // Infinite loop
-        pauseOnHover: true,       // pause on hover
+        pauseOnHover: true,       
         cssEase: 'linear'         // transition effect
         // ,
         // appendDots: $('.dots')

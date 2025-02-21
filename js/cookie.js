@@ -40,14 +40,14 @@ changeSettingsButton.addEventListener('click', () => {
 });
 
 // Accept Cookies button click
-acceptCookiesButton.addEventListener('click', () => {
-    // Store in localStorage
-    localStorage.setItem('cookiesAccepted', 'true');
+acceptCookiesButton.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookiePopup.style.display = "none";
 
-    // Hide popup and enable scrolling
-    cookiePopup.style.display = 'none';
     enableScrolling();
+    window.dispatchEvent(new Event("scroll"));
 });
+
 
 // Check accepted cookies on page load
 document.addEventListener('DOMContentLoaded', () => {
