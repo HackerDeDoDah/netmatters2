@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+        carouselWrapper.style.transition = "transform 0.5s ease";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+                carouselWrapper.style.transition = "transform 0.5s ease";
             }, 50);
         }, 500); // Wait for animation to finish
     }
@@ -69,22 +69,20 @@ document.addEventListener("DOMContentLoaded", () => {
     function scrollCarousel() {
         // Ensure images list updates dynamically
         images = updateImageList();
-        imageWidth = images[0].getBoundingClientRect().width;
+        imageWidth = images[0].offsetWidth;
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+        carouselWrapper.style.transition = "transform 0.5s ease";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
             // Move first image to the end
             let firstImage = carouselWrapper.firstElementChild;
-            carouselWrapper.appendChild(firstImage);
-
-            // Instantly reset position without a visual jump
             carouselWrapper.style.transition = "none";
             scrollPosition += imageWidth;
             carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
+            carouselWrapper.appendChild(firstImage);
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {

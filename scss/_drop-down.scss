@@ -53,7 +53,7 @@
     width: 100vw;
     z-index: 1000; 
     transition: opacity 0.3s ease;
-    top: 20px;
+    top: 0;
 }
 
 .menu-item:hover, .menu-item:focus {
@@ -368,7 +368,7 @@
     height: fit-content;
     margin: 0 auto;
     position: absolute;
-    top: 105px;
+    top: 90px;
     left: 0;
     z-index: 1000;
 }

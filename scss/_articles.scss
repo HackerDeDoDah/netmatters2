@@ -60,7 +60,22 @@
         min-width: 370px;
         
     }
+}
 
+.business {
+    p {
+        @media (max-width: 820px) {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-size: 14px;
+        }
+    }
+    h3 {
+        @media (max-width: 820px) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .article-content {
@@ -133,7 +148,12 @@
 .marketing h3 {
     color: #2ecc71;
     margin: 0;
-    
+    @media (max-width: 1200px) {
+        margin-bottom: 35px;
+    }
+    @media (max-width: 820px) {
+        margin-bottom: 0;
+    }
 }
 
 .notables h3 {
