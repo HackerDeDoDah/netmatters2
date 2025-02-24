@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.5s ease";
+        carouselWrapper.style.transition = "transform 0.3s ease";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.5s ease";
+                carouselWrapper.style.transition = "transform 0.3s ease";
             }, 50);
         }, 500); // Wait for animation to finish
     }
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.5s ease";
+        carouselWrapper.style.transition = "transform 0.3s ease";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.5s ease-in-out";
+                carouselWrapper.style.transition = "transform 0.3s ease-in-out";
             }, 50);
         }, 500); // Wait for animation to finish
     }

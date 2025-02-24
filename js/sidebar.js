@@ -2,7 +2,6 @@
 
 function toggleNav() {
     var body = document.querySelector(".full-container");
-    // var hamburger = document.querySelector(".hamburger");
 
     var isOpen = body.style.transform === "translateX(-360px)";
 

@@ -3,7 +3,6 @@
 
 // Container and Header Styling
 header {
-    // position: relative;
     display: flex;
     visibility: visible;
     background-color: #fff;
@@ -26,7 +25,7 @@ header {
     height: fit-content;
     margin: 0;
     @media (max-width: 768px) {
-        height: 140px;
+        height: 120px;
     }
 }
 
@@ -108,16 +107,14 @@ nav img {
     display: flex;
     align-items: center;
     width: 290px;
-    border: 0.5px solid #999aa2;
-    border-radius: 0 3px 3px 0;
 }
 
 .search-input {
-    padding: 8px 10px 8px 10px;
+    padding: 8px 10px;
     font-size: 14px;
     color: #999aa2;
     outline: none;
-    height: 52px;
+    height: 54px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -127,6 +124,7 @@ nav img {
     right: 0px;
     color: #fff;
     font-size: 1.5rem;
+    height: 54px;
     background-color: #999aa2;
     border: 1px solid transparent;
     padding: 7px 14px;
@@ -138,17 +136,18 @@ nav img {
 // Hide Search Button
 .search-button {
     display: none;
+    background-color: #fff;
 }
 
 // General styling for the hamburger container
 .burger-container {
-    width: 55px;
-    height: 52.4px;
+    width: 60px;
+    height: 54px;
     display: block;
     flex-direction: column;
     border-radius: 3px;
     background-color: #2f313d;
-    padding: 0 7px;
+    padding: 0 10px;
     justify-content: center;
     align-content: center;
     z-index: 1001;
@@ -214,11 +213,12 @@ nav img {
 .search-block {
     display: none;
     border: 1px solid transparent;
+    border-radius: 3px;
     background-color: #999aa2;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     text-align: center;
-    padding: 15px 10px;
+    padding: 10px;
     font-size: 1.5rem;
     color: #fff;
 }
@@ -237,32 +237,26 @@ nav img {
     position: relative;
     display: none;
     align-items: center;
-    width: 100%;
-    height: fit-content;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0 10px;
+    width: 95%;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    margin: 0;
     overflow: hidden;
-    background-color: #f9f9f9;
+    background-color: #e1e2e7;
     .search-input {
         flex: 1;
         padding: 10px;
         border: none;
         outline: none;
         font-size: 16px;
+        color: #2f313d;
+        background-color: #e1e2e7;
     }
-    .search-button {
-        background-color: #999aa2;
-        border: none;
-        color: #333;
-        padding: 10px;
+    i {
+        color: #2f313d;
+        font-size: 20px;
         cursor: pointer;
-        font-size: 16px;
-        border-left: 1px solid #999aa2;
-        transition: background-color 0.3s;
-    }
-    .search-button:hover {
-        background-color: #a0a0a0;
     }
 }
 
@@ -274,5 +268,11 @@ nav img {
     }
     .container-nav {
         align-items: flex-start;
+    }
+    .search-button {
+        display: block;
+        background-color: #e1e2e7;
+        border: none;
+        margin-right: 6px;
     }
 }
