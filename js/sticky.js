@@ -2,6 +2,22 @@
 // sticky header
 
 
+
+
+// window.addEventListener("scroll", function() {
+//     //console.log(window.scrollY);
+//     let navbar = document.getElementById("header");
+//     if(window.scrollY>=300) {
+//         navbar.classList.add("fixed-header")
+//     }
+//     else{
+//         navbar.classList.remove("fixed-header")
+//     }
+// })
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let lastScrollTop = 0;
     const stickyContainer = document.querySelector('.sticky-container');
