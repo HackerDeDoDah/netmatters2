@@ -14,12 +14,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    max-width: 100%;
+}
+
 .full-container {
     position: relative;
     z-index: 2;
     transition: transform 0.3s ease !important;
     background-color: #fff;
     opacity: 1;
+    max-width: 100vw;
 }
 
 .carousel-wrapper {
@@ -202,20 +207,12 @@ body {
     transform: translateY(0);
 }
 
-// @media screen and (min-width: 450px) {
-//     .sidething {
-//         display: flex;
-//     }
-// }
-
-
-
 .view-more {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    // max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     a {

@@ -16,7 +16,7 @@ function openNav() {
     var body = document.querySelector(".full-container");
     var overlay = document.querySelector(".overlay");
     var screenWidth = window.innerWidth;
-    var sidebarWidth = screenWidth < 450 ? 275 : 360;
+    var sidebarWidth = screenWidth < 450 ? 275 : 360; // Adjusted sidebar width for smaller screens
 
     body.style.transform = `translateX(-${sidebarWidth}px)`;
     body.style.transition = "transform 0.3s ease";
@@ -24,7 +24,6 @@ function openNav() {
 
     document.dispatchEvent(new Event("sidebarOpen")); // Notify sticky.js
     isSidebarOpen = true; // Update sidebar state
-
 }
 
 function closeNav() {
