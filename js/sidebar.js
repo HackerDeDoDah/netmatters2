@@ -23,6 +23,8 @@ function openNav() {
     overlay.style.display = "flex";
 
     document.dispatchEvent(new Event("sidebarOpen")); // Notify sticky.js
+    isSidebarOpen = true; // Update sidebar state
+
 }
 
 function closeNav() {
@@ -33,6 +35,8 @@ function closeNav() {
     overlay.style.display = "none";
 
     document.dispatchEvent(new Event("sidebarClose")); // Notify sticky.js
+    isSidebarOpen = false; // Update sidebar state
+
 }
 
 
@@ -60,4 +64,3 @@ sidebar.addEventListener("touchmove", function (event) {
         closeNav();
     }
 }, false);
-

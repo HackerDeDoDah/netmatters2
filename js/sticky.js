@@ -47,9 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
             isSticky = false;
         }
     
-        // Show/hide sticky header only when sidebar is closed
+    // Show/hide sticky header only when sidebar is closed and sidebar is not open
+
         if (!isSidebarOpen && isSticky) {
-            if (scrollTop > lastScrollTop) {
+        if (scrollTop > lastScrollTop && !isSidebarOpen) {
+
                 stickyContainer.classList.remove('show'); // Hide on scroll down
             } else {
                 stickyContainer.classList.add('show'); // Show on scroll up
