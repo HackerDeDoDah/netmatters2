@@ -59,7 +59,7 @@ sidebar.addEventListener("touchmove", function (event) {
     let moveX = event.touches[0].clientX;
     let diffX = moveX - startX;
 
-    if (diffX < 50) { // If swiping right
+    if (diffX < 40) { // If swiping right
         closeNav();
     }
 }, false);

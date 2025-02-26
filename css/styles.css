@@ -750,7 +750,7 @@ a:hover {
 }
 
 .tool-tip:hover .tool-tip-text {
-  opacity: 1;
+  opacity: 1 !important;
   pointer-events: auto;
 }
 
