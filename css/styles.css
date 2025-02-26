@@ -2160,7 +2160,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg) !important;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -2168,7 +2168,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg) !important;
 }
 
 .search-block {

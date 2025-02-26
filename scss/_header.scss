@@ -187,14 +187,14 @@ nav img {
     justify-content: space-between;
     align-items: center;
     width: 40px;
-    height: 30px; //Adjusted for better centering
+    height: 30px;
     cursor: pointer;
     position: relative;
 }
 
 .hamburger span {
     display: block;
-    width: 30px; // Slightly smaller to fit within container
+    width: 30px; 
     height: 4px;
     background: #fff;
     margin: 4px 0;
@@ -202,7 +202,6 @@ nav img {
     position: absolute;
 }
 
-// Position the spans properly
 .hamburger span:nth-child(1) {
     top: 0;
 }
@@ -216,9 +215,8 @@ nav img {
     bottom: 0;
 }
 
-// Hamburger animation when sidebar is open
 .hamburger.open span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg) !important;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -226,7 +224,7 @@ nav img {
 }
 
 .hamburger.open span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg) !important;
 }
 
 
