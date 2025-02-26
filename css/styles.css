@@ -686,7 +686,7 @@ a:hover {
   position: relative;
   display: inline-block;
   overflow: visible;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .tool-tip img {
@@ -715,7 +715,7 @@ a:hover {
   bottom: 120%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 9999;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   pointer-events: none;
   white-space: nowrap;
@@ -757,7 +757,7 @@ a:hover {
 body, .tool-tip {
   position: relative !important;
   overflow: visible !important;
-  z-index: 999 !important;
+  z-index: 9999 !important;
 }
 
 #cookie-popup {
@@ -3194,7 +3194,7 @@ ul.slick-dots li.slick-active::before {
   position: relative;
   left: 0;
   right: 0;
-  max-width: 167.14px;
+  max-width: 170px;
   border: 1px solid transparent;
   text-align: center;
   justify-content: center;

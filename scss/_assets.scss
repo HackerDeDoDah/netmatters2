@@ -52,7 +52,7 @@
     position: relative;
     display: inline-block;
     overflow: visible;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .tool-tip img {
@@ -82,7 +82,7 @@
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 999; // Ensure it's above everything 
+    z-index: 9999; // Ensure it's above everything 
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     pointer-events: none; // Prevents flickering on hover 
     white-space: nowrap;
@@ -128,7 +128,7 @@
 body, .tool-tip {
     position: relative !important;
     overflow: visible !important;
-    z-index: 999 !important;
+    z-index: 9999 !important;
 }
 
 
