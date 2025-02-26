@@ -2,11 +2,15 @@
 
 .menu {
     display: none; 
+    position: absolute;
+    top: 95px;
     justify-content: center; 
     align-items: center;
     width: 100%; 
     background-color: #333645;
     height: 95px;
+    margin-left: auto;
+    margin-right: auto;
     @media (min-width: 992px) {
         display: flex;
     }
@@ -20,10 +24,10 @@
 }
 
 .menu-item {
-    // display: flex;
     position: relative;
     left: 0;
     right: 0; 
+    max-width: 167.14px;
     border: 1px solid transparent;
     text-align: center;
     justify-content: center;
@@ -50,10 +54,10 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    top: -195px;
     width: 100vw;
     z-index: 1000; 
     transition: opacity 0.3s ease;
-    top: 0;
 }
 
 .menu-item:hover, .menu-item:focus {
@@ -228,7 +232,6 @@
     }
 }
 
-
 #bs:hover {
     background-color: #67809f;
     &::after {
@@ -366,9 +369,10 @@
     display: flex;
     width: 100vw;
     height: fit-content;
+    text-align: left;
     margin: 0 auto;
     position: absolute;
-    top: 90px;
+    top: -6px;
     left: 0;
     z-index: 1000;
 }

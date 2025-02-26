@@ -31,8 +31,10 @@ a {
 .social-container {
    display: flex;
    width: 300px;
-   margin-right: 40px;
-   margin-top: 40px;
+   margin: 40px 40px 0 0;
+   @media (max-width: 450px) {
+      margin: 0;
+   }
 }
 
 .footer-grid {   
@@ -184,6 +186,13 @@ a {
       text-decoration: none;
    }
    @include m.s-c;
+   @media (max-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      .o1, .o2, .o3, .o4 {
+         width: 80px;
+      }
+   }
 }
 
 //--------- consent ----------------

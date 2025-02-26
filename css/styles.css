@@ -47,6 +47,10 @@ html {
   max-width: 100%;
 }
 
+main {
+  top: 195px;
+}
+
 .full-container {
   position: relative;
   z-index: 2;
@@ -303,8 +307,12 @@ a:hover {
 .social-container {
   display: flex;
   width: 300px;
-  margin-right: 40px;
-  margin-top: 40px;
+  margin: 40px 40px 0 0;
+}
+@media (max-width: 450px) {
+  .social-container {
+    margin: 0;
+  }
 }
 
 .footer-grid {
@@ -541,6 +549,15 @@ a:hover {
 }
 .social-icons .fa-instagram:hover {
   background-color: #C13584;
+}
+@media (max-width: 450px) {
+  .social-icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .social-icons .o1, .social-icons .o2, .social-icons .o3, .social-icons .o4 {
+    width: 80px;
+  }
 }
 
 .consent {
@@ -1931,6 +1948,23 @@ body, .tool-tip {
   background-color: #f7b322;
 }
 
+.placeholder {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 189px;
+}
+@media (max-width: 991px) {
+  .placeholder {
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .placeholder {
+    height: 130px;
+  }
+}
+
 header {
   display: flex;
   visibility: visible;
@@ -1940,7 +1974,8 @@ header {
   justify-content: center;
   border-bottom: 1px solid transparent;
   box-sizing: border-box;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-nav {
@@ -1952,11 +1987,17 @@ header {
   max-width: 1200px;
   width: 100%;
   height: fit-content;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 991px) {
+  .container-nav {
+    height: 80px;
+  }
 }
 @media (max-width: 768px) {
   .container-nav {
-    height: 120px;
+    height: 130px;
   }
 }
 
@@ -2157,11 +2198,11 @@ nav img {
   position: relative;
   display: none;
   align-items: center;
-  width: 95%;
+  width: 90%;
   height: 45px;
   border: 2px solid #ccc;
   border-radius: 2px;
-  margin: 0;
+  margin-bottom: 20px;
   overflow: hidden;
   background-color: #e1e2e7;
 }
@@ -2185,6 +2226,7 @@ nav img {
     display: flex;
     position: absolute;
     top: 100px;
+    width: 95%;
   }
   .container-nav {
     align-items: flex-start;
@@ -2194,6 +2236,11 @@ nav img {
     background-color: #e1e2e7;
     border: none;
     margin-right: 6px;
+  }
+}
+@media (max-width: 450px) {
+  .search-bar2 {
+    width: 90%;
   }
 }
 :root {
@@ -3120,11 +3167,15 @@ ul.slick-dots li.slick-active::before {
 
 .menu {
   display: none;
+  position: absolute;
+  top: 95px;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #333645;
   height: 95px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 992px) {
   .menu {
@@ -3143,6 +3194,7 @@ ul.slick-dots li.slick-active::before {
   position: relative;
   left: 0;
   right: 0;
+  max-width: 167.14px;
   border: 1px solid transparent;
   text-align: center;
   justify-content: center;
@@ -3201,10 +3253,10 @@ ul.slick-dots li.slick-active::before {
 .dropdown-content {
   display: none;
   position: absolute;
+  top: -195px;
   width: 100vw;
   z-index: 1000;
   transition: opacity 0.3s ease;
-  top: 0;
 }
 
 .menu-item:hover .dropdown-content, .menu-item:focus .dropdown-content {
@@ -4256,9 +4308,10 @@ ul.slick-dots li.slick-active::before {
   display: flex;
   width: 100vw;
   height: fit-content;
+  text-align: left;
   margin: 0 auto;
   position: absolute;
-  top: 90px;
+  top: -6px;
   left: 0;
   z-index: 1000;
 }
@@ -4454,7 +4507,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 991px) {
   .mobile-body {
     display: flex;
   }

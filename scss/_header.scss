@@ -1,5 +1,18 @@
 @use 'mixins' as m;
 
+.placeholder {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 189px;
+    @media (max-width: 991px) {
+        height: 80px;
+    }
+    @media (max-width: 768px) {
+        height: 130px;
+    }
+    
+}
 
 // Container and Header Styling
 header {
@@ -11,7 +24,8 @@ header {
     justify-content: center;
     border-bottom: 1px solid transparent;
     box-sizing: border-box;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-nav {
@@ -23,11 +37,19 @@ header {
     max-width: 1200px;
     width: 100%;
     height: fit-content;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 991px) {
+        height: 80px;
+    }
     @media (max-width: 768px) {
-        height: 120px;
+        height: 130px;
     }
 }
+
+
+
+
 
 // Navigation Styling
 nav {
@@ -237,11 +259,11 @@ nav img {
     position: relative;
     display: none;
     align-items: center;
-    width: 95%;
+    width: 90%;
     height: 45px;
     border: 2px solid #ccc;
     border-radius: 2px;
-    margin: 0;
+    margin-bottom: 20px;
     overflow: hidden;
     background-color: #e1e2e7;
     .search-input {
@@ -265,6 +287,7 @@ nav img {
         display: flex;
         position:absolute;
         top: 100px;
+        width: 95%;
     }
     .container-nav {
         align-items: flex-start;
@@ -274,5 +297,10 @@ nav img {
         background-color: #e1e2e7;
         border: none;
         margin-right: 6px;
+    }
+}
+@media (max-width: 450px) {
+    .search-bar2 {
+        width: 90%;
     }
 }
