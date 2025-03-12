@@ -34,6 +34,10 @@
 }
 // flex grid for text
 
+.white {
+    background-color: #fff;
+}
+
 .welcome-container {
     display: flex;
     flex-direction: row;
@@ -135,4 +139,9 @@
 
 .card-button {
     margin-top: auto;
+}
+
+#home a {
+    color: black;
+    font-size: 16px;
 }

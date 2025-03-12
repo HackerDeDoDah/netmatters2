@@ -134,3 +134,7 @@ $(document).on("afterChange", ".slick-slider", function () {
         }
     });
 });
+
+// document.querySelector('.btn-contact').addEventListener('click', function() {
+//     window.location.href = 'contact_us.php';
+// });

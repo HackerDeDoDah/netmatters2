@@ -1914,6 +1914,56 @@ body, .tool-tip {
   padding: 0;
 }
 
+.contact-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: visible;
+}
+.contact-card-container a {
+  text-decoration: none;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  height: 500px;
+}
+
+.card-btn {
+  border: 1px solid purple;
+  background-color: purple;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.contact-card-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  bottom: auto;
+}
+
 :root {
   --primary-color: #3498db;
   --secondary-color: #4287f5;
@@ -2580,6 +2630,10 @@ nav img {
   }
 }
 
+.white {
+  background-color: #fff;
+}
+
 .welcome-container {
   display: flex;
   flex-direction: row;
@@ -2834,6 +2888,11 @@ nav img {
 
 .card-button {
   margin-top: auto;
+}
+
+#home a {
+  color: black;
+  font-size: 16px;
 }
 
 :root {
@@ -4609,4 +4668,122 @@ body {
   border: 2px solid #605f5f;
   height: 120px;
   align-content: center;
+}
+
+.contact-info {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 700px auto;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d7d7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin: 40px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 50px auto;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.form-btn {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.form-btn .submit-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+.form-btn .submit-btn :hover {
+  background-color: #555;
+}
+.form-btn p {
+  font-size: 16px;
+  text-align: right;
+}
+
+#privacy {
+  color: black;
+  font-size: 16px;
+}
+
+.required {
+  color: red;
+  font-size: 16px;
+}
+
+.terms {
+  color: #333;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.terms a {
+  color: #333;
+  cursor: pointer;
+}
+
+.contact-text-container {
+  margin: 0;
+}
+.contact-text-container p {
+  font-size: 16px;
+  color: #333;
+}
+.contact-text-container a {
+  font-size: 28px;
+  color: purple;
+  text-decoration: none;
+}
+.contact-text-container a :hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
