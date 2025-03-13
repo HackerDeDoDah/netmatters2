@@ -30,6 +30,9 @@
                     <p><a href="index.php"><strong>Home</strong></a> / Our Offices</p>
                 </div>
             </div>
+            <div class="OurOffices">
+                <p>Our Offices</p>
+            </div>
             <section class="contact-card-container">
                 <div class="contact-grid">
                     <div class="contact-card">
@@ -116,10 +119,13 @@
                 </section>
                 <section>
                     <div class="contact-text-container">
-                    <p>Email us on:</p>
-                    <a href="mailto:sales@netmatters.com"><strong>sales@netmatters.com</strong></a>
-                    <p>Business hours:</p>
-                    <p>Monday - Friday 07:00 - 18:00</p>
+                        <p>Email us on:</p>
+                        <a href="mailto:sales@netmatters.com"><strong>sales@netmatters.com</strong></a>
+                        <p>Business hours:</p>
+                        <p>Monday - Friday 07:00 - 18:00</p>
+                        <div class="accord">
+                            <p>Out of Hours IT Support<i class="fa-solid fa-chevron-down"></i></p>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -263,52 +263,38 @@
         <!-- article cards -->
         <section>
           <div class="article-container">
-            <div class="grid-container-articles">
-              <article class="business" tabindex="0">
-                <img class="card-img" src="assets/img/business-development-executive-AIfQ.webp" alt="business">
-                <div class="labelz" id="l1">CAREERS</div>
-                <div class="article-content">
-                  <h3><strong>Business Development Executive</strong></h3>
-                  <p>Salary Range £26k-£36k per annum + Bonus Hours 40 hours per week, Monday - Friday Location Wymondha...</p>
-                  <button class="btn-orange btn-style">READ MORE</button>
-                  <hr class="seperator">
-                  <div class="card-footer-container">
-                    <img class="avatar item" src="assets/img/rebecca-moore-1fh7.webp" alt="Rebecca Moore">
-                    <p class="item"><strong>Posted by Rebecca Moore</strong> <br>18th October 2024</p>
-                  </div>
+            
+              <?php
+              // Include the database connection
+              include 'db_connect.php';
+
+              // Fetch news posts from the database
+              $stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC");
+              $newsPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+              ?>
+
+              <section class="news-section">
+                <div class="grid-container-articles">
+                  <?php foreach ($newsPosts as $post): ?>
+                      <article class="business" tabindex="0">
+                          <img class="card-img" src="<?php echo htmlspecialchars($post['image_url']); ?>" 
+                              alt="<?php echo htmlspecialchars($post['title']); ?>">
+                          <div class="labelz" id="l1" style="background-color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;"><?php echo htmlspecialchars($post['labelz']); ?></div>
+                          <div class="article-content">
+                              <h3 style="color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;"><strong><?php echo htmlspecialchars($post['title']); ?></strong></h3>
+                              <p><?php echo htmlspecialchars($post['content']); ?></p>
+                              <button class="btn-orange btn-style" style="background-color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;">READ MORE</button>
+                              <hr class="seperator">
+                              <div class="card-footer-container">
+                                  <img class="avatar item" src="<?php echo htmlspecialchars($post['profile_image_url']); ?>" alt="<?php echo htmlspecialchars($post['author']); ?>">
+                                  <p class="item"><strong>Posted by <?php echo htmlspecialchars($post['author']); ?></strong> <br>
+                                  <?php echo date('jS F Y', strtotime($post['created_at'])); ?></p>
+                              </div>
+                          </div>
+                      </article>
+                  <?php endforeach; ?>
                 </div>
-              </article>
-              
-              <article class="marketing" tabindex="0">
-                <img class="card-img" src="assets/img/why-should-i-P4Y2.webp" alt="marketing">
-                <div class="labelz" id="l2">INSIGHTS</div>
-                  <div class="article-content">
-                    <h3><strong>Why Should I Invest in Content Marketing?</strong></h3>
-                    <p>It seems as though everyone is publishing articles these days, but is it worth it? Articles, blog po...</p>
-                    <button class="btn-green btn-style">READ MORE</button>
-                    <hr class="seperator">
-                    <div class="card-footer-container">
-                      <img class="avatar" src="assets/img/netmatters-ltd-VXAv.webp" alt="netmatters small logo">
-                      <p><strong>Posted by Netmatters <br></strong>16th October 2024</p>
-                    </div>
-                  </div>
-              </article>
-          
-              <article class="notables" tabindex="0">
-                <img class="card-img" src="assets/img/september-notables-2024-ZBOM.webp" alt="september notable">
-                <div class="labelz" id="l3">NEWS</div>
-                <div class="article-content">
-                  <h3><strong>September Notables 2024 - Celebrating Our Tea...</strong></h3>
-                  <p>September Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we...</p>
-                  <button class="btn-purple btn-style">READ MORE</button>
-                  <hr class="seperator">
-                  <div class="card-footer-container">
-                    <img class="avatar" src="assets/img/netmatters-ltd-VXAv.webp" alt="netmatters small logo">
-                    <p><strong>Posted by Netmatters <br></strong>10th October 2024</p>
-                  </div>
-                </div>
-              </article>
-            </div>
+              </section>
           </div>
         </section>
 

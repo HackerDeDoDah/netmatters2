@@ -1,7 +1,7 @@
 .contact-info {
     display: grid;
     gap: 10px;
-    grid-template-columns: 700px auto;
+    grid-template-columns: 790px 410px;
     width: 1200px;
     margin: 0 auto;
 }
@@ -15,8 +15,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 700px;
-    margin: 40px;
+    max-width: 790px;
+    margin: 20px 0;
 }
 
 .form-grid {
@@ -30,6 +30,7 @@
     margin-bottom: 15px;
     width: 100%;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -83,7 +84,6 @@ input, textarea {
     }
 }
 
-
 #privacy {
     color: black;
     font-size: 16px;
@@ -107,8 +107,8 @@ input, textarea {
 .contact-text-container {
     margin: 0;
     width: 100%;
-    max-width: 200px;
-    padding: 40px;
+    max-width: 600px;
+    padding: 20px;
     p {
         font-size: 16px;
         color: #333;
@@ -121,4 +121,9 @@ input, textarea {
             text-decoration: underline;
         }
     }
+}
+
+.accord p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
