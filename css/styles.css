@@ -4725,7 +4725,11 @@ input, textarea {
 
 .checkbox-group input {
   margin-right: 10px;
-  font-size: 20px;
+}
+
+.my-checkbox {
+  display: flex;
+  transform: scale(2);
 }
 
 .form-btn {
@@ -4774,6 +4778,9 @@ input, textarea {
 
 .contact-text-container {
   margin: 0;
+  width: 100%;
+  max-width: 200px;
+  padding: 40px;
 }
 .contact-text-container p {
   font-size: 16px;

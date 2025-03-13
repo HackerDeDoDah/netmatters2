@@ -97,7 +97,7 @@
                                 <textarea id="message" name="message" rows="4" required placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>
                             </div>
                             <div class="checkbox-group">
-                                <input type="checkbox" id="marketing" name="marketing">
+                                <input type="checkbox" class="my-checkbox" id="marketing" name="marketing">
                                 <label for="marketing">
                                     Please tick this box if you wish to receive marketing information from us.<br>
                                     Please see our <a id="privacy" href="#">Privacy Policy</a> for more information on how we keep your data safe.
