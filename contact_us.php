@@ -25,8 +25,8 @@
         ?>
 
         <main>
-            <div class="container white">
-                <div id="home">
+            <div class="container-white">
+                <div class="home">
                     <p><a href="index.php"><strong>Home</strong></a> / Our Offices</p>
                 </div>
             </div>
@@ -37,34 +37,49 @@
                 <div class="contact-grid">
                     <div class="contact-card">
                         <div class="contact-card-img">
-                            <img src="assets/img/home-YLei.jpg" alt="Netmatters Building">
+                            <img src="assets/img/cambridge.jpg" alt="Netmatters Building">
                         </div>
                         <div class="card-content">
-                            <h2>The East Of England's Leading Technology Company</h2>
-                            <p>Performance-driven digital and technology services with complete transparency.</p>
-                            <a href="#" class="card-btn">FIND OUT MORE&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                            <p class="office">Cambridge Office</p>
+                            <p class="address">Unit 1.31, <br>
+                            St John's Innovation Centre, <br>
+                            Cowley Road, Milton, <br>
+                            Cambridge, <br>
+                            CB4 0WS</p>
+                            <a class="telephone" href="tel:01223375772">01223 37 57 72</a>
+                            <button href="#" class="card-btn">VIEW MORE</button>
                         </div>
                     </div>
 
                     <div class="contact-card">
                         <div class="contact-card-img">
-                            <img src="assets/img/home-YLei.jpg" alt="Netmatters Building">
+                            <img src="assets/img/wymondham.jpg" alt="Netmatters Building">
                         </div>
                         <div class="card-content">
-                            <h2>The East Of England's Leading Technology Company</h2>
-                            <p>Performance-driven digital and technology services with complete transparency.</p>
-                            <a href="#" class="card-btn">FIND OUT MORE&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                            <p class="office">Wymondham Office</p>
+                            <p class="address">Unit 15,<br>
+                            Penfold Drive,<br>
+                            Gateway 11 Business Park,<br>
+                            Wymondham, Norfolk,<br>
+                            NR18 0WZ</p>
+                            <a class="telephone" href="tel:01603704020">01603 70 40 20</a>
+                            <button href="#" class="card-btn">VIEW MORE</button>
                         </div>
                     </div>
 
                     <div class="contact-card">
                         <div class="contact-card-img">
-                            <img src="assets/img/home-YLei.jpg" alt="Netmatters Building">
+                            <img src="assets/img/yarmouth-2.jpg" alt="Netmatters Building">
                         </div>
                         <div class="card-content">
-                            <h2>The East Of England's Leading Technology Company</h2>
-                            <p>Performance-driven digital and technology services with complete transparency.</p>
-                            <a href="#" class="card-btn">FIND OUT MORE&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                            <p class="office">Great Yarmouth Office</p>
+                            <p class="address">Suite F23,<br>
+                            Beacon Innovation Centre,<br>
+                            Beacon Park, Gorleston,<br>
+                            Great Yarmouth, Norfolk,<br>
+                            NR31 7RA</p>
+                            <a class="telephone" href="tel:01493603204">01493 60 32 04</a>
+                            <button href="#" class="card-btn">VIEW MORE</button>
                         </div>
                     </div>
                 </div>
