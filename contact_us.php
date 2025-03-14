@@ -88,7 +88,7 @@
             <div class="contact-info">
                 <section>
                     <div class="form-container">
-                        <form>
+                        <form action="process_form.php" method="POST">
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label for="name">Your Name<span class="required">*</span></label>
@@ -117,7 +117,11 @@
                             <div class="checkbox-group">
                                 <input type="checkbox" class="my-checkbox" id="marketing" name="marketing">
                                 <label for="marketing">
-                                    Please tick this box if you wish to receive marketing information from us.<br>
+                                    Please tick this box if you wish to receive marketing information from us.
+                                </label>
+                            </div>
+                            <div class="privacy">
+                                <label>
                                     Please see our <a id="privacy" href="#">Privacy Policy</a> for more information on how we keep your data safe.
                                 </label>
                             </div>
@@ -140,6 +144,15 @@
                         <p>Monday - Friday 07:00 - 18:00</p>
                         <div class="accord">
                             <p>Out of Hours IT Support<i class="fa-solid fa-chevron-down"></i></p>
+                            <div class="accord-content">
+                                <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                <div class="opening">
+                                    <p>Monday - Friday 18:00 - 22:00</p>
+                                    <p>Saturday 08:00 - 16:00</p>
+                                    <p>Sunday 10:00 - 18:00</p>
+                                </div>
+                                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                            </div>
                         </div>
                     </div>
                 </section>

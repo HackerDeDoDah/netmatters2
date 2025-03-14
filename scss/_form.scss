@@ -13,7 +13,6 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 790px;
     margin: 20px 0;
@@ -58,6 +57,7 @@ input, textarea {
 .my-checkbox {
     display: flex;
     transform: scale(2);
+    justify-content: flex-start;
 }
 
 .form-btn {
@@ -89,6 +89,11 @@ input, textarea {
     font-size: 16px;
 }
 
+.privacy {
+    display: flex;
+    margin-left: 50px;
+}
+
 .required {
     color: red;
     font-size: 16px;
@@ -115,7 +120,7 @@ input, textarea {
     }
     a {
         font-size: 28px;
-        color: purple;
+        color: #926fb1;
         text-decoration: none;
         :hover {
             text-decoration: underline;
@@ -126,4 +131,11 @@ input, textarea {
 .accord p:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.accord-content {
+    display: none;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: default;
 }
