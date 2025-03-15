@@ -21,7 +21,7 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
         
-                            <div class="phone">
+                            <div href="contact_us.php" class="phone">
                                 <i class="fa-solid fa-phone-volume"></i>
                             </div>
         

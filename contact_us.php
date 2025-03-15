@@ -20,6 +20,7 @@
     ?>
 
     <div class="full-container">
+        <div class="overlay"></div>
         <?php
             include 'header.php';
         ?>

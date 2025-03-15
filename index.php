@@ -269,7 +269,7 @@
               include 'db_connect.php';
 
               // Fetch news posts from the database
-              $stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC");
+              $stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC LIMIT 3");
               $newsPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
               ?>
 
