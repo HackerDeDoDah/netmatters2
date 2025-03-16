@@ -4806,6 +4806,12 @@ input, textarea {
   margin: 20px;
 }
 
+#closer {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 #privacy {
   color: black;
   font-size: 16px;

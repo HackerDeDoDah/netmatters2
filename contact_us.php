@@ -90,10 +90,10 @@
                 <section>
                     <div class="form-container">
                         <div class="success">
-                            <p>Your message has been sent successfully.</p>
+                            <p>Your message has been sent!<span id="cleser">x</span></p>
                         </div>
                         <div class="failed">
-                            <p>Please fill out all required (<span class="required">*</span>) fields.</p>
+                            <p>Please fill out all required (<span class="required">*</span>) fields.<span id="cleser">x</span></p>
                         </div>
                         <form action="process_form.php" method="POST">
                             <div class="form-grid">
