@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
     if (!name) {
         errors.push('Name is required.');
     }
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!email || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
         errors.push('Valid email is required.');
     }
     if (!phone || !/^\+?[0-9\s-]+$/.test(phone)) {

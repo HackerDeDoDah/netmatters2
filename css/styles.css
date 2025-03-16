@@ -4711,7 +4711,7 @@ body {
 .form-container {
   display: flex;
   flex-direction: row;
-  background-color: #d9d7d7;
+  background-color: #dfdede;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -4786,6 +4786,26 @@ input, textarea {
   text-align: right;
 }
 
+.success {
+  display: flex;
+  background-color: rgb(127, 229, 127);
+  border: none;
+  color: #333;
+  padding: 10px;
+  width: 100%;
+  margin: 20px;
+}
+
+.failed {
+  display: flex;
+  background-color: rgb(229, 127, 127);
+  border: none;
+  color: #333;
+  padding: 10px;
+  width: 100%;
+  margin: 20px;
+}
+
 #privacy {
   color: black;
   font-size: 16px;
@@ -4793,7 +4813,7 @@ input, textarea {
 
 .privacy {
   display: flex;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .required {
