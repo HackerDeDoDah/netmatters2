@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
     if (!name) {
         errors.push('Name is required.');
     }
-    if (!email || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+    if (!email || !/^(?!test@test$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
         errors.push('Valid email is required.');
     }
     if (!phone || !/^\+?[0-9\s-]+$/.test(phone)) {
@@ -26,4 +26,15 @@ form.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent form submission
         alert(errors.join('\n'));
     }
+});
+
+
+// ----accordion------------------
+
+document.querySelector(".accordion").addEventListener("click", function() {
+    // const panel = document.querySelector(".panel");
+    // panel.style.display = panel.style.display === "block" ? "none" : "block";
+    // panel.classList.toggle("active");
+
+    document.querySelector(".panel").classList.toggle("active");
 });

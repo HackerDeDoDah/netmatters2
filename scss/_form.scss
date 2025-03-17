@@ -1,17 +1,19 @@
 .contact-info {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 790px 410px;
     width: 1200px;
     margin: 0 auto;
+    @media (max-width: 1259px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form-container {
     display: flex;
     flex-direction: row;
-    background-color: #dfdede;
+    background-color: #e3e1e1;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
     max-width: 790px;
@@ -20,13 +22,14 @@
 
 .form-grid {
     display: grid;
-    gap: 10px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
 .form-group {
     margin-bottom: 15px;
+    margin-left: 10px;
     width: 100%;
 }
 
@@ -41,6 +44,7 @@ input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .checkbox-group {
@@ -50,15 +54,49 @@ input, textarea {
     align-items: center;
 }
 
-.checkbox-group input {
-    margin-right: 10px;
+input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid #555;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-.my-checkbox {
-    display: flex;
-    transform: scale(2);
-    justify-content: flex-start;
+input[type="checkbox"]:checked {
+    background-color: #444;
+    border-color: #222;
+    position: relative;
 }
+
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+
+// .checkbox-group input {
+//     margin-right: 10px;
+// }
+
+// .my-checkbox {
+//     display: flex;
+//     transform: scale(2);
+//     justify-content: flex-start;
+//     &:checked {
+//         background-color: #333;
+//     }
+// }
 
 .form-btn {
     display: grid;
@@ -66,6 +104,7 @@ input, textarea {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
     .submit-btn {
         background-color: #333;
         color: #fff;
@@ -84,24 +123,40 @@ input, textarea {
     }
 }
 
-.success {
+.fail-succeed {
     display: flex;
+    flex-direction: column;
+    
+}
+
+.success {
+    display: none;
+    position: relative;
     background-color: rgb(127, 229, 127); 
     border: none;
     color: #333;
     padding: 10px;
     width: 100%;
+    height: fit-content;
     margin: 20px;
+    span {
+        justify-self: flex-end;
+    }
 }
 
 .failed {
-    display: flex;
+    display: none;
+    position: relative;
     background-color: rgb(229, 127, 127);
     border: none;
     color: #333;
     padding: 10px;
     width: 100%;
+    height: fit-content;
     margin: 20px;
+    span {
+        justify-self: flex-end;
+    }
 }
 
 #closer {
@@ -129,6 +184,7 @@ input, textarea {
     color: #333;
     font-size: 12px;
     margin-top: 10px;
+    margin-left: 10px;
     a {
         color: #333;
         cursor: pointer;
@@ -154,14 +210,23 @@ input, textarea {
     }
 }
 
-.accord p:hover {
-    text-decoration: underline;
+.accordion {
     cursor: pointer;
+    width: 300px;
+    h4 {
+        text-decoration: underline;
+    }
 }
 
-.accord-content {
-    display: none;
+.panel {
+    // display: none;
     text-decoration: none;
-    font-size: 14px;
-    cursor: default;
+    max-height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.panel.active {
+    // display: block;
+    max-height: 300px;
 }

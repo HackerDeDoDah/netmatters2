@@ -8,10 +8,10 @@
     <title>Contact Us | Netmatters</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Slick Theme (optional) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- side bar-->
@@ -90,10 +90,10 @@
                 <section>
                     <div class="form-container">
                         <div class="success">
-                            <p>Your message has been sent!<span id="cleser">x</span></p>
+                            <p>Your message has been sent!<span id="closer">X</span></p>
                         </div>
                         <div class="failed">
-                            <p>Please fill out all required (<span class="required">*</span>) fields.<span id="cleser">x</span></p>
+                            <p>Please fill out all required (<span class="required">*</span>) fields.<span id="closer">X</span></p>
                         </div>
                         <form action="process_form.php" method="POST">
                             <div class="form-grid">
@@ -119,7 +119,7 @@
                             
                             <div class="form-group">
                                 <label for="message">Message<span class="required">*</span></label>
-                                <textarea id="message" name="message" rows="4" required placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>
+                                <textarea id="message" name="message" rows="4">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                             </div>
                             <div class="checkbox-group">
                                 <input type="checkbox" class="my-checkbox" id="marketing" name="marketing">
@@ -149,16 +149,16 @@
                         <a href="mailto:sales@netmatters.com"><strong>sales@netmatters.com</strong></a>
                         <p>Business hours:</p>
                         <p>Monday - Friday 07:00 - 18:00</p>
-                        <div class="accord">
-                            <p>Out of Hours IT Support<i class="fa-solid fa-chevron-down"></i></p>
-                            <div class="accord-content">
+                        <div class="accordion">
+                            <h4><strong>Out of Hours IT Support<i class="fa-solid fa-chevron-down"></i></strong></h4>
+                            <div class="panel">
                                 <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                 <div class="opening">
-                                    <p>Monday - Friday 18:00 - 22:00</p>
-                                    <p>Saturday 08:00 - 16:00</p>
-                                    <p>Sunday 10:00 - 18:00</p>
+                                    <p><strong>Monday - Friday 18:00 - 22:00</strong></p>
+                                    <p><strong>Saturday 08:00 - 16:00</strong></p>
+                                    <p><strong>Sunday 10:00 - 18:00</strong></p>
                                 </div>
-                                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                                <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
                             </div>
                         </div>
                     </div>
@@ -185,6 +185,7 @@
     <script src="js/sticky.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/cookie.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>
