@@ -1902,6 +1902,11 @@ body, .tool-tip {
   width: 100%;
   max-width: 1200px;
 }
+@media (max-width: 990px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .contact-card {
   display: flex;
@@ -1963,6 +1968,15 @@ body, .tool-tip {
 .OurOffices p {
   font-size: 36px;
   color: #333;
+}
+@media (max-width: 990px) {
+  .OurOffices {
+    max-width: 700px;
+    background-color: #333;
+  }
+  .OurOffices p {
+    color: #fff;
+  }
 }
 
 .container-white {
