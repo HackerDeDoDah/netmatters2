@@ -191,8 +191,11 @@
     max-width: 1200px;
     @media (max-width: 990px) {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
+
+
 
 .contact-card {
     display: flex;
@@ -202,7 +205,12 @@
     border-radius: 20px 20px 0 0;
     max-width: 400px;
     width: 100%;
-    height: 500px;
+    height: fit-content;
+    @media (max-width: 990px) {
+        max-width: 700px;
+        margin: 0 auto;
+        // height: 650px;
+    }
 }
 
 .office {
@@ -222,6 +230,7 @@
 }
 
 .card-btn {
+    display: flex;
     background-color: #926fb1;
     color: #fff;
     font-size: 16px;
@@ -230,6 +239,7 @@
     border: none;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     &:hover {
         background-color: #7f458d;
@@ -248,17 +258,22 @@
 .OurOffices {
     display: flex;
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px 0;
     p {
         font-size: 36px;
         color: #333; 
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
     }
     @media (max-width: 990px) {
-        max-width: 700px;
         background-color: #333;
+        margin: 0 0 40px 0;
+        height: 70px;
+        align-items: center;
         p {
             color: #fff;
+            max-width: 700px;
         }
     }
 }
@@ -269,7 +284,6 @@
     width: 100%;
     height: 50px;
     margin: 0;
-    // top: -20px;
     box-shadow: #4a4a4a6c 0px 0px 10px;
     a {
         color: #333;
@@ -279,6 +293,9 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+    }
+    @media (max-width: 990px) {
+        top: 40px;
     }
 }
 

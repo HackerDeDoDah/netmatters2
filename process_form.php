@@ -36,8 +36,3 @@ if ($stmt->execute()) {
     header("Location: contact_us.php?status=error");
     exit();
 }
-
-$stmt->close(); // don't understand why this is error?
-
-$conn->close();
-?>

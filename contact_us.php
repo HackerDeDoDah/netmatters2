@@ -89,13 +89,13 @@
             <div class="contact-info">
                 <section>
                     <div class="form-container">
-                        <div class="success">
-                            <p>Your message has been sent!<span id="closer">X</span></p>
-                        </div>
-                        <div class="failed">
-                            <p>Please fill out all required (<span class="required">*</span>) fields.<span id="closer">X</span></p>
-                        </div>
                         <form action="process_form.php" method="POST">
+                            <div class="success" style="display: none;">
+                                <p>Your message has been sent! <span id="closer">X</span></p>
+                            </div>
+                            <div class="failed" style="display: none;">
+                                <p>Please fill out all required (<span class="required">*</span>) fields. <span id="closer">X</span></p>
+                            </div>
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label for="name">Your Name<span class="required">*</span></label>

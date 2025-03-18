@@ -313,7 +313,7 @@ a:hover {
 }
 @media (max-width: 450px) {
   .social-container {
-    margin: 0;
+    margin: 0 0 50px 0;
   }
 }
 
@@ -1905,6 +1905,7 @@ body, .tool-tip {
 @media (max-width: 990px) {
   .contact-grid {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -1916,7 +1917,13 @@ body, .tool-tip {
   border-radius: 20px 20px 0 0;
   max-width: 400px;
   width: 100%;
-  height: 500px;
+  height: fit-content;
+}
+@media (max-width: 990px) {
+  .contact-card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .office {
@@ -1936,6 +1943,7 @@ body, .tool-tip {
 }
 
 .card-btn {
+  display: flex;
   background-color: #926fb1;
   color: #fff;
   font-size: 16px;
@@ -1944,6 +1952,7 @@ body, .tool-tip {
   border: none;
   margin-top: 20px;
   margin-left: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 .card-btn:hover {
@@ -1962,20 +1971,25 @@ body, .tool-tip {
 .OurOffices {
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 .OurOffices p {
   font-size: 36px;
   color: #333;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 990px) {
   .OurOffices {
-    max-width: 700px;
     background-color: #333;
+    margin: 0 0 40px 0;
+    height: 70px;
+    align-items: center;
   }
   .OurOffices p {
     color: #fff;
+    max-width: 700px;
   }
 }
 
@@ -1995,6 +2009,11 @@ body, .tool-tip {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 990px) {
+  .container-white {
+    top: 40px;
+  }
 }
 
 .telephone {
@@ -4725,6 +4744,7 @@ body {
 @media (max-width: 1259px) {
   .contact-info {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 
@@ -4738,6 +4758,13 @@ body {
   max-width: 790px;
   margin: 20px 0;
 }
+@media (max-width: 990px) {
+  .form-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .form-grid {
   display: grid;
@@ -4745,11 +4772,22 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+@media (max-width: 990px) {
+  .form-grid {
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+}
 
 .form-group {
   margin-bottom: 15px;
   margin-left: 10px;
   width: 100%;
+}
+@media (max-width: 990px) {
+  .form-group {
+    width: 96%;
+  }
 }
 
 label {
@@ -4834,7 +4872,7 @@ input[type=checkbox]:checked::before {
 }
 
 .success {
-  display: none;
+  display: flex;
   position: relative;
   background-color: rgb(127, 229, 127);
   border: none;
@@ -4913,10 +4951,16 @@ input[type=checkbox]:checked::before {
 .contact-text-container a :hover {
   text-decoration: underline;
 }
+@media (max-width: 450px) {
+  .contact-text-container a {
+    font-size: 18px;
+  }
+}
 
 .accordion {
   cursor: pointer;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 .accordion h4 {
   text-decoration: underline;
