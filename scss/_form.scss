@@ -2,11 +2,13 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 790px 410px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     @media (max-width: 1259px) {
-        grid-template-columns: 1fr;
-        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 1100px;
     }
 }
 
@@ -19,6 +21,7 @@
     width: 100%;
     max-width: 790px;
     margin: 20px 0;
+    grid-area: 1;
     @media (max-width: 990px) {
         max-width: 700px;
         margin-left:auto;
@@ -193,8 +196,9 @@ input[type="checkbox"]:checked::before {
 .contact-text-container {
     margin: 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
+    grid-area: 2;
     p {
         font-size: 16px;
         color: #333;
@@ -209,6 +213,10 @@ input[type="checkbox"]:checked::before {
         @media (max-width: 450px) {
             font-size: 18px;
         }
+    }
+    @media (max-width: 990px) {
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
@@ -227,10 +235,10 @@ input[type="checkbox"]:checked::before {
     text-decoration: none;
     max-height: 0;
     overflow: hidden;
-    transition: height 0.3s ease;
+    transition: max-height 0.5s ease-out;
 }
 
 .panel.active {
     // display: block;
-    max-height: 300px;
+    max-height: 400px;
 }

@@ -1897,6 +1897,7 @@ body, .tool-tip {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
   gap: 30px;
   margin: 0 auto;
   width: 100%;
@@ -1906,6 +1907,11 @@ body, .tool-tip {
   .contact-grid {
     grid-template-columns: 1fr;
     margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .contact-grid {
+    width: 95%;
   }
 }
 
@@ -1984,12 +1990,17 @@ body, .tool-tip {
   .OurOffices {
     background-color: #333;
     margin: 0 0 40px 0;
-    height: 70px;
+    height: 80px;
     align-items: center;
   }
   .OurOffices p {
     color: #fff;
     max-width: 700px;
+  }
+}
+@media (max-width: 450px) {
+  .OurOffices {
+    margin-top: 20px;
   }
 }
 
@@ -2012,7 +2023,15 @@ body, .tool-tip {
 }
 @media (max-width: 990px) {
   .container-white {
-    top: 40px;
+    margin-top: 20px;
+  }
+  .container-white .home {
+    max-width: 700px;
+  }
+}
+@media (max-width: 450px) {
+  .container-white {
+    display: none;
   }
 }
 
@@ -4738,13 +4757,15 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: 790px 410px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1259px) {
   .contact-info {
-    grid-template-columns: 1fr;
-    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1100px;
   }
 }
 
@@ -4757,6 +4778,7 @@ body {
   width: 100%;
   max-width: 790px;
   margin: 20px 0;
+  grid-area: 1;
 }
 @media (max-width: 990px) {
   .form-container {
@@ -4936,8 +4958,9 @@ input[type=checkbox]:checked::before {
 .contact-text-container {
   margin: 0;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   padding: 20px;
+  grid-area: 2;
 }
 .contact-text-container p {
   font-size: 16px;
@@ -4956,6 +4979,12 @@ input[type=checkbox]:checked::before {
     font-size: 18px;
   }
 }
+@media (max-width: 990px) {
+  .contact-text-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .accordion {
   cursor: pointer;
@@ -4970,9 +4999,9 @@ input[type=checkbox]:checked::before {
   text-decoration: none;
   max-height: 0;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: max-height 0.5s ease-out;
 }
 
 .panel.active {
-  max-height: 300px;
+  max-height: 400px;
 }/*# sourceMappingURL=styles.css.map */
