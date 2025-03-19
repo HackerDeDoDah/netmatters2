@@ -89,42 +89,82 @@
             <div class="contact-info" id="contact">
                 <section>
                     <div class="form-container">
-                        <?php if (isset($_GET['errors'])): ?>
-                            <div class="failed" style="display: flex; flex-direction: column; color: #fff; background-color: red; border: 2px solid red; padding: 10px; margin-bottom: 15px;">
-                                <?php echo nl2br(htmlspecialchars($_GET['errors'])); ?>
-                            </div>
-                        <?php endif; ?>
+                        
                         <form action="process_form.php" method="POST">
-                            <div class="success" style="display: none;">
-                                <p>Your message has been sent! <span id="closer">X</span></p>
-                            </div>
-                            <!-- <div class="failed" style="display: none;">
-                                <p>Please fill out all required (<span class="required">*</span>) fields. <span id="closer">X</span></p>
-                            </div> -->
+                            <?php if (isset($_GET['success'])): ?>
+                                <div id="success-box" style="
+                                    background-color: #d4edda; 
+                                    border: 2px solid #28a745; 
+                                    color: #155724; 
+                                    padding: 10px 15px; 
+                                    margin-bottom: 15px; 
+                                    display: flex; 
+                                    justify-content: space-between; 
+                                    align-items: center;
+                                    border-radius: 5px;
+                                ">
+                                    Your message was sent successfully!
+                                    <span id="close-success" style="
+                                        cursor: pointer; 
+                                        font-weight: bold; 
+                                        font-size: 12px;
+                                        margin-left: 10px;
+                                    ">
+                                        ❌
+                                    </span>
+                                </div>
+                            <?php endif; ?>
+                            <?php if (isset($_GET['errors'])): ?>
+                                <div id="fail-box" style="
+                                    background-color:rgb(237, 212, 212); 
+                                    border: 2px solid rgb(167, 40, 40); 
+                                    color:rgb(87, 21, 21); 
+                                    padding: 10px 15px; 
+                                    margin-bottom: 15px; 
+                                    display: flex; 
+                                    justify-content: space-between; 
+                                    align-items: center;
+                                    border-radius: 5px;
+                                ">
+                                    Unable to send your message!
+                                    <span id="close-fail" style="
+                                        cursor: pointer; 
+                                        font-weight: bold; 
+                                        font-size: 12px;
+                                        margin-left: 10px;
+                                    ">
+                                        ❌
+                                    </span>
+                                </div>
+                            <?php endif; ?>
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label for="name">Your Name<span class="required">*</span></label>
-                                    <input type="text" id="name" name="name" required>
+                                    <input type="text" id="name" name="name" value="<?php echo htmlspecialchars($_GET['name'] ?? ''); ?>"
+                                    style="<?php echo isset($_GET['errors']['name']) ? 'border: 2px solid red;' : ''; ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="company">Company Name</label>
-                                    <input type="text" id="company" name="company">
+                                    <input type="text" id="company" name="company" value="<?php echo htmlspecialchars($_GET['company'] ?? ''); ?>">
                                 </div>
                             </div>
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label for="email">Your Email<span class="required">*</span></label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($_GET['email'] ?? ''); ?>"
+                                    style="<?php echo isset($_GET['errors']['email']) ? 'border: 2px solid red;' : ''; ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Your Telephone Number<span class="required">*</span></label>
-                                    <input type="tel" id="phone" name="phone" required>
+                                    <input type="tel" id="phone" name="phone" value="<?php echo htmlspecialchars($_GET['phone'] ?? ''); ?>"
+                                    style="<?php echo isset($_GET['errors']['phone']) ? 'border: 2px solid red;' : ''; ?>" required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label for="message">Message<span class="required">*</span></label>
-                                <textarea id="message" name="message" rows="4">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"
+                                style="<?php echo isset($_GET['errors']['message']) ? 'border: 2px solid red;' : ''; ?>"><?php echo htmlspecialchars($_GET['message'] ?? ''); ?></textarea>
                             </div>
                             <div class="checkbox-group">
                                 <input type="checkbox" class="my-checkbox" id="marketing" name="marketing">

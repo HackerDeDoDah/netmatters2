@@ -35,3 +35,25 @@ form.addEventListener('submit', function (e) {
         alert(errors.join('\n'));
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const successBox = document.getElementById('success-box');
+    const closeButton = document.getElementById('close-success');
+
+    if (successBox && closeButton) {
+        closeButton.addEventListener('click', function () {
+            successBox.style.display = 'none';
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const failBox = document.getElementById('fail-box');
+    const closeButton = document.getElementById('close-fail');
+
+    if (failBox && closeButton) {
+        closeButton.addEventListener('click', function () {
+            failBox.style.display = 'none';
+        });
+    }
+});
