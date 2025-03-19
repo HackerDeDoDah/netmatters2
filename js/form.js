@@ -1,9 +1,10 @@
 // JavaScript Form Validation
 const form = document.querySelector('form');
+const emailInput = document.getElementById('email');
 
 form.addEventListener('submit', function (e) {
     const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
+    const email = emailInput.value.trim();
     const phone = document.getElementById('phone').value.trim();
     const message = document.getElementById('message').value.trim();
 
@@ -12,29 +13,25 @@ form.addEventListener('submit', function (e) {
     if (!name) {
         errors.push('Name is required.');
     }
-    if (!email || !/^(?!test@test$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+
+    const emailRegex = /^(?!test@test$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email || !emailRegex.test(email)) {
         errors.push('Valid email is required.');
+        email.style.border = '2px solid red'; // red border email input
+    } else {
+        email.style.border = ''; // reset if valid
     }
+
     if (!phone || !/^\+?[0-9\s-]+$/.test(phone)) {
         errors.push('Valid phone number is required.');
     }
+
     if (!message) {
-        errors.push('Message is required.');
+        errors.push('Message requires a minimum of five words.');
     }
 
     if (errors.length > 0) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault(); // prevent form submission
         alert(errors.join('\n'));
     }
-});
-
-
-// ----accordion------------------
-
-document.querySelector(".accordion").addEventListener("click", function() {
-    // const panel = document.querySelector(".panel");
-    // panel.style.display = panel.style.display === "block" ? "none" : "block";
-    // panel.classList.toggle("active");
-
-    document.querySelector(".panel").classList.toggle("active");
 });

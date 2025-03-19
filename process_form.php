@@ -13,12 +13,19 @@ if ($conn->connect_error) {
 }
 
 // Collect form data
-$name = htmlspecialchars($_POST['name']);
-$company = htmlspecialchars($_POST['company']);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$phone = htmlspecialchars($_POST['phone']);
-$message = htmlspecialchars($_POST['message']);
+$name = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES | ENT_HTML5);
+$company = htmlspecialchars(trim($_POST['company'] ?? ''), ENT_QUOTES | ENT_HTML5);
+$email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$phone = htmlspecialchars(trim($_POST['phone'] ?? ''), ENT_QUOTES | ENT_HTML5);
+$message = htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES | ENT_HTML5);
 $marketing = isset($_POST['marketing']) ? 1 : 0;
+
+// email validation
+if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $email === 'test@test.com') {
+    // handle invalid email
+    header("Location: contact_us.php?errors=" . urlencode("Invalid email address provided.") . "#contact");
+    exit;
+}
 
 //execute SQL 
 $sql = "INSERT INTO enquiries (name, company, email, phone, message, marketing) 
@@ -29,10 +36,10 @@ $stmt->bind_param("sssssi", $name, $company, $email, $phone, $message, $marketin
 
 if ($stmt->execute()) {
     // Redirect
-    header("Location: contact_us.php?status=success");
-    exit();
+    header("Location: contact_us.php?errors=" . urlencode("Submission unsuccessful.") . "#contact");
+    exit;
 } else {
     // Redirect
-    header("Location: contact_us.php?status=error");
+    header("Location: contact_us.php?status=error#contact");
     exit();
 }

@@ -14,7 +14,7 @@
 
 .form-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #e3e1e1;
     padding: 20px;
     border-radius: 8px;
@@ -220,6 +220,8 @@ input[type="checkbox"]:checked::before {
     }
 }
 
+// accordion---------------------
+
 .accordion {
     cursor: pointer;
     max-width: 300px;
@@ -227,11 +229,9 @@ input[type="checkbox"]:checked::before {
     h4 {
         text-decoration: underline;
     }
-
 }
 
 .panel {
-    // display: none;
     text-decoration: none;
     max-height: 0;
     overflow: hidden;
@@ -239,6 +239,5 @@ input[type="checkbox"]:checked::before {
 }
 
 .panel.active {
-    // display: block;
     max-height: 400px;
 }

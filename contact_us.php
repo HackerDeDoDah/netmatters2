@@ -86,16 +86,21 @@
                 </div>
             </section>
 
-            <div class="contact-info">
+            <div class="contact-info" id="contact">
                 <section>
                     <div class="form-container">
+                        <?php if (isset($_GET['errors'])): ?>
+                            <div class="failed" style="display: flex; flex-direction: column; color: #fff; background-color: red; border: 2px solid red; padding: 10px; margin-bottom: 15px;">
+                                <?php echo nl2br(htmlspecialchars($_GET['errors'])); ?>
+                            </div>
+                        <?php endif; ?>
                         <form action="process_form.php" method="POST">
                             <div class="success" style="display: none;">
                                 <p>Your message has been sent! <span id="closer">X</span></p>
                             </div>
-                            <div class="failed" style="display: none;">
+                            <!-- <div class="failed" style="display: none;">
                                 <p>Please fill out all required (<span class="required">*</span>) fields. <span id="closer">X</span></p>
-                            </div>
+                            </div> -->
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label for="name">Your Name<span class="required">*</span></label>
@@ -186,6 +191,7 @@
     <script src="js/sidebar.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/form.js"></script>
-
+    <script src="js/accordion.js"></script>
+    
 </body>
 </html>
