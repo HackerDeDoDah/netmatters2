@@ -1,11 +1,9 @@
-
-
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "form_entries";
+$database = "christopherday_form_entries";
+$username = "christopherday_christopherday";
+$password = "P.w^AWF6W=96";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
