@@ -1,20 +1,20 @@
 // Sidebar Pop-out & Swipe-to-Close
+let isSidebarOpen = false; // Track sidebar state
 
 function toggleNav() {
     var body = document.querySelector(".full-container");
-    var burger = document.querySelector(".hamburger"); // Select hamburger element
-
-    var isOpen = body.style.transform === "translateX(-360px)";
+    var burger = document.querySelector(".hamburger");
+    var overlay = document.querySelector(".overlay");
+    var isOpen = isSidebarOpen;
 
     if (!isOpen) {
         openNav();
-        burger.classList.add("open"); // Add open class
+        burger.classList.add("open");
     } else {
         closeNav();
-        burger.classList.remove("open"); // Remove open class
+        burger.classList.remove("open");
     }
 }
-
 
 function openNav() {
     var body = document.querySelector(".full-container");
@@ -26,32 +26,31 @@ function openNav() {
     body.style.transition = "transform 0.3s ease";
     overlay.style.display = "flex";
 
-    document.dispatchEvent(new Event("sidebarOpen")); // tell sticky.js
-    isSidebarOpen = true; // Update state
+    isSidebarOpen = true;
+    document.dispatchEvent(new Event("sidebarOpen")); // Notify sticky.js
 }
 
 function closeNav() {
     var body = document.querySelector(".full-container");
     var overlay = document.querySelector(".overlay");
-    var burger = document.querySelector(".hamburger"); 
+    var burger = document.querySelector(".hamburger");
 
     body.style.transform = "translateX(0)";
     overlay.style.display = "none";
+    burger.classList.remove("open");
 
-    burger.classList.remove("open"); // hamburger reset
-
-    document.dispatchEvent(new Event("sidebarClose")); // Notify
     isSidebarOpen = false;
+    document.dispatchEvent(new Event("sidebarClose")); // Notify sticky.js
+
+    // Force sticky header to update after sidebar closes
+    setTimeout(() => {
+        window.dispatchEvent(new Event("scroll"));
+    }, 50);
 }
 
-
-// event listener for button
+// Event listeners
 document.querySelector(".burger-container").addEventListener('click', toggleNav);
-
-document.querySelector(".overlay").addEventListener('click', function() {
-    closeNav();
-});
-
+document.querySelector(".overlay").addEventListener('click', closeNav);
 
 // Swipe-to-close
 let startX = 0;
@@ -65,7 +64,7 @@ sidebar.addEventListener("touchmove", function (event) {
     let moveX = event.touches[0].clientX;
     let diffX = moveX - startX;
 
-    if (diffX < 40) { // If swiping right
+    if (diffX < 40) {
         closeNav();
     }
 }, false);
