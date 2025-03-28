@@ -295,3 +295,65 @@
     }
 }
 
+// Menu colors map
+$menu-colors: (
+    'bs': #67809f,
+    'it': #4183d7,
+    'dm': #2ecc71,
+    'ts': #ce4125,
+    'wd': #926fb1,
+    'cs': #f62459,
+    'dc': #ce4125
+);
+
+@mixin hover-triangle($color) {
+    background-color: $color;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 85px 0 85px;
+        border-color: $color transparent transparent transparent;
+        top: 82px;
+        left: 0;
+        margin-top: 12px;
+        align-self: center;
+        @media screen and (max-width: 1030px) and (min-width: 1020px) {
+            border-width: 20px 65px 0 65px;
+        }
+    }
+}
+
+// Top cards color map
+$top-card-colors: (
+    'top1': #67809f,
+    'top2': #4287f5,
+    'top3': #2ecc71,
+    'top4': #ce4125,
+    'top5': #926fb1,
+    'top6': #f62459,
+    'top7': #ce4125
+);
+
+@mixin top-card-hover($color) {
+    background-color: $color;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    @include color;
+    @include change;
+    .circle-background {
+        background-color: #fff;
+    }
+    .fa-solid {
+        color: $color;
+    }
+    .card-button-top {
+        color: $color;
+    }
+}
+

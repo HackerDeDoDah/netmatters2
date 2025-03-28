@@ -1199,10 +1199,9 @@ body, .tool-tip {
 .card-button-top {
   display: flex;
   flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  padding: 15px 15px;
+  margin: 20px auto;
+  height: 25px;
+  padding: 4px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -4171,73 +4170,80 @@ ul.slick-dots li.slick-active::before {
 }
 
 #bs:hover ~ #bespoke-software,
-#bespoke-software:hover {
+#bespoke-software:hover,
+#bespoke-software:hover ~ #bs {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: #566a83;
+  background-color: #526781;
 }
 
 #it:hover ~ #it-support,
-#it-support:hover {
+#it-support:hover,
+#it-support:hover ~ #it {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: #4287fa;
+  background-color: #5691db;
 }
 
 #dm:hover ~ #digital-marketing,
-#digital-marketing:hover {
+#digital-marketing:hover,
+#digital-marketing:hover ~ #dm {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: green;
+  background-color: #25a25a;
 }
 
 #ts:hover ~ #telecoms-services,
-#telecoms-services:hover {
+#telecoms-services:hover,
+#telecoms-services:hover ~ #ts {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: brown;
+  background-color: #a3331d;
 }
 
 #wd:hover ~ #web-design,
-#web-design:hover {
+#web-design:hover,
+#web-design:hover ~ #wd {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: purple;
+  background-color: #79539a;
 }
 
 #cs:hover ~ #cyber-security,
-#cyber-security:hover {
+#cyber-security:hover,
+#cyber-security:hover ~ #cs {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: #cf1846;
+  background-color: #de093f;
 }
 
 #dc:hover ~ #developer-course,
-#developer-course:hover {
+#developer-course:hover,
+#developer-course:hover ~ #dc {
   display: block;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: brown;
+  background-color: #a3331d;
 }
 
 .menu-container:hover .arrow,
@@ -4314,10 +4320,14 @@ ul.slick-dots li.slick-active::before {
   padding-right: 0.6rem;
 }
 
-#bs:hover {
+#bs:hover,
+#bs:hover ~ #bs-section,
+#bs-section:hover ~ #bs {
   background-color: #67809f;
 }
-#bs:hover::after {
+#bs:hover::after,
+#bs:hover ~ #bs-section::after,
+#bs-section:hover ~ #bs::after {
   content: "";
   display: block;
   position: absolute;
@@ -4332,11 +4342,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #bs:hover::after,
+  #bs:hover ~ #bs-section::after,
+  #bs-section:hover ~ #bs::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#it:hover {
+#it:hover,
+#it:hover ~ #it-section,
+#it-section:hover ~ #it {
   background-color: #4183d7;
 }
-#it:hover::after {
+#it:hover::after,
+#it:hover ~ #it-section::after,
+#it-section:hover ~ #it::after {
   content: "";
   display: block;
   position: absolute;
@@ -4351,11 +4372,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #it:hover::after,
+  #it:hover ~ #it-section::after,
+  #it-section:hover ~ #it::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#dm:hover {
+#dm:hover,
+#dm:hover ~ #dm-section,
+#dm-section:hover ~ #dm {
   background-color: #2ecc71;
 }
-#dm:hover::after {
+#dm:hover::after,
+#dm:hover ~ #dm-section::after,
+#dm-section:hover ~ #dm::after {
   content: "";
   display: block;
   position: absolute;
@@ -4370,11 +4402,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #dm:hover::after,
+  #dm:hover ~ #dm-section::after,
+  #dm-section:hover ~ #dm::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#ts:hover {
+#ts:hover,
+#ts:hover ~ #ts-section,
+#ts-section:hover ~ #ts {
   background-color: #ce4125;
 }
-#ts:hover::after {
+#ts:hover::after,
+#ts:hover ~ #ts-section::after,
+#ts-section:hover ~ #ts::after {
   content: "";
   display: block;
   position: absolute;
@@ -4389,11 +4432,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #ts:hover::after,
+  #ts:hover ~ #ts-section::after,
+  #ts-section:hover ~ #ts::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#wd:hover {
+#wd:hover,
+#wd:hover ~ #wd-section,
+#wd-section:hover ~ #wd {
   background-color: #926fb1;
 }
-#wd:hover::after {
+#wd:hover::after,
+#wd:hover ~ #wd-section::after,
+#wd-section:hover ~ #wd::after {
   content: "";
   display: block;
   position: absolute;
@@ -4408,11 +4462,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #wd:hover::after,
+  #wd:hover ~ #wd-section::after,
+  #wd-section:hover ~ #wd::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#cs:hover {
+#cs:hover,
+#cs:hover ~ #cs-section,
+#cs-section:hover ~ #cs {
   background-color: #f62459;
 }
-#cs:hover::after {
+#cs:hover::after,
+#cs:hover ~ #cs-section::after,
+#cs-section:hover ~ #cs::after {
   content: "";
   display: block;
   position: absolute;
@@ -4427,11 +4492,22 @@ ul.slick-dots li.slick-active::before {
   margin-top: 12px;
   align-self: center;
 }
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #cs:hover::after,
+  #cs:hover ~ #cs-section::after,
+  #cs-section:hover ~ #cs::after {
+    border-width: 20px 65px 0 65px;
+  }
+}
 
-#dc:hover {
+#dc:hover,
+#dc:hover ~ #dc-section,
+#dc-section:hover ~ #dc {
   background-color: #ce4125;
 }
-#dc:hover::after {
+#dc:hover::after,
+#dc:hover ~ #dc-section::after,
+#dc-section:hover ~ #dc::after {
   content: "";
   display: block;
   position: absolute;
@@ -4445,6 +4521,13 @@ ul.slick-dots li.slick-active::before {
   left: 0;
   margin-top: 12px;
   align-self: center;
+}
+@media screen and (max-width: 1030px) and (min-width: 1020px) {
+  #dc:hover::after,
+  #dc:hover ~ #dc-section::after,
+  #dc-section:hover ~ #dc::after {
+    border-width: 20px 65px 0 65px;
+  }
 }
 
 .content-container {

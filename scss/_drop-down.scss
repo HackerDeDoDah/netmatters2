@@ -117,73 +117,80 @@
 }
 
 #bs:hover ~ #bespoke-software,
-#bespoke-software:hover {
+#bespoke-software:hover,
+#bespoke-software:hover ~ #bs {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #566a83;
+    background-color: darken(map-get(m.$menu-colors, 'bs'), 10%);
 }
 
 #it:hover ~ #it-support,
-#it-support:hover { 
-    display : block;
+#it-support:hover,
+#it-support:hover ~ #it { 
+    display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #4287fa;
+    background-color: lighten(map-get(m.$menu-colors, 'it'), 5%);
 }
 
 #dm:hover ~ #digital-marketing,
-#digital-marketing:hover {
+#digital-marketing:hover,
+#digital-marketing:hover ~ #dm {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: green;
+    background-color: darken(map-get(m.$menu-colors, 'dm'), 10%);
 }
 
 #ts:hover ~ #telecoms-services,
-#telecoms-services:hover {
+#telecoms-services:hover,
+#telecoms-services:hover ~ #ts {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: brown;
+    background-color: darken(map-get(m.$menu-colors, 'ts'), 10%);
 }
 
 #wd:hover ~ #web-design,
-#web-design:hover {
+#web-design:hover,
+#web-design:hover ~ #wd {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: purple;
+    background-color: darken(map-get(m.$menu-colors, 'wd'), 10%);
 }
 
 #cs:hover ~ #cyber-security,
-#cyber-security:hover {
+#cyber-security:hover,
+#cyber-security:hover ~ #cs {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #cf1846;
+    background-color: darken(map-get(m.$menu-colors, 'cs'), 10%);
 }
 
 #dc:hover ~ #developer-course,
-#developer-course:hover {
+#developer-course:hover,
+#developer-course:hover ~ #dc {
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: brown;
+    background-color: darken(map-get(m.$menu-colors, 'dc'), 10%);
 }
 
 .menu-container:hover .arrow, 
@@ -232,136 +239,12 @@
     }
 }
 
-#bs:hover {
-    background-color: #67809f;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #67809f transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#it:hover {
-    background-color: #4183d7;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #4183d7 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#dm:hover {
-    background-color: #2ecc71;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #2ecc71 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#ts:hover {
-    background-color: #ce4125;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #ce4125 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#wd:hover {
-    background-color: #926fb1;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #926fb1 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#cs:hover {
-    background-color: #f62459;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #f62459 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
-    }
-}
-
-#dc:hover {
-    background-color: #ce4125;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 85px 0 85px;
-        border-color: #ce4125 transparent transparent transparent;
-        top: 82px;
-        left: 0;
-        margin-top: 12px;
-        align-self: center;
+// Apply the mixin to all menu items using the color map
+@each $id, $color in m.$menu-colors {
+    ##{$id}:hover,
+    ##{$id}:hover ~ ##{$id}-section,
+    ##{$id}-section:hover ~ ##{$id} {
+        @include m.hover-triangle($color);
     }
 }
 
