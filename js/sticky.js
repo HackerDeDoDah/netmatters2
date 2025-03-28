@@ -1,4 +1,3 @@
-
 // sticky header
 
 // simple version----------------
@@ -8,14 +7,21 @@ jQuery(document).ready(function($) {
     var $sticky = $('.sticky-container');
     var scrollThreshold = 600;
     var sidebarActive = false;
+    var isInitialized = false;
 
-    $sticky.css({
-        'position': 'fixed',
-        'top': '0',
-        'width': '100%',
-        'transition': 'top 0.3s ease',
-        'z-index': '1000'
-    });
+    function initializeSticky() {
+        if (isInitialized) return;
+        
+        $sticky.css({
+            'position': 'fixed',
+            'top': '0',
+            'width': '100%',
+            'transition': 'top 0.3s ease',
+            'z-index': '1000'
+        });
+        
+        isInitialized = true;
+    }
 
     function handleScroll() {
         if (sidebarActive) return; // Prevent changes when sidebar is open
@@ -34,7 +40,20 @@ jQuery(document).ready(function($) {
         lastScrollTop = scrollTop;
     }
 
-    $(window).on('scroll', handleScroll);
+    // Initialize sticky header
+    initializeSticky();
+
+    // Use requestAnimationFrame for smoother scroll handling
+    let ticking = false;
+    $(window).on('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
 
     // Sidebar event listeners
     document.addEventListener("sidebarOpen", function() {
@@ -47,5 +66,11 @@ jQuery(document).ready(function($) {
         setTimeout(() => {
             handleScroll(); // Recalculate header position
         }, 50);
+    });
+
+    // Re-initialize on window resize
+    $(window).on('resize', function() {
+        initializeSticky();
+        handleScroll();
     });
 });

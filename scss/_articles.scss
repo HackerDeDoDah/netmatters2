@@ -197,6 +197,7 @@
     @media (max-width: 1200px) {
         width: 95%;
     }
+    
 }
 
 .contact-card {
@@ -219,6 +220,7 @@
     font-size: 20px;
     margin-left: 20px;
     margin-top: 0;
+    color: #333645; 
     &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -263,13 +265,13 @@
     margin: 20px 0;
     p {
         font-size: 36px;
-        color: #333; 
+        color: #333645 ; 
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
     }
     @media (max-width: 990px) {
-        background-color: #333;
+        background-color: #333645;
         margin: 0 0 40px 0;
         height: 80px;
         align-items: center;
@@ -291,7 +293,7 @@
     margin: 0;
     box-shadow: #4a4a4a6c 0px 0px 10px;
     a {
-        color: #333;
+        color: #333645;
         font-size: 16px;
     }
     .home {
