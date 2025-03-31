@@ -1,9 +1,20 @@
 <?php
+// Load environment variables
+$envFile = __DIR__ . '/.env';
+if (file_exists($envFile)) {
+    $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($lines as $line) {
+        if (strpos($line, '=') !== false && strpos($line, '#') !== 0) {
+            list($key, $value) = explode('=', $line, 2);
+            $_ENV[trim($key)] = trim($value);
+        }
+    }
+}
 
-$servername = "localhost";
-$database = "form_entries";
-$username = "root";
-$password = "";
+$servername = $_ENV['FORM_DB_HOST'] ?? "localhost";
+$database = $_ENV['FORM_DB_NAME'] ?? "form_entries";
+$username = $_ENV['FORM_DB_USER'] ?? "root";
+$password = $_ENV['FORM_DB_PASS'] ?? "";
 
 $conn = new mysqli($servername, $username, $password, $database);
 

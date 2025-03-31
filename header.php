@@ -3,9 +3,7 @@
             <header>
                 <div class="container-nav header-flex">
                     <nav>
-                        <form action="index.php" method="get">
-                            <img src="assets/img/f-logo.webp" alt="netmatters" tabindex="0">
-                        </form>
+                        <a href="index.php"><img src="assets/img/f-logo.webp" alt="netmatters" tabindex="0"></a>
                         <div class="right-align">
                             <button class="button btn-blue"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</button>
                             <form action="contact_us.php" method="get">
