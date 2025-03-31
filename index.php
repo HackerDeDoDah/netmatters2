@@ -418,7 +418,6 @@
   <!--splide js-->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <!-- main js -->
-  <script src="js/scripts.js" defer></script> <!-- Added defer attribute for better loading -->
   <script src="js/sticky.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/cookie.js"></script>
