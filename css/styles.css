@@ -1200,8 +1200,8 @@ body, .tool-tip {
   display: flex;
   flex-direction: row;
   margin: 20px auto;
-  height: 25px;
-  padding: 4px 15px;
+  height: 55px;
+  padding: 15px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -2212,6 +2212,13 @@ nav img {
   width: 290px;
 }
 
+.search-bar span {
+  background-color: #999aa2;
+}
+.search-bar span:hover {
+  background-color: #7a7a7a;
+}
+
 .search-input {
   padding: 8px 10px;
   font-size: 14px;
@@ -2234,6 +2241,9 @@ nav img {
   border-radius: 4px;
   cursor: pointer;
   z-index: 2;
+}
+.search-icon:hover {
+  background-color: #7a7a7a;
 }
 
 .search-button {
@@ -3368,22 +3378,22 @@ ul.slick-dots li.slick-active::before {
 .menu-item:not(:hover) .n-6 {
   color: #C13584;
 }
-.menu-item:hover .cc-1 {
+.menu-item:hover .cc-1, .menu-item:focus .cc-1 {
   background-color: #f7b322;
 }
-.menu-item:hover .cc-2 {
+.menu-item:hover .cc-2, .menu-item:focus .cc-2 {
   background-color: #4183d7;
 }
-.menu-item:hover .cc-3 {
+.menu-item:hover .cc-3, .menu-item:focus .cc-3 {
   background-color: #2ecc71;
 }
-.menu-item:hover .cc-4, .menu-item:hover .cc-7 {
+.menu-item:hover .cc-4, .menu-item:hover .cc-7, .menu-item:focus .cc-4, .menu-item:focus .cc-7 {
   background-color: #ce4125;
 }
-.menu-item:hover .cc-5 {
+.menu-item:hover .cc-5, .menu-item:focus .cc-5 {
   background-color: #926fb1;
 }
-.menu-item:hover .cc-6 {
+.menu-item:hover .cc-6, .menu-item:focus .cc-6 {
   background-color: #f62459;
 }
 @media screen and (min-width: 992px) {
@@ -4179,6 +4189,11 @@ ul.slick-dots li.slick-active::before {
   width: 100%;
   background-color: #526781;
 }
+#bs:hover ~ #bespoke-software #bs,
+#bespoke-software:hover #bs,
+#bespoke-software:hover ~ #bs #bs {
+  background-color: #526781;
+}
 
 #it:hover ~ #it-support,
 #it-support:hover,
@@ -4188,6 +4203,11 @@ ul.slick-dots li.slick-active::before {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  background-color: #5691db;
+}
+#it:hover ~ #it-support #it,
+#it-support:hover #it,
+#it-support:hover ~ #it #it {
   background-color: #5691db;
 }
 
@@ -4201,6 +4221,11 @@ ul.slick-dots li.slick-active::before {
   width: 100%;
   background-color: #25a25a;
 }
+#dm:hover ~ #digital-marketing #dm,
+#digital-marketing:hover #dm,
+#digital-marketing:hover ~ #dm #dm {
+  background-color: #25a25a;
+}
 
 #ts:hover ~ #telecoms-services,
 #telecoms-services:hover,
@@ -4210,6 +4235,11 @@ ul.slick-dots li.slick-active::before {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  background-color: #a3331d;
+}
+#ts:hover ~ #telecoms-services #ts,
+#telecoms-services:hover #ts,
+#telecoms-services:hover ~ #ts #ts {
   background-color: #a3331d;
 }
 
@@ -4223,6 +4253,11 @@ ul.slick-dots li.slick-active::before {
   width: 100%;
   background-color: #79539a;
 }
+#wd:hover ~ #web-design #wd,
+#web-design:hover #wd,
+#web-design:hover ~ #wd #wd {
+  background-color: #79539a;
+}
 
 #cs:hover ~ #cyber-security,
 #cyber-security:hover,
@@ -4234,6 +4269,11 @@ ul.slick-dots li.slick-active::before {
   width: 100%;
   background-color: #de093f;
 }
+#cs:hover ~ #cyber-security #cs,
+#cyber-security:hover #cs,
+#cyber-security:hover ~ #cs #cs {
+  background-color: #de093f;
+}
 
 #dc:hover ~ #developer-course,
 #developer-course:hover,
@@ -4243,6 +4283,11 @@ ul.slick-dots li.slick-active::before {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  background-color: #a3331d;
+}
+#dc:hover ~ #developer-course #dc,
+#developer-course:hover #dc,
+#developer-course:hover ~ #dc #dc {
   background-color: #a3331d;
 }
 

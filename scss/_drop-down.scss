@@ -43,7 +43,7 @@
     &:not(:hover) {
         @include m.n-c;
     }
-    &:hover {
+    &:hover, &:focus {
         @include m.no-c;
     }
     @media screen and (min-width: 992px) {
@@ -125,6 +125,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'bs'), 10%);
+    #bs {
+        background-color: darken(map-get(m.$menu-colors, 'bs'), 10%);
+    }
 }
 
 #it:hover ~ #it-support,
@@ -136,6 +139,9 @@
     margin-right: auto;
     width: 100%;
     background-color: lighten(map-get(m.$menu-colors, 'it'), 5%);
+    #it {
+        background-color: lighten(map-get(m.$menu-colors, 'it'), 5%);
+    }
 }
 
 #dm:hover ~ #digital-marketing,
@@ -147,6 +153,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'dm'), 10%);
+    #dm {
+        background-color: darken(map-get(m.$menu-colors, 'dm'), 10%);
+    }
 }
 
 #ts:hover ~ #telecoms-services,
@@ -158,6 +167,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'ts'), 10%);
+    #ts {
+        background-color: darken(map-get(m.$menu-colors, 'ts'), 10%);
+    }
 }
 
 #wd:hover ~ #web-design,
@@ -169,6 +181,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'wd'), 10%);
+    #wd {
+        background-color: darken(map-get(m.$menu-colors, 'wd'), 10%);
+    }
 }
 
 #cs:hover ~ #cyber-security,
@@ -180,6 +195,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'cs'), 10%);
+    #cs {
+        background-color: darken(map-get(m.$menu-colors, 'cs'), 10%);
+    }
 }
 
 #dc:hover ~ #developer-course,
@@ -191,6 +209,9 @@
     margin-right: auto;
     width: 100%;
     background-color: darken(map-get(m.$menu-colors, 'dc'), 10%);
+    #dc {
+        background-color: darken(map-get(m.$menu-colors, 'dc'), 10%);
+    }
 }
 
 .menu-container:hover .arrow, 

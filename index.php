@@ -16,10 +16,10 @@
 
 <body>
 
-    <!-- side bar-->
-  <?php
-    include 'sid_menu.php';
-  ?>
+  <!-- side bar-->
+<?php
+  include 'sid_menu.php';
+?>
 
   <div class="full-container">
     <div class="overlay"></div>

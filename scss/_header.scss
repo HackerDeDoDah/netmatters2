@@ -132,6 +132,13 @@ nav img {
     width: 290px;
 }
 
+.search-bar span {
+    background-color: #999aa2;
+    &:hover {
+        background-color: #7a7a7a;
+    }
+}
+
 .search-input {
     padding: 8px 10px;
     font-size: 14px;
@@ -154,6 +161,9 @@ nav img {
     border-radius: 4px;
     cursor: pointer;
     z-index: 2;
+    &:hover {
+        background-color: #7a7a7a;
+    }
 }
 
 // Hide Search Button
