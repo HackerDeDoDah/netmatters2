@@ -1196,11 +1196,10 @@ body, .tool-tip {
   font-size: 1.5rem;
 }
 
-.card-button-top {
+button.card-button-top {
   display: flex;
   flex-direction: row;
   margin: 20px auto;
-  height: 55px;
   padding: 15px 15px;
   border: none;
   border-radius: 4px;
@@ -1209,35 +1208,35 @@ body, .tool-tip {
   font-size: 1rem;
   font-weight: 200;
 }
-.card-button-top .btn-blue {
+button.card-button-top .btn-blue {
   background-color: #4183d7;
   color: #fff;
 }
-.card-button-top .btn-red {
+button.card-button-top .btn-red {
   background-color: #f62459;
   color: #fff;
 }
-.card-button-top .btn-green {
+button.card-button-top .btn-green {
   background-color: #2ecc71;
   color: #fff;
 }
-.card-button-top .btn-brown {
+button.card-button-top .btn-brown {
   background-color: #ce4125;
   color: #fff;
 }
-.card-button-top .btn-orange {
+button.card-button-top .btn-orange {
   background-color: #f7b322;
   color: #fff;
 }
-.card-button-top .btn-yellow {
+button.card-button-top .btn-yellow {
   background-color: yellow;
   color: #fff;
 }
-.card-button-top .btn-purple {
+button.card-button-top .btn-purple {
   background-color: #926fb1;
   color: #fff;
 }
-.card-button-top .btn-dark-grey {
+button.card-button-top .btn-dark-grey {
   background-color: #67809f;
   color: #fff;
 }

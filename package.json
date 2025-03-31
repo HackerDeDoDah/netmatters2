@@ -1,0 +1,12 @@
+{
+    "name": "netmatters2",
+    "version": "1.0.0",
+    "description": "Netmatters website",
+    "scripts": {
+        "sass": "sass --watch scss:css",
+        "sass:build": "sass scss:css"
+    },
+    "dependencies": {
+        "sass": "^1.69.5"
+    }
+} 

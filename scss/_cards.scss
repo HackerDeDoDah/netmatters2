@@ -134,11 +134,11 @@
     font-size: 1.5rem;
 }
 
-.card-button-top {
+button.card-button-top {
     display: flex;
     flex-direction: row;
     margin: 20px auto; 
-    height: 55px;
+    //height: 45px;
     padding: 15px 15px;
     border: none;
     border-radius: 4px;
