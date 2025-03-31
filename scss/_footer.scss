@@ -190,8 +190,8 @@ a {
    @media (max-width: 450px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 5px;
-      .o1, .o2, .o3, .o4 {
-         width: 80px;
+      .o2, .o4 {
+         margin-right: 90px;
       }
    }
 }

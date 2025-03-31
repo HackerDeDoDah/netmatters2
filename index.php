@@ -8,10 +8,10 @@
     <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Slick Theme (optional) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -414,12 +414,13 @@
   <script src="https://kit.fontawesome.com/97e5723333.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- Slick Slider JS -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!--splide js-->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <!-- main js -->
-  <script src="js/sticky.js"></script>
-  <script src="js/sidebar.js"></script>
-  <script src="js/cookie.js"></script>
+  <script src="js/scripts.js?v=<?php echo time(); ?>"></script>
+  <script src="js/sticky.js?v=<?php echo time(); ?>"></script>
+  <script src="js/sidebar.js?v=<?php echo time(); ?>"></script>
+  <script src="js/cookie.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>

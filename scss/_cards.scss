@@ -115,6 +115,7 @@
     display: grid;
     height: 315px;
     width: 100%;
+    padding-top: 20px;
     gap: 0;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -132,14 +133,15 @@
 .top-cards .fa-solid {
     color: #fff;
     font-size: 1.5rem;
+    top: 20px;
 }
 
 button.card-button-top {
     display: flex;
     flex-direction: row;
-    margin: 20px auto; 
-    height: 35px;
-    padding: 15px 15px;
+    margin: auto; 
+    bottom: 20px !important;
+    padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -161,7 +163,7 @@ button.card-button-top {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 25px;
+    top: 35px;
     .circle-background {
         width: 70px;
         height: 70px;

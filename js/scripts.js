@@ -135,32 +135,3 @@ $(document).on("afterChange", ".slick-slider", function () {
     });
 });
 
-//------News limits for break points
-
-// function getNewsLimit() {
-//     if (window.innerWidth <= 992 && window.innerWidth > 768) {
-//         return 2;
-//     }
-// }
-
-// function fetchNews() {
-//     const limit = getNewsLimit();
-//     fetch(`db_connect.php?limit=${limit}`)
-//     .then(response => response.json())
-//     .then(data => {
-//         const newsContainer = document.getElementById("news-container");
-//         newsContainer.innerHTML = "";
-//         data.forEach(post => {
-//         newsContainer.innerHTML += `<div class="news-item">
-//             <h3>${post.title}</h3>
-//             <p>${post.content}</p>
-//         </div>`;
-//         });
-//     });
-// }
-
-// // Fetch news on page load
-// fetchNews();
-
-// // Re-fetch news when resizing window
-// window.addEventListener("resize", fetchNews);
