@@ -189,10 +189,7 @@ a {
    @include m.s-c;
    @media (max-width: 450px) {
       grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      .o2, .o4 {
-         margin-right: 90px;
-      }
+      gap: 5px; 
    }
 }
 

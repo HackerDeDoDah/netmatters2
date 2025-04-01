@@ -1,4 +1,3 @@
-
 // partner carousel top -----------------
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -132,6 +131,50 @@ $(document).on("afterChange", ".slick-slider", function () {
         } else {
             button.css("background-color", "#fff");
         }
+    });
+});
+
+// Tooltip functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const tooltips = document.querySelectorAll('.tool-tip');
+    
+    tooltips.forEach(tooltip => {
+        const tooltipText = tooltip.querySelector('.tool-tip-text');
+        
+        tooltip.addEventListener('mouseenter', function(e) {
+            const rect = tooltip.getBoundingClientRect();
+            const tooltipRect = tooltipText.getBoundingClientRect();
+            
+            // Position the tooltip above the element
+            tooltipText.style.top = 'auto';
+            tooltipText.style.bottom = '100%';
+            tooltipText.style.left = '50%';
+            tooltipText.style.transform = 'translateX(-50%)';
+            
+            // Check if tooltip would go off screen
+            if (tooltipRect.top < 0) {
+                // Position below if it would go off top
+                tooltipText.style.top = '100%';
+                tooltipText.style.bottom = 'auto';
+                tooltipText.style.marginTop = '8px';
+                tooltipText.style.marginBottom = '0';
+                
+                // Adjust arrow position
+                tooltipText.querySelector('::before').style.top = '0';
+                tooltipText.querySelector('::before').style.bottom = 'auto';
+                tooltipText.querySelector('::before').style.borderTopColor = 'transparent';
+                tooltipText.querySelector('::before').style.borderBottomColor = '#fff';
+            }
+            
+            // Show tooltip
+            tooltipText.style.opacity = '1';
+            tooltipText.style.visibility = 'visible';
+        });
+        
+        tooltip.addEventListener('mouseleave', function() {
+            tooltipText.style.opacity = '0';
+            tooltipText.style.visibility = 'hidden';
+        });
     });
 });
 

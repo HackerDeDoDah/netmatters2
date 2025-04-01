@@ -301,105 +301,116 @@
         <section class="partner-banner2">
           <div class="carousel-wrapper2">
             <div class="tool-tip sweetzy">
-              <img src="assets/img/sweetzy_logo.webp" alt="sweetzy">
-              <span class="tool-tip-text">
-                <p>Sweetzy</p>
-                <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
-                <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/sweetzy_logo.webp" alt="sweetzy">
+                    <div class="tool-tip-text">
+                        <h3>Sweetzy</h3>
+                        <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
+                        <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
             
-            
             <div class="tool-tip xupes">
-              <img src="assets/img/xupes_logo.webp" alt="xupes">
-              <span class="tool-tip-text"><h3>Xupes</h3></span>
+                <div class="tool-tip-content">
+                    <img src="assets/img/xupes_logo.webp" alt="xupes">
+                    <div class="tool-tip-text">
+                        <h3>Xupes</h3>
+                    </div>
+                </div>
             </div>
             
             <div class="tool-tip girl-guides">
-              <img src="assets/img/girl_guides_anglia_logo.webp" alt="guides">
-              <span class="tool-tip-text">
-                <h3>Girl Guides Anglia</h3>
-                <p>Girl Guides Anglia is part of Girlguiding, the UK's leading charity for girls and young woman in the UK.</p>
-                <button class="btn-blue">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/girl_guides_anglia_logo.webp" alt="guides">
+                    <div class="tool-tip-text">
+                        <h3>Girl Guides Anglia</h3>
+                        <p>Girl Guides Anglia is part of Girlguiding, the UK's leading charity for girls and young woman in the UK.</p>
+                        <button class="btn-blue">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
-          
             
             <div class="tool-tip trust">
-              <img src="assets/img/girls_day_school_trust_logob.webp" alt="girls-day-out">
-              <span class="tool-tip-text">
-                <h3>GDST</h3>
-                <p>The Girl's Day School Trust (GDST) is the UK's leading family of 25 independent girls' schools.</p>
-                <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/girls_day_school_trust_logob.webp" alt="girls-day-out">
+                    <div class="tool-tip-text">
+                        <h3>GDST</h3>
+                        <p>The Girl's Day School Trust (GDST) is the UK's leading family of 25 independent girls' schools.</p>
+                        <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
             
-            
             <div class="tool-tip one-travel">
-              <img src="assets/img/onetravellerlogo_white_figuire.webp" alt="one-traveller">
-              <span class="tool-tip-text">
-                <h3>One Traveller</h3>
-                <p><strong>One Traveller</strong>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
-                <button class="btn-purple">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/onetravellerlogo_white_figuire.webp" alt="one-traveller">
+                    <div class="tool-tip-text">
+                        <h3>One Traveller</h3>
+                        <p><strong>One Traveller</strong>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
+                        <button class="btn-purple">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
             
             <div class="tool-tip busseys">
-              <img src="assets/img/busseys_logo.webp" alt="busseys">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/busseys_logo.webp" alt="busseys">
+                    <div class="tool-tip-text">
+                        <h3>Busseys</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tool-tip black-swan">
-              <img src="assets\img\black_swan_logo.webp" alt="black-swan">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/black_swan_logo.webp" alt="black-swan">
+                    <div class="tool-tip-text">
+                        <h3>Black Swan</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tool-tip solutions">
-              <img src="assets\img\survey_solutions_logo.webp" alt="survey solutions">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/survey_solutions_logo.webp" alt="survey solutions">
+                    <div class="tool-tip-text">
+                        <h3>Survey Solutions</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tool-tip ashcroft">
-              <img src="assets\img\ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="survey solutions">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="ashcroft">
+                    <div class="tool-tip-text">
+                        <h3>Ashcroft</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tool-tip howes">
-              <img src="assets\img\howespercivallogo.webp" alt="survey solutions">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/howespercivallogo.webp" alt="howes percival">
+                    <div class="tool-tip-text">
+                        <h3>Howes Percival</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tool-tip searles">
-              <img src="assets\img\searles_logo.webp" alt="survey solutions">
-              <span class="tool-tip-text">
-                <h3>Busseys</h3>
-                <p>One of the UK's leading Ford dealerships.</p>
-              </span>
-              <div class="triangle2"></div>
+                <div class="tool-tip-content">
+                    <img src="assets/img/searles_logo.webp" alt="searles">
+                    <div class="tool-tip-text">
+                        <h3>Searles</h3>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </div>
+                </div>
             </div>
 
           </div>
