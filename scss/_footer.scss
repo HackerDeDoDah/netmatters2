@@ -31,7 +31,7 @@ a {
 .social-container {
    display: flex;
    width: 300px;
-   margin: 40px 40px 0 0;
+   margin: 0;
    @media (max-width: 450px) {
       margin: 0 0 50px 0;
    }
@@ -187,9 +187,12 @@ a {
       text-decoration: none;
    }
    @include m.s-c;
-   @media (max-width: 450px) {
-      grid-template-columns: repeat(2, 1fr);
+
+   @media screen and (max-width: 450px) {
+      grid-template-columns: repeat(2, 65px);
       gap: 5px; 
+      justify-content: start;
+      margin: 0;
    }
 }
 

@@ -309,7 +309,7 @@ a:hover {
 .social-container {
   display: flex;
   width: 300px;
-  margin: 40px 40px 0 0;
+  margin: 0;
 }
 @media (max-width: 450px) {
   .social-container {
@@ -552,10 +552,12 @@ a:hover {
 .social-icons .fa-instagram:hover {
   background-color: #C13584;
 }
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .social-icons {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 65px);
     gap: 5px;
+    justify-content: start;
+    margin: 0;
   }
 }
 
