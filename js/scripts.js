@@ -133,3 +133,50 @@ $(document).on("afterChange", ".slick-slider", function () {
         }
     });
 });
+
+// Set screen width cookie and update articles
+function setScreenWidthCookie() {
+    const screenWidth = window.innerWidth;
+    document.cookie = `screenWidth=${screenWidth}; path=/`;
+    
+    // Update articles based on screen width
+    updateArticles(screenWidth);
+}
+
+// Function to update articles via AJAX
+function updateArticles(screenWidth) {
+    const formData = new FormData();
+    formData.append('screenWidth', screenWidth);
+
+    fetch('get_articles.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(html => {
+        // Update the articles container
+        document.querySelector('.grid-container-articles').innerHTML = html;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+// Set initial screen width cookie and load articles
+setScreenWidthCookie();
+
+// Debounce function to limit how often the resize handler is called
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Update screen width cookie and articles on window resize (debounced)
+window.addEventListener('resize', debounce(function() {
+    setScreenWidthCookie();
+}, 250));

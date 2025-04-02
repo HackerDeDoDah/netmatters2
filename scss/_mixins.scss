@@ -9,7 +9,7 @@
 //----------------------
 
 @mixin responsive {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
@@ -37,7 +37,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
         width: 750px;
         #top1,
         #top2,

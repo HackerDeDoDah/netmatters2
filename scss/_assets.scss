@@ -52,11 +52,12 @@
 }
 
 // Tooltip styles
+
 .tool-tip {
     position: relative;
     display: inline-block;
     overflow: visible;
-    z-index: 9999;
+    z-index: 9999; 
 }
 
 .tool-tip-content {

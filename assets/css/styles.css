@@ -699,13 +699,22 @@ a:hover {
   display: inline-block;
 }
 
+.tool-tip-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .tool-tip-text {
   position: absolute;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
-  color: #333;
   padding: 15px;
   border-radius: 4px;
   font-size: 14px;
@@ -716,13 +725,13 @@ a:hover {
   transition: all 0.2s ease-in-out;
   z-index: 9999;
   pointer-events: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 280px;
   text-align: left;
   line-height: 1.5;
   max-height: 300px;
   overflow-y: auto;
 }
+
 .tool-tip-text::before {
   content: "";
   position: absolute;
@@ -730,18 +739,19 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #fff;
+  border-top-color: inherit;
 }
+
 .tool-tip-text h3 {
-  color: #333;
   margin: 0 0 8px 0;
   font-size: 16px;
 }
+
 .tool-tip-text p {
   margin: 0 0 12px 0;
-  color: #666;
   font-size: 14px;
 }
+
 .tool-tip-text button {
   width: 100%;
   padding: 8px 15px;
@@ -5066,4 +5076,4 @@ input[type=checkbox]:checked::before {
 
 .panel.active {
   max-height: 400px;
-}/*# sourceMappingURL=styles.css.map */
+}

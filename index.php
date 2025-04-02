@@ -263,36 +263,9 @@
         <!-- article cards -->
         <section>
           <div class="article-container">
-            
-              <?php
-              // Include the database connection
-              include 'db_connect.php';
-
-              // Fetch news posts from the database
-              $stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC");
-              $newsPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-              ?>
-
               <section class="news-section">
                 <div class="grid-container-articles">
-                  <?php foreach ($newsPosts as $post): ?>
-                      <article class="business" tabindex="0">
-                          <img class="card-img" src="<?php echo htmlspecialchars($post['image_url']); ?>" 
-                              alt="<?php echo htmlspecialchars($post['title']); ?>">
-                          <div class="labelz" id="l1" style="background-color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;"><?php echo htmlspecialchars($post['labelz']); ?></div>
-                          <div class="article-content">
-                              <h3 style="color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;"><strong><?php echo htmlspecialchars($post['title']); ?></strong></h3>
-                              <p><?php echo htmlspecialchars($post['content']); ?></p>
-                              <button class="btn-orange btn-style" style="background-color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;">READ MORE</button>
-                              <hr class="seperator">
-                              <div class="card-footer-container">
-                                  <img class="avatar item" src="<?php echo htmlspecialchars($post['profile_image_url']); ?>" alt="<?php echo htmlspecialchars($post['author']); ?>">
-                                  <p class="item"><strong>Posted by <?php echo htmlspecialchars($post['author']); ?></strong> <br>
-                                  <?php echo date('jS F Y', strtotime($post['created_at'])); ?></p>
-                              </div>
-                          </div>
-                      </article>
-                  <?php endforeach; ?>
+                  <!-- Articles will be loaded here by JavaScript -->
                 </div>
               </section>
           </div>
@@ -302,113 +275,135 @@
           <div class="carousel-wrapper2">
             <div class="tool-tip sweetzy">
                 <div class="tool-tip-content">
-                    <img src="assets/img/sweetzy_logo.webp" alt="sweetzy">
-                    <div class="tool-tip-text">
-                        <h3>Sweetzy</h3>
-                        <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
-                        <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/sweetzy_logo.webp" alt="sweetzy">
+                        <div class="tool-tip-text">
+                            <h3>Sweetzy</h3>
+                            <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
+                            <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="tool-tip xupes">
                 <div class="tool-tip-content">
-                    <img src="assets/img/xupes_logo.webp" alt="xupes">
-                    <div class="tool-tip-text">
-                        <h3>Xupes</h3>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/xupes_logo.webp" alt="xupes">
+                        <div class="tool-tip-text">
+                            <h3>Xupes</h3>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="tool-tip girl-guides">
                 <div class="tool-tip-content">
-                    <img src="assets/img/girl_guides_anglia_logo.webp" alt="guides">
-                    <div class="tool-tip-text">
-                        <h3>Girl Guides Anglia</h3>
-                        <p>Girl Guides Anglia is part of Girlguiding, the UK's leading charity for girls and young woman in the UK.</p>
-                        <button class="btn-blue">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/girl_guides_anglia_logo.webp" alt="guides">
+                        <div class="tool-tip-text">
+                            <h3>Girl Guides Anglia</h3>
+                            <p>Girl Guides Anglia is part of Girlguiding, the UK's leading charity for girls and young woman in the UK.</p>
+                            <button class="btn-blue">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="tool-tip trust">
                 <div class="tool-tip-content">
-                    <img src="assets/img/girls_day_school_trust_logob.webp" alt="girls-day-out">
-                    <div class="tool-tip-text">
-                        <h3>GDST</h3>
-                        <p>The Girl's Day School Trust (GDST) is the UK's leading family of 25 independent girls' schools.</p>
-                        <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/girls_day_school_trust_logob.webp" alt="girls-day-out">
+                        <div class="tool-tip-text">
+                            <h3>GDST</h3>
+                            <p>The Girl's Day School Trust (GDST) is the UK's leading family of 25 independent girls' schools.</p>
+                            <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="tool-tip one-travel">
                 <div class="tool-tip-content">
-                    <img src="assets/img/onetravellerlogo_white_figuire.webp" alt="one-traveller">
-                    <div class="tool-tip-text">
-                        <h3>One Traveller</h3>
-                        <p><strong>One Traveller</strong>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
-                        <button class="btn-purple">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/onetravellerlogo_white_figuire.webp" alt="one-traveller">
+                        <div class="tool-tip-text">
+                            <h3>One Traveller</h3>
+                            <p><strong>One Traveller</strong>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
+                            <button class="btn-purple">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="tool-tip busseys">
                 <div class="tool-tip-content">
-                    <img src="assets/img/busseys_logo.webp" alt="busseys">
-                    <div class="tool-tip-text">
-                        <h3>Busseys</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/busseys_logo.webp" alt="busseys">
+                        <div class="tool-tip-text">
+                            <h3>Busseys</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="tool-tip black-swan">
                 <div class="tool-tip-content">
-                    <img src="assets/img/black_swan_logo.webp" alt="black-swan">
-                    <div class="tool-tip-text">
-                        <h3>Black Swan</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/black_swan_logo.webp" alt="black-swan">
+                        <div class="tool-tip-text">
+                            <h3>Black Swan</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="tool-tip solutions">
                 <div class="tool-tip-content">
-                    <img src="assets/img/survey_solutions_logo.webp" alt="survey solutions">
-                    <div class="tool-tip-text">
-                        <h3>Survey Solutions</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/survey_solutions_logo.webp" alt="survey solutions">
+                        <div class="tool-tip-text">
+                            <h3>Survey Solutions</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="tool-tip ashcroft">
                 <div class="tool-tip-content">
-                    <img src="assets/img/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="ashcroft">
-                    <div class="tool-tip-text">
-                        <h3>Ashcroft</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="ashcroft">
+                        <div class="tool-tip-text">
+                            <h3>Ashcroft</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="tool-tip howes">
                 <div class="tool-tip-content">
-                    <img src="assets/img/howespercivallogo.webp" alt="howes percival">
-                    <div class="tool-tip-text">
-                        <h3>Howes Percival</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/howespercivallogo.webp" alt="howes percival">
+                        <div class="tool-tip-text">
+                            <h3>Howes Percival</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="tool-tip searles">
                 <div class="tool-tip-content">
-                    <img src="assets/img/searles_logo.webp" alt="searles">
-                    <div class="tool-tip-text">
-                        <h3>Searles</h3>
-                        <p>One of the UK's leading Ford dealerships.</p>
+                    <div class="tool-tip-container">
+                        <img src="assets/img/searles_logo.webp" alt="searles">
+                        <div class="tool-tip-text">
+                            <h3>Searles</h3>
+                            <p>One of the UK's leading Ford dealerships.</p>
+                        </div>
                     </div>
                 </div>
             </div>
