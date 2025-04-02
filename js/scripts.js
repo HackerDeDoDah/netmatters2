@@ -134,6 +134,38 @@ $(document).on("afterChange", ".slick-slider", function () {
     });
 });
 
+// Function to update articles via AJAX
+function updateArticles(screenWidth) {
+    const formData = new FormData();
+    formData.append('screenWidth', screenWidth);
+
+    fetch('get_articles.php', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+    })
+    .then(html => {
+        const container = document.querySelector('.grid-container-articles');
+        if (container) {
+            container.innerHTML = html;
+        } else {
+            console.error('Could not find articles container');
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching articles:', error);
+        // You might want to show a user-friendly error message here
+    });
+}
+
 // Set screen width cookie and update articles
 function setScreenWidthCookie() {
     const screenWidth = window.innerWidth;
@@ -142,26 +174,6 @@ function setScreenWidthCookie() {
     // Update articles based on screen width
     updateArticles(screenWidth);
 }
-
-// Function to update articles via AJAX
-function updateArticles(screenWidth) {
-    const formData = new FormData();
-    formData.append('screenWidth', screenWidth);
-
-    fetch('get_articles.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(html => {
-        // Update the articles container
-        document.querySelector('.grid-container-articles').innerHTML = html;
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-// Set initial screen width cookie and load articles
-setScreenWidthCookie();
 
 // Debounce function to limit how often the resize handler is called
 function debounce(func, wait) {
@@ -175,6 +187,11 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
+// Set initial screen width cookie and load articles
+document.addEventListener('DOMContentLoaded', function() {
+    setScreenWidthCookie();
+});
 
 // Update screen width cookie and articles on window resize (debounced)
 window.addEventListener('resize', debounce(function() {

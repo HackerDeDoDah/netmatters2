@@ -3,25 +3,10 @@
 // simple version----------------
 
 jQuery(document).ready(function($) {
-    var lastScrollTop = 0;
     var $sticky = $('.sticky-container');
-    var scrollThreshold = 600;
     var sidebarActive = false;
-    var isInitialized = false;
-
-    function initializeSticky() {
-        if (isInitialized) return;
-        
-        $sticky.css({
-            'position': 'fixed',
-            'top': '0',
-            'width': '100%',
-            'transition': 'top 0.3s ease',
-            'z-index': '1000'
-        });
-        
-        isInitialized = true;
-    }
+    var lastScrollTop = 0;
+    var scrollThreshold = 600;
 
     function handleScroll() {
         if (sidebarActive) {
@@ -44,7 +29,13 @@ jQuery(document).ready(function($) {
     }
 
     // Initialize sticky header
-    initializeSticky();
+    $sticky.css({
+        'position': 'fixed',
+        'top': '0',
+        'width': '100%',
+        'transition': 'top 0.3s ease',
+        'z-index': '1000'
+    });
 
     // Use requestAnimationFrame for smoother scroll handling
     let ticking = false;
@@ -62,19 +53,15 @@ jQuery(document).ready(function($) {
     document.addEventListener("sidebarOpen", function() {
         sidebarActive = true;
         $sticky.css('top', '0');
-        $sticky.css('position', 'fixed');
     });
 
     document.addEventListener("sidebarClose", function() {
         sidebarActive = false;
-        setTimeout(() => {
-            handleScroll();
-        }, 50);
+        handleScroll();
     });
 
     // Re-initialize on window resize
     $(window).on('resize', function() {
-        initializeSticky();
         handleScroll();
     });
 });
