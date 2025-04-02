@@ -60,10 +60,10 @@
     transition: opacity 0.3s ease;
 }
 
-.menu-item:hover, .menu-item:focus {
-    .dropdown-content {
-        display: flex;
-    }
+.menu-item:hover .dropdown-content,
+.dropdown-content:hover ~ .menu-item,
+.dropdown-content:hover {
+    display: flex;
 }
 
 .dropdown-content p {
@@ -118,6 +118,7 @@
 
 #bs:hover ~ #bespoke-software,
 #bespoke-software:hover,
+#bespoke-software:hover ~ #bs,
 #bespoke-software:hover ~ #bs {
     display: block;
     position: absolute;
@@ -132,7 +133,8 @@
 
 #it:hover ~ #it-support,
 #it-support:hover,
-#it-support:hover ~ #it { 
+#it-support:hover ~ #it,
+#it-support:hover ~ #it {
     display: block;
     position: absolute;
     margin-left: auto;
@@ -146,6 +148,7 @@
 
 #dm:hover ~ #digital-marketing,
 #digital-marketing:hover,
+#digital-marketing:hover ~ #dm,
 #digital-marketing:hover ~ #dm {
     display: block;
     position: absolute;
@@ -160,6 +163,7 @@
 
 #ts:hover ~ #telecoms-services,
 #telecoms-services:hover,
+#telecoms-services:hover ~ #ts,
 #telecoms-services:hover ~ #ts {
     display: block;
     position: absolute;
@@ -174,6 +178,7 @@
 
 #wd:hover ~ #web-design,
 #web-design:hover,
+#web-design:hover ~ #wd,
 #web-design:hover ~ #wd {
     display: block;
     position: absolute;
@@ -188,6 +193,7 @@
 
 #cs:hover ~ #cyber-security,
 #cyber-security:hover,
+#cyber-security:hover ~ #cs,
 #cyber-security:hover ~ #cs {
     display: block;
     position: absolute;
@@ -202,6 +208,7 @@
 
 #dc:hover ~ #developer-course,
 #developer-course:hover,
+#developer-course:hover ~ #dc,
 #developer-course:hover ~ #dc {
     display: block;
     position: absolute;

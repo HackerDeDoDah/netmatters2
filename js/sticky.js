@@ -24,7 +24,10 @@ jQuery(document).ready(function($) {
     }
 
     function handleScroll() {
-        if (sidebarActive) return; // Prevent changes when sidebar is open
+        if (sidebarActive) {
+            $sticky.css('top', '0');
+            return;
+        }
 
         var scrollTop = $(window).scrollTop();
         
@@ -58,13 +61,14 @@ jQuery(document).ready(function($) {
     // Sidebar event listeners
     document.addEventListener("sidebarOpen", function() {
         sidebarActive = true;
-        $sticky.css('top', '0'); // Ensure it's visible when sidebar opens
+        $sticky.css('top', '0');
+        $sticky.css('position', 'fixed');
     });
 
     document.addEventListener("sidebarClose", function() {
         sidebarActive = false;
         setTimeout(() => {
-            handleScroll(); // Recalculate header position
+            handleScroll();
         }, 50);
     });
 

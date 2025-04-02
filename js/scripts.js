@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.3s ease";
+        carouselWrapper.style.transition = "transform 1s cubic-bezier(0.4, 0, 0.2, 1)";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.3s ease";
+                carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
             }, 50);
-        }, 500); // Wait for animation to finish
+        }, 800); // Increased wait time to match new transition duration
     }
 
     function startCarousel() {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.3s ease";
+        carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.3s ease-in-out";
+                carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
             }, 50);
-        }, 500); // Wait for animation to finish
+        }, 800); // Increased wait time to match new transition duration
     }
 
     function startCarousel() {
@@ -112,7 +112,7 @@ $(document).ready(function(){
         autoplay: true,           
         autoplaySpeed: 5000,      // Slide duration in milliseconds
         speed: 300,               // Transition speed
-        fade: false,              
+        fade: false,              //fade set to false (duh)
         dots: true,               // Pagination dots
         arrows: false,            // navigation arrows
         infinite: true,           // Infinite loop
@@ -133,48 +133,3 @@ $(document).on("afterChange", ".slick-slider", function () {
         }
     });
 });
-
-// Tooltip functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const tooltips = document.querySelectorAll('.tool-tip');
-    
-    tooltips.forEach(tooltip => {
-        const tooltipText = tooltip.querySelector('.tool-tip-text');
-        
-        tooltip.addEventListener('mouseenter', function(e) {
-            const rect = tooltip.getBoundingClientRect();
-            const tooltipRect = tooltipText.getBoundingClientRect();
-            
-            // Position the tooltip above the element
-            tooltipText.style.top = 'auto';
-            tooltipText.style.bottom = '100%';
-            tooltipText.style.left = '50%';
-            tooltipText.style.transform = 'translateX(-50%)';
-            
-            // Check if tooltip would go off screen
-            if (tooltipRect.top < 0) {
-                // Position below if it would go off top
-                tooltipText.style.top = '100%';
-                tooltipText.style.bottom = 'auto';
-                tooltipText.style.marginTop = '8px';
-                tooltipText.style.marginBottom = '0';
-                
-                // Adjust arrow position
-                tooltipText.querySelector('::before').style.top = '0';
-                tooltipText.querySelector('::before').style.bottom = 'auto';
-                tooltipText.querySelector('::before').style.borderTopColor = 'transparent';
-                tooltipText.querySelector('::before').style.borderBottomColor = '#fff';
-            }
-            
-            // Show tooltip
-            tooltipText.style.opacity = '1';
-            tooltipText.style.visibility = 'visible';
-        });
-        
-        tooltip.addEventListener('mouseleave', function() {
-            tooltipText.style.opacity = '0';
-            tooltipText.style.visibility = 'hidden';
-        });
-    });
-});
-

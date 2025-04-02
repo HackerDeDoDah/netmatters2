@@ -433,5 +433,6 @@
   <script src="js/sticky.js?v=<?php echo time(); ?>"></script>
   <script src="js/sidebar.js?v=<?php echo time(); ?>"></script>
   <script src="js/cookie.js?v=<?php echo time(); ?>"></script>
+  <script src="js/tooltips.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
