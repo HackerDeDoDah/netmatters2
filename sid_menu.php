@@ -135,6 +135,7 @@
         <ul>
             <li><i class="fa-solid fa-angles-right"></i> Bespoke Software</li>
             <li><i class="fa-solid fa-angles-right"></i> IT Support</li>
+            <li><i class="fa-solid fa-angles-right"></i> Digital Marketing</li>
             <li><i class="fa-solid fa-angles-right"></i> Telecoms Service</li>
             <li><i class="fa-solid fa-angles-right"></i> Web Design</li>
             <li><i class="fa-solid fa-angles-right"></i> Cyber Security</li>

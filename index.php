@@ -15,6 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
     <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
+    <!-- Add dropdown.js -->
+    <script src="js/dropdown.js" defer></script>
 </head>
 
 <body>
