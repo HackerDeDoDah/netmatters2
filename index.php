@@ -30,13 +30,17 @@
     <div class="overlay"></div>
       <div class="main">
                       <!-- cookie popup -->
-        <div id="cookie-popup">
-          <h2>Cookies Policy</h2>
-          <hr>
-          <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p> 
-          <hr>
-          <button id="change-settings">Change Settings</button>
-          <button id="accept-cookies">Accept Cookies</button>
+        <div id="cookie-overlay">
+          <div id="cookie-popup">
+            <p id="cookie-title">Cookies Policy</p>
+            <hr>
+            <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.</p> 
+            <hr>
+            <div class="cookie-buttons">
+              <button id="change-settings">Change Settings</button>
+              <button id="accept-cookies">Accept Cookies</button>
+            </div>
+          </div>
         </div>
 
         <?php

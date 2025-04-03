@@ -1,6 +1,6 @@
 // cookie popup
 
-const cookiePopup = document.getElementById('cookie-popup');
+const cookiePopup = document.getElementById('cookie-overlay');
 const changeSettingsButton = document.getElementById('change-settings');
 const acceptCookiesButton = document.getElementById('accept-cookies');
 
