@@ -274,7 +274,7 @@
           <div class="article-container">
               <section class="news-section">
                 <div class="grid-container-articles">
-                  <!-- Articles will be loaded here by JavaScript -->
+                  <?php include 'get_articles.php'; ?>
                 </div>
               </section>
           </div>

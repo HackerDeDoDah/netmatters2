@@ -2,19 +2,8 @@
 // Include the database connection
 include 'db_connect.php';
 
-// Get screen width from POST data
-$screenWidth = isset($_POST['screenWidth']) ? intval($_POST['screenWidth']) : 1260;
-
-// Determine number of articles based on screen width
-$articlesToShow = 3; // Default for desktop
-if ($screenWidth < 768) {
-    $articlesToShow = 3; // Mobile
-} elseif ($screenWidth < 992) {
-    $articlesToShow = 2; // Tablet
-}
-
-// Fetch news posts from the database with limit
-$stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC LIMIT " . $articlesToShow);
+// Fetch all news posts from the database
+$stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC");
 $newsPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Output the articles HTML
