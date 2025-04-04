@@ -7,8 +7,11 @@ $stmt = $conn->query("SELECT * FROM news_posts ORDER BY created_at DESC");
 $newsPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Output the articles HTML
-foreach ($newsPosts as $post): ?>
-    <article class="business" tabindex="0">
+foreach ($newsPosts as $index => $post): 
+    // Create a unique ID for each article
+    $articleId = 'article-' . ($index + 1);
+?>
+    <article class="article-card" id="<?php echo $articleId; ?>" tabindex="0">
         <img class="card-img" src="<?php echo htmlspecialchars($post['image_url']); ?>" 
             alt="<?php echo htmlspecialchars($post['title']); ?>">
         <div class="labelz" id="l1" style="background-color: <?php echo htmlspecialchars($post['labelz_colors']); ?>;"><?php echo htmlspecialchars($post['labelz']); ?></div>

@@ -434,7 +434,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <!-- main js -->
   <script src="js/scripts.js?v=<?php echo time(); ?>"></script>
-  <script src="js/sticky.js?v=<?php echo time(); ?>"></script>
+  <script src="js/sticky-css.js?v=<?php echo time(); ?>"></script>
   <script src="js/sidebar.js?v=<?php echo time(); ?>"></script>
   <script src="js/cookie.js?v=<?php echo time(); ?>"></script>
   <script src="js/tooltips.js?v=<?php echo time(); ?>"></script>

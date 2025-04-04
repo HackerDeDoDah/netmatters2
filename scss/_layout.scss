@@ -86,7 +86,7 @@ main {
 }
 
 .container-nav {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: grid;
         grid-template-columns: 200px 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -119,7 +119,7 @@ main {
         }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         
         .search-bar {
             display: block;
@@ -173,7 +173,7 @@ main {
         flex-wrap: wrap;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         width: 750px;
         
         
@@ -197,20 +197,61 @@ main {
     color: rgb(12, 11, 11);
     padding: 15px 20px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    transition: transform 0.3s ease, position 0.3s ease;
 }
 
-.sticky-container.sticky {
+// Default state - relative positioning
+.sticky-container {
+    position: relative;
+}
+
+// Fixed past threshold
+html[data-scroll-past="true"] .sticky-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    transform: translateY(0);
-    z-index: 1000;
 }
 
-.sticky-container.sticky.show {
-    transform: translateY(0);
+// Hide header when scrolling down
+@media (min-width: 768px) {
+    @media (min-height: 400px) {
+        html:not([data-scroll="0"]) .sticky-container {
+            transform: translateY(0);
+        }
+        
+        // Hide header when scrolling down past threshold
+        html[data-scroll="down"][data-can-hide="true"] .sticky-container {
+            transform: translateY(-200px);
+        }
+        
+        // show header when scrolling up if passed threshold
+        html[data-scroll="up"][data-show-on-scroll-up="true"] .sticky-container {
+            transform: translateY(0);
+        }
+        
+        // Keep header hidden scrolling up if notpassed the threshold
+        html[data-scroll="up"]:not([data-show-on-scroll-up="true"]) .sticky-container {
+            transform: translateY(-200px);
+        }
+    }
+}
+
+// placeholder
+.sticky-container::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+//header visible when sidebar is open
+html[data-sidebar="open"] .sticky-container {
+    transform: translateY(0) !important;
 }
 
 .view-more {
@@ -225,6 +266,9 @@ main {
         text-decoration: none;
         color: black;
         font-size: 24px;
+    }
+    @media (max-width: 768px) {
+        max-width: 740px;
     }
 }
 
