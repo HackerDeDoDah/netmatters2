@@ -268,6 +268,9 @@
             <h2>Latest News</h2>
             <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
           </div>
+          <div class="latest">
+            <h2>Latest News</h2>
+          </div>
         </section>
         <!-- article cards -->
         <section>
@@ -279,6 +282,9 @@
               </section>
           </div>
         </section>
+        <div class="view-more2">
+          <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
 
         <section class="partner-banner2">
           <div class="carousel-wrapper2">

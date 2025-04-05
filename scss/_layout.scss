@@ -85,81 +85,6 @@ main {
     }
 }
 
-.container-nav {
-    @media screen and (max-width: 767px) {
-        display: grid;
-        grid-template-columns: 200px 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-            "logo phone burger"
-            "search2 search2 search2";
-
-
-        img {
-            grid-area: logo;
-        }
-
-        .phone {
-            grid-area: phone;
-            display: flex;
-        }
-
-        .burger-container {
-            grid-area: burger;
-        }
-
-        .button,
-        .search-bar {
-            display: none;
-        }
-
-        .search-bar2 {
-            grid-area: search2;
-            display: flex;
-        }
-    }
-
-    @media (min-width: 768px) {
-        
-        .search-bar {
-            display: block;
-        }
-        .button, .search-block {
-            display: none;
-        }
-        .search-bar2 {
-            display: none;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .search-bar2 {
-            display: none;
-        }
-        .search-bar {
-            display: none;
-        }
-        .search-block {
-            display: block;
-        }
-        .button {
-            display: block;
-        }
-        .phone {
-            display: none;
-        }
-    }
-
-    @media (min-width: 1260px) {
-        .button, .search-bar {
-            display: block;
-        }
-        .search-block {
-            display: none;
-        }
-    }
-}
-
 .grid-container2 {
     margin-right: auto;
     margin-left: auto;
@@ -269,6 +194,34 @@ html[data-sidebar="open"] .sticky-container {
     }
     @media (max-width: 768px) {
         max-width: 740px;
+    }
+    @media (max-width: 450px) {
+        display: none;
+    }
+}
+
+.view-more2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+    }
+    @media (max-width: 450px) {
+        display: flex;
+    }
+}
+
+.latest {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    @media (max-width: 450px) {
+        display: flex;
     }
 }
 

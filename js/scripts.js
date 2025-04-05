@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 1s cubic-bezier(0.4, 0, 0.2, 1)";
+        carouselWrapper.style.transition = "transform 0.3s linear";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+                carouselWrapper.style.transition = "transform 0.3s linear";
             }, 50);
         }, 800); // Increased wait time to match new transition duration
     }
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Move wrapper left by one image width
         scrollPosition -= imageWidth;
-        carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+        carouselWrapper.style.transition = "transform 0.3s linear";
         carouselWrapper.style.transform = `translateX(${scrollPosition}px)`;
 
         setTimeout(() => {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Re-enable smooth transition for the next move
             setTimeout(() => {
-                carouselWrapper.style.transition = "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+                carouselWrapper.style.transition = "transform 0.3s linear";
             }, 50);
         }, 800); // Increased wait time to match new transition duration
     }
@@ -110,13 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(function(){
     $('.slick-carousel').slick({
         autoplay: true,           
-        autoplaySpeed: 5000,      // Slide duration in milliseconds
+        autoplaySpeed: 4000,      // Slide duration in milliseconds
         speed: 300,               // Transition speed
-        fade: false,              //fade set to false (duh)
+        fade: false,              // fade set to false (duh)
         dots: true,               // Pagination dots
         arrows: false,            // navigation arrows
         infinite: true,           // Infinite loop
-        pauseOnHover: true,       
+        pauseOnHover: true,       // pause on hover
         cssEase: 'linear'         // transition effect
         // ,
         // appendDots: $('.dots')

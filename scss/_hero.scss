@@ -38,6 +38,7 @@
                 text-align: center;
                 width: 90%;
                 margin-left: auto;
+                top: 40%;
             }
             .hero-overlay {
                 display: flex;
@@ -60,7 +61,7 @@
                 margin-bottom: 10px;
                 color: #ffffff;
                 @media screen and (max-width: 768px) {
-                    font-size: 2rem;
+                    font-size: 2.3rem;
                 }
             }
             p {
@@ -70,6 +71,9 @@
                 margin-bottom: 20px;
                 line-height: 1.5rem;
                 color: #ffffff;
+                @media screen and (max-width: 768px) {
+                    line-height: 1.7rem;
+                }
             }
             .car-btn {
                 padding: 15px;
