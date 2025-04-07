@@ -100,13 +100,23 @@ main {
 
     @media (min-width: 769px) {
         width: 750px;
-        
-        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        #welcome {
+            order: 1;
+            line-height: 1.9rem;
+        }
+        #services {
+            order: 2;
+            button {
+                margin-top: 10px;
+            }
+        }
     }
 
     @media (min-width: 992px) {
         width: 970px;
-
     }
 
     @media (min-width: 1260px) {
@@ -192,6 +202,10 @@ html[data-sidebar="open"] .sticky-container {
         color: black;
         font-size: 24px;
     }
+    @media (max-width: 992px) {
+        max-width: 720px;
+        margin: 0 auto;
+    }
     @media (max-width: 768px) {
         max-width: 740px;
     }
@@ -212,6 +226,10 @@ html[data-sidebar="open"] .sticky-container {
     }
     @media (max-width: 450px) {
         display: flex;
+    }
+    @media (max-width: 992px) {
+        max-width: 768px;
+        margin: 0 auto;
     }
 }
 

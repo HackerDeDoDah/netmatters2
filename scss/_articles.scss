@@ -31,6 +31,7 @@
     // Media query to hide the third article at smaller screens
     @media (max-width: 1025px) {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 990px;
         
         // Hide the third article
         .article-card:nth-child(3) {
@@ -40,7 +41,7 @@
     
     // Media query for mobile screens
     @media (max-width: 768px) {
-        width: 750px;
+        max-width: 750px;
         grid-template-columns: 1fr;
         
     }
@@ -109,7 +110,7 @@
     
     // Target individual articles using nth-child
     &:nth-child(1) {
-        // Custom styles for the first article
+        
         .labelz {
             background-color: #ff6b6b;
         }
@@ -120,7 +121,7 @@
     }
     
     &:nth-child(2) {
-        // Custom styles for the second article
+        
         .labelz {
             background-color: #4ecdc4;
         }
@@ -131,7 +132,7 @@
     }
     
     &:nth-child(3) {
-        // Custom styles for the third article
+        
         .labelz {
             background-color: #45b7d1;
         }

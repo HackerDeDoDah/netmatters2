@@ -1,7 +1,7 @@
     <div class="placeholder">
         <div class="sticky-container">
             <header>
-                <div class="container-nav header-flex">
+                <div class="container-nav ">
                     <nav>
                         <a href="index.php"><img src="assets/img/f-logo.webp" alt="netmatters" tabindex="0"></a>
                         <div class="right-align">

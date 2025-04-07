@@ -4,6 +4,8 @@
         display: grid;
         grid-template-columns: 200px 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: space-between;
         grid-template-areas: 
             "logo phone burger"
             "search2 search2 search2";
@@ -31,7 +33,7 @@
             display: flex;
             position: absolute;
             top: 100px;
-            width: 95%;
+            width: 100%;
         }
     }
 
@@ -64,6 +66,7 @@
     .search-bar2 {
         grid-area: search2;
         display: flex;
+        width: 100%;
     }
 }
 
@@ -87,7 +90,7 @@
         display: block;
     }
     .search-block {
-        display: block;
+        display: none;
     }
     .button {
         display: block;

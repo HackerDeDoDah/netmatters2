@@ -6,12 +6,18 @@
     width: 100%;
     height: 189px;
     @media (max-width: 991px) {
-        height: 100px;
+        height: 110px;
     }
     @media (max-width: 767px) {
         height: 170px;
     }
 }
+
+.container-nav {
+    height: fit-content;
+    padding: 0;
+}
+
 
 // Container and Header Styling
 header {
@@ -19,7 +25,7 @@ header {
     visibility: visible;
     background-color: #fff;
     width: 100%;
-    display: flex;
+    height: fit-content;
     justify-content: center;
     border-bottom: 1px solid transparent;
     box-sizing: border-box;
@@ -43,236 +49,223 @@ nav {
         gap: 10px;
         padding: 5px 10px 10px 10px;
     }
-}
-
-// plane style
-.plane {
-    filter: invert(1);
-}
-
-// Logo Styling 
-nav img {
-    display: flex;
-    max-height: auto;
-    max-width: 370px;
-    width: 100%;
-    margin-left: 0;
-    cursor: pointer;
-    @media (max-width: 450px) {
-        width: 200px;
+    @media (max-width: 992px) {
+        max-width: 768px;
+        margin: 0 auto;
     }
-}
-
-// Right-Aligned Section 
-.right-align {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 20px;
-    @media (max-width: 450px) {
+    @media (max-width: 768px) {
+        flex-direction: row;
+        align-items: center;
         gap: 10px;
     }
-}
-
-// Button Styling 
-.button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px;
-    font-size: 18px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
-
-.btn-blue {
-    background-color: #4183d7;
-}
-
-.btn-light-grey {
-    background-color: #999aa2;
-    &:hover {
-        background-color: #7a7a7a;
-    }
-}
-
-.button i {
-    height: 16px;
-    padding-right: 10px;
-    padding-left: 0;
-}
-
-// Search Bar
-.search-bar {
-    display: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 290px;
-}
-
-.search-bar span {
-    background-color: #999aa2;
-    &:hover {
-        background-color: #7a7a7a;
-    }
-}
-
-.search-input {
-    padding: 8px 10px;
-    font-size: 14px;
-    color: #999aa2;
-    outline: none;
-    height: 54px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.search-icon {
-    position: absolute;
-    right: 0px;
-    color: #fff;
-    font-size: 1.5rem;
-    height: 54px;
-    background-color: #999aa2;
-    border: 1px solid transparent;
-    padding: 8px 14px;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    z-index: 2;
-    &:hover {
-        background-color: #7a7a7a;
-    }
-}
-
-// Hide Search Button
-.search-button {
-    display: none;
-    background-color: #fff;
-}
-
-// General styling for the hamburger container
-.burger-container {
-    width: 62px;
-    height: 56px;
-    display: block;
-    flex-direction: column;
-    border-radius: 3px;
-    background-color: #2f313d;
-    padding: 0 10px;
-    justify-content: center;
-    align-content: center;
-    z-index: 1001;
-    cursor: pointer;
-    &:hover {
-        background-color: #0a0a0d;
-    }
-}
-
-// Styling for the lines
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 40px;
-    height: 30px;
-    cursor: pointer;
-    position: relative;
-}
-
-.hamburger span {
-    display: block;
-    width: 30px; 
-    height: 4px;
-    background: #fff;
-    margin: 4px 0;
-    transition: all 0.3s ease-in-out;
-    position: absolute;
-}
-
-.hamburger span:nth-child(1) {
-    top: 0;
-}
-
-.hamburger span:nth-child(2) {
-    top: 36%;
-    transform: translateY(-50%);
-}
-
-.hamburger span:nth-child(3) {
-    bottom: 0;
-}
-
-.hamburger.open span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg) !important;
-}
-
-.hamburger.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg) !important;
-}
-
-
-// ---------------
-
-.search-block {
-    display: none;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    background-color: #999aa2;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.phone {
-    display: none;
-    color: #2f313d;
-    font-size: 1.7rem;
-    cursor: pointer;
-    &:hover{
-        text-decoration: underline;
-    }
-}
-
-.search-bar2 {
-    position: relative;
-    display: none;
-    align-items: center;
-    width: 90%;
-    height: 45px;
-    border: 2px solid #ccc;
-    border-radius: 2px;
-    margin-bottom: 0 auto 20px auto;
-    overflow: hidden;
-    background-color: #e1e2e7;
-    .search-input {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        color: #2f313d;
-        background-color: #e1e2e7;
-    }
-    i {
-        color: #2f313d;
-        font-size: 20px;
+    // Logo Styling 
+    nav img {
+        display: flex;
+        max-height: auto;
+        max-width: 370px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: auto;
         cursor: pointer;
+        @media (max-width: 450px) {
+            width: 200px;
+        }
+    }
+    // plane style
+    .plane {
+        filter: invert(1);
+    }
+    // Right-Aligned Section 
+    .right-align {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 20px;
+        @media (max-width: 450px) {
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            top: -100px;
+        }
+    }
+    // Button Styling 
+    .button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px;
+        font-size: 18px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        opacity: 0.9;
+    }
+    .btn-blue {
+        background-color: #4183d7;
+    }
+    .btn-light-grey {
+        background-color: #999aa2;
+        &:hover {
+            background-color: #7a7a7a;
+        }
+    }
+    .button i {
+        height: 16px;
+        padding-right: 10px;
+        padding-left: 0;
+    }
+    // Search Bar
+    .search-bar {
+        display: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 290px;
+    }
+    .search-bar span {
+        background-color: #999aa2;
+        &:hover {
+            background-color: #7a7a7a;
+        }
+    }
+    .search-input {
+        padding: 8px 10px;
+        font-size: 14px;
+        color: #999aa2;
+        outline: none;
+        height: 54px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .search-icon {
+        position: absolute;
+        right: 0px;
+        color: #fff;
+        font-size: 1.5rem;
+        height: 54px;
+        background-color: #999aa2;
+        border: 1px solid transparent;
+        padding: 8px 14px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        z-index: 2;
+        &:hover {
+            background-color: #7a7a7a;
+        }
+    }
+    // Hide Search Button
+    .search-button {
+        display: none;
+        background-color: #fff;
+    }
+    // General styling for the hamburger container
+    .burger-container {
+        width: 62px;
+        height: 56px;
+        display: block;
+        flex-direction: column;
+        border-radius: 3px;
+        background-color: #2f313d;
+        padding: 0 10px;
+        justify-content: center;
+        align-content: center;
+        z-index: 1001;
+        cursor: pointer;
+        &:hover {
+            background-color: #0a0a0d;
+        }
+    }
+    // Styling for the lines
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+    }
+    .hamburger span {
+        display: block;
+        width: 30px; 
+        height: 4px;
+        background: #fff;
+        margin: 4px 0;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+    }
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+    .hamburger span:nth-child(2) {
+        top: 36%;
+        transform: translateY(-50%);
+    }
+    .hamburger span:nth-child(3) {
+        bottom: 0;
+    }
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg) !important;
+    }
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg) !important;
+    }
+    // ---------------
+    .search-block {
+        display: none;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        background-color: #999aa2;
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .phone {
+        display: none;
+        color: #2f313d;
+        font-size: 1.7rem;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .search-bar2 {
+        position: relative;
+        display: none;
+        align-items: center;
+        width: 90%;
+        height: 45px;
+        border: 2px solid #ccc;
+        border-radius: 2px;
+        margin-bottom: 0 auto 20px auto;
+        overflow: hidden;
+        background-color: #e1e2e7;
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #2f313d;
+            background-color: #e1e2e7;
+        }
+        i {
+            color: #2f313d;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 }
+
+
