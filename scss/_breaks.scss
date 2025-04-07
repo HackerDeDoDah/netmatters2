@@ -8,7 +8,7 @@
         justify-content: space-between;
         grid-template-areas: 
             "logo phone burger"
-            "search2 search2 search2";
+            "search2";
 
         img {
             grid-area: logo;
@@ -30,9 +30,11 @@
 
         .search-bar2 {
             grid-area: search2;
+            grid-column: 1 / 4;
             display: flex;
             position: absolute;
-            top: 100px;
+            top: 120px;
+            max-width: 680px;
             width: 100%;
         }
     }
@@ -119,11 +121,12 @@
     max-width: 1200px;
     width: 100%;
     height: fit-content;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 
     @media (max-width: 991px) {
-        height: 80px;
+        height: 110px;
     }
 
     @media (max-width: 767px) {

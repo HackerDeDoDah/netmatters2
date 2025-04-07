@@ -116,6 +116,9 @@
     .btn-blue {
         background-color: #4183d7;
         color: #fff;
+        &:hover {
+            background-color: #366cb2;
+        }
     }
 
     .btn-red {
@@ -126,6 +129,9 @@
     .btn-green {
         background-color: #2ecc71;
         color: #fff;
+        &:hover {
+            background-color: #29b965;
+        }
     }
 
     .btn-brown {
@@ -146,7 +152,11 @@
     .btn-purple {
         background-color: #926fb1;
         color: #fff;
+        &:hover {
+            background-color: #7a5d93;
+        }
     }
+
     .btn-dark-grey {
         background-color: #67809f;
         color: #fff;

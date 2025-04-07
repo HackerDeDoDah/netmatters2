@@ -304,7 +304,7 @@
             <div class="tool-tip xupes">
                 <div class="tool-tip-content">
                     <div class="tool-tip-container">
-                        <img src="assets/img/xupes_logo.webp" alt="xupes">
+                        <img src="assets/img/xupes_logo.webp"style="height: 60px;" alt="xupes">
                         <div class="tool-tip-text">
                             <h3>Xupes</h3>
                         </div>
@@ -369,8 +369,10 @@
                         <img src="assets/img/black_swan_logo.webp" alt="black-swan">
                         <div class="tool-tip-text">
                             <h3>Black Swan</h3>
-                            <p>One of the UK's leading Ford dealerships.</p>
-                        </div>
+                            <p>Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on putting the needs of their residents first.</p>
+                            <button class="btn-orange">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+
+                          </div>
                     </div>
                 </div>
             </div>
@@ -381,7 +383,6 @@
                         <img src="assets/img/survey_solutions_logo.webp" alt="survey solutions">
                         <div class="tool-tip-text">
                             <h3>Survey Solutions</h3>
-                            <p>One of the UK's leading Ford dealerships.</p>
                         </div>
                     </div>
                 </div>
@@ -393,8 +394,9 @@
                         <img src="assets/img/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="ashcroft">
                         <div class="tool-tip-text">
                             <h3>Ashcroft</h3>
-                            <p>One of the UK's leading Ford dealerships.</p>
-                        </div>
+                            <p>Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.</p>
+                            <button class="btn-purple">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -405,7 +407,6 @@
                         <img src="assets/img/howespercivallogo.webp" alt="howes percival">
                         <div class="tool-tip-text">
                             <h3>Howes Percival</h3>
-                            <p>One of the UK's leading Ford dealerships.</p>
                         </div>
                     </div>
                 </div>
@@ -417,8 +418,9 @@
                         <img src="assets/img/searles_logo.webp" alt="searles">
                         <div class="tool-tip-text">
                             <h3>Searles</h3>
-                            <p>One of the UK's leading Ford dealerships.</p>
-                        </div>
+                            <p>Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holiday resort for families.</p>
+                            <button class="btn-green">VIEW OUR CASE STUDY<i class="fa-solid fa-arrow-right"></i></button>
+                          </div>
                     </div>
                 </div>
             </div>

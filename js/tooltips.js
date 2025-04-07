@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Apply the calculated position
-            tooltipText.style.top = `${top}px`;
-            tooltipText.style.left = `${left}px`;
+            // tooltipText.style.bottom = `${top}px`;
+            // tooltipText.style.left = `${left}px`;
             
             // Update arrow position
             const arrow = tooltipText.querySelector('::before');
