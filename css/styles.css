@@ -2183,11 +2183,6 @@ button.card-button-top .btn-dark-grey {
   }
 }
 
-.container-nav {
-  height: fit-content;
-  padding: 0;
-}
-
 header {
   display: flex;
   visibility: visible;
@@ -5270,7 +5265,7 @@ input[type=checkbox]:checked::before {
     display: none;
   }
   .search-bar {
-    display: block;
+    display: none;
   }
   .search-block {
     display: none;
