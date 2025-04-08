@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
-    const scrollThreshold = 200;
+    const scrollThreshold = 600;
     let hasPassedThreshold = false;
     
     // Function to update scroll state
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Set initial scroll position
         if (scrollTop === 0) {
-            document.documentElement.setAttribute('data-scroll', '0');
+            document.documentElement.setAttribute('data-scroll', '-200');
             document.documentElement.removeAttribute('data-scroll-past');
             document.documentElement.removeAttribute('data-can-hide');
             document.documentElement.removeAttribute('data-show-on-scroll-up');

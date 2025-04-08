@@ -11,6 +11,7 @@
 @mixin responsive {
     @media (max-width: 767px) {
         width: 100%;
+        padding: 15px;
         margin-right: auto;
         margin-left: auto;
         #top1,
@@ -26,7 +27,7 @@
         .grid-container-articles {
             display: grid;
             grid-template-columns: 1fr;
-            width: 98%;
+            width: 100%;
         }
         .card-tags {
             align-content: center;
@@ -39,6 +40,7 @@
 
     @media (min-width: 768px) and (max-width: 991px) {
         width: 750px;
+        padding: 15px;
         #top1,
         #top2,
         #top3 {
@@ -61,7 +63,8 @@
     }
 
     @media (min-width: 992px) {
-        width: 970px;
+        width: 950px;
+        padding: 15px;
         #top1,
         #top2,
         #top3 {
@@ -80,6 +83,7 @@
 
     @media (min-width: 1260px) {
         width: 1200px;
+        padding: 15px;
         #top1,
         #top2,
         #top3 {

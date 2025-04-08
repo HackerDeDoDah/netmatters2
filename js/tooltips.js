@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     // Tooltip is above
                     arrow.style.top = 'auto';
-                    arrow.style.bottom = '-6px';
+                    arrow.style.bottom = '-40px';
                 }
             }
         });

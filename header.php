@@ -3,7 +3,7 @@
             <header>
                 <div class="container-nav ">
                     <nav>
-                        <a href="index.php"><img src="assets/img/f-logo.webp" alt="netmatters" tabindex="0"></a>
+                        <a href="index.php"><img class="logo" src="assets/img/f-logo.webp" alt="netmatters" tabindex="0"></a>
                         <div class="right-align">
                             <button class="button btn-blue"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</button>
                             <form action="contact_us.php" method="get">

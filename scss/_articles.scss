@@ -30,9 +30,9 @@
     max-width: 1200px;
     
     // Media query to hide the third article at smaller screens
-    @media (max-width: 1025px) {
+    @media (max-width: 1260px) {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 990px;
+        max-width: 950px;
         
         // Hide the third article
         .article-card:nth-child(3) {
@@ -42,9 +42,11 @@
     
     // Media query for mobile screens
     @media (max-width: 768px) {
-        max-width: 750px;
+        width: 100%;
         grid-template-columns: 1fr;
-        
+        .article-card:nth-child(3) {
+            display: flex;
+        }
     }
 }
 
@@ -75,7 +77,7 @@
         transform: translateY(-10px);
     }  
     @media (min-width: 768px) {
-        min-width: 340px;
+        width: 100%;
     }
     p {
         @media (max-width: 820px) {
