@@ -74,9 +74,12 @@
 
 @media (min-width: 769px) {
     .search-bar {
-        display: block;
+        display: none;
     }
-    .button, .search-block {
+    .search-block {
+        display: flex;
+    }
+    .button {
         display: none;
     }
     .search-bar2 {
@@ -92,7 +95,7 @@
         display: none;
     }
     .search-block {
-        display: none;
+        display: flex;
     }
     .button {
         display: block;
@@ -103,6 +106,7 @@
 }
 
 @media (min-width: 1260px) {
+
     .button, .search-bar {
         display: block;
     }
@@ -120,18 +124,18 @@
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    height: fit-content;
-    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width: 991px) {
-        height: 110px;
+    @media (max-width: 990px) {
+        height: 90px;
+        width: 800px;
     }
 
-    @media (max-width: 767px) {
-        height: 130px;
+    @media (max-width: 768px) {
+        height: 90px;
         margin-top: 10px;
+        width: 100%;
     }
 }
 

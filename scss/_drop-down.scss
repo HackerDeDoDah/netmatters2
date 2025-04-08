@@ -75,7 +75,7 @@
 }
 
 .menu-item:hover .dropdown-content,
-.dropdown-content:hover ~ .menu-item,
+.dropdown-content:hover ~ .menu-item::after,
 .dropdown-content:hover {
     display: flex;
     opacity: 1;
